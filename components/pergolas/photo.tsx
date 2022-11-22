@@ -53,8 +53,8 @@ export default function Photo(){
                     </div>
                 </div>
                 <div className=" h-carrousel-case w-1/2">
-                    {/* <ProductCarroussel></ProductCarroussel> */}
-                    <img src="/assets/pergolas/carroussel_pergola_bioclimatique_1.jpg" alt={"Pergolas Bioclimatique posée par KANCOON en Vendée - spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
+                    <ProductCarroussel></ProductCarroussel>
+                    {/* <img src="/assets/pergolas/carroussel_pergola_bioclimatique_1.jpg" alt={"Pergolas Bioclimatique posée par KANCOON en Vendée - spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/> */}
                 </div>
             </div>
 

@@ -1,23 +1,22 @@
-import { useRef } from 'react';
-import Autoplay from 'embla-carousel-autoplay';
 import { Carousel } from '@mantine/carousel';
+import { Image } from '@mantine/core';
+
+const images = ['/assets/pergolas/carroussel_pergola_bioclimatique_1.jpg','/assets/pergolas/carroussel_pergola_bioclimatique_2.jpg',];
 
 export default function ProductCarroussel() {
-  const autoplay = useRef(Autoplay({ delay: 2000 }));
+  const slides = images.map((url) => (
+    <Carousel.Slide key={url}>
+      <Image src={url} height='576px' width='720px'/>
+    </Carousel.Slide>
+  ));
+
   return (
-    <Carousel
-      sx={{ maxWidth: 720 }}
-      mx="auto"
+    <Carousel 
+      slideSize= '50%'
+      mx="auto" 
       withIndicators
-      height={540}
-      plugins={[autoplay.current]}
-      onMouseEnter={autoplay.current.stop}
-      onMouseLeave={autoplay.current.reset}
-    >
-      <Carousel.Slide>1</Carousel.Slide>
-      <Carousel.Slide>2</Carousel.Slide>
-      <Carousel.Slide>3</Carousel.Slide>
-      {/* ...other slides */}
+      height={'576px'}>
+        {slides}
     </Carousel>
   );
 }

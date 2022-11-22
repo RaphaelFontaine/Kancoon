@@ -22,7 +22,7 @@ module.exports = {
     },
     fontSize: {
       'title-size': '2rem',
-      'corps-size': '1rem',
+      'corps-size': '1em',
       'realisation-title-size': '50px',
       'realisation-corps-size': '20px'
     },
