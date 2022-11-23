@@ -1,6 +1,44 @@
 import { Demo } from "@mantine/ds";
-import ProductCarroussel from "../common/product-caroussel";
+import {ProductCarroussel} from "../common/product-caroussel";
+import {InstalledCarroussel} from "../common/product-caroussel";
 
+const carrousel_perg_bio = [
+    '/assets/pergolas/carroussel_pergola_bioclimatique_1.jpg',
+    '/assets/pergolas/carroussel_pergola_bioclimatique_2.jpg',
+    '/assets/pergolas/carroussel_pergola_bioclimatique_3.jpg',
+    '/assets/pergolas/carroussel_pergola_bioclimatique_4.jpg',
+    '/assets/pergolas/carroussel_pergola_bioclimatique_5.jpg',
+    '/assets/pergolas/carroussel_pergola_bioclimatique_6.jpg',
+    '/assets/pergolas/carroussel_pergola_bioclimatique_7.jpg',
+    '/assets/pergolas/carroussel_pergola_bioclimatique_8.jpg',
+    '/assets/pergolas/carroussel_pergola_bioclimatique_9.jpg',
+];
+
+const carrousel_perg_toile = [
+    '/assets/pergolas/carrousel_pergola_toile_1.jpg',
+    '/assets/pergolas/carrousel_pergola_toile_2.jpg',
+    '/assets/pergolas/carrousel_pergola_toile_3.jpg',
+    '/assets/pergolas/carrousel_pergola_toile_4.jpg',
+];
+
+const installed_pergolas = [
+    "/assets/pergolas/installed_pergola_1.jpg",
+    "/assets/pergolas/installed_pergola_2.jpg",
+    "/assets/pergolas/installed_pergola_3.jpg",
+    "/assets/pergolas/installed_pergola_4.jpg",
+    "/assets/pergolas/installed_pergola_5.jpg",
+    "/assets/pergolas/installed_pergola_6.jpg",
+    "/assets/pergolas/installed_pergola_7.jpg",
+    "/assets/pergolas/installed_pergola_8.jpg",
+    "/assets/pergolas/installed_pergola_9.jpg",
+    "/assets/pergolas/installed_pergola_10.jpg",
+    "/assets/pergolas/installed_pergola_11.jpg",
+    "/assets/pergolas/installed_pergola_12.jpg",
+    "/assets/pergolas/installed_pergola_13.jpg",
+    "/assets/pergolas/installed_pergola_14.jpg",
+    "/assets/pergolas/installed_pergola_15.jpg",
+
+]
 
 export default function Photo(){
     return(
@@ -53,7 +91,11 @@ export default function Photo(){
                     </div>
                 </div>
                 <div className=" h-carrousel-case w-1/2">
-                    <ProductCarroussel></ProductCarroussel>
+                    <ProductCarroussel
+                        images= {carrousel_perg_bio}
+                    >
+
+                    </ProductCarroussel>
                     {/* <img src="/assets/pergolas/carroussel_pergola_bioclimatique_1.jpg" alt={"Pergolas Bioclimatique posée par KANCOON en Vendée - spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/> */}
                 </div>
             </div>
@@ -61,8 +103,10 @@ export default function Photo(){
             <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
             <div className=" h-carrousel-case w-1/2">
                     {/* <ProductCarroussel></ProductCarroussel> */}
-                    <img src="/assets/pergolas/carrousel_pergola_toile_1.jpg" alt={"Pergolas Bioclimatique posée par KANCOON en Vendée - spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
-                </div>
+                    <ProductCarroussel
+                        images= {carrousel_perg_toile}
+                    >
+                    </ProductCarroussel>                </div>
                 <div className="h-carrousel-case flex flex-row bg-white w-1/2 text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
@@ -88,6 +132,11 @@ export default function Photo(){
                     Les Sables d'Olonne, Saint Gilles Croix de Vie, La Roche sur Yon
                 </div>
             </div>
+            <InstalledCarroussel 
+                    className="h-carrousel-case w-full"
+                    images= {installed_pergolas}
+            >
+            </InstalledCarroussel>
         </>
     )
 }

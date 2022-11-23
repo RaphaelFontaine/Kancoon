@@ -13,7 +13,7 @@ export default function Pergolas() {
                 <link rel="icon" href= "/FAVICON-transparent.png" />
             </Head>
             <HeaderAction></HeaderAction>
-            <main className='pt-[95px]'>
+            <main className='pt-[95px] bg-dark-grey'>
                 <Photo></Photo>
                 <Hero></Hero>
             </main>

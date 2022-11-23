@@ -21,8 +21,8 @@ module.exports = {
       police: 'Poppins'
     },
     fontSize: {
-      'title-size': '2rem',
-      'corps-size': '1em',
+      'title-size': 'calc(2vw + 2px)',
+      'corps-size': 'calc(1vw + 2px)',
       'realisation-title-size': '50px',
       'realisation-corps-size': '20px'
     },
