@@ -12,7 +12,6 @@ export function InstalledCarroussel(props: any) {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
   return (
     <Carousel 
-      color='#fff'
       slideSize= '100%'
       mx="auto" 
       withIndicators
@@ -36,9 +35,12 @@ export function ProductCarroussel(props: any) {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
   return (
     <Carousel 
+      classNames={{
+        "indicator" : "bg-white",
+      }}
       slideSize= '50%'
       mx="auto" 
-      withIndicators
+      withIndicators={true}
       plugins={[autoplay.current]}
       loop
       height={'576px'}
