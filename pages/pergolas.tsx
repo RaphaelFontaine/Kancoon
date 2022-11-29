@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Hero from '../components/pergolas/hero'
 import HeaderAction from '../components/common/header'
-import Photo from '../components/pergolas/photo'
+import Produit from '../components/pergolas/produit'
+import Realisations from '../components/pergolas/realisations'
 
 export default function Pergolas() {
     return (
@@ -14,8 +14,8 @@ export default function Pergolas() {
             </Head>
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>
-                <Photo></Photo>
-                <Hero></Hero>
+                <Produit></Produit>
+                <Realisations></Realisations>
             </main>
 
         </div>
