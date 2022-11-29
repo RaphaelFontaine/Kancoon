@@ -72,9 +72,9 @@ export default function Photo(){
             </div>
 
             <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
-                <div className="h-carrousel-case flex flex-row bg-white w-1/2 text-corps-color">
-                    <div className="flex flex-row bg-white h-grey-band pl-[40px]">
-                        <div className="bg-dark-grey w-grey-band h-grey-band">
+                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+                    <div className="flex flex-row bg-white h-grey-band  pl-[40px]">
+                        <div className="bg-dark-grey w-grey-band h-grey-band ">
                         </div>
                         <div className="bg-white pl-[20px]">
                             <div className="bg-green w-green-band h-green-band">
@@ -90,7 +90,7 @@ export default function Photo(){
                         </div>
                     </div>
                 </div>
-                <div className=" h-carrousel-case w-1/2">
+                <div className=" h-carrousel-case lg:w-1/2 w-full">
                     <ProductCarroussel
                         images= {carrousel_perg_bio}
                     >
