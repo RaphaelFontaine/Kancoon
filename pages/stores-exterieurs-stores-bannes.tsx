@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import HeaderAction from '../components/common/header'
 import Produit from '../components/stores-ext/produits'
+import Realisations from '../components/stores-ext/realisations'
 
 export default function StoresExt() {
     return (
@@ -14,6 +15,7 @@ export default function StoresExt() {
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>
                 <Produit></Produit>
+                <Realisations></Realisations>
                 
             </main>
 
