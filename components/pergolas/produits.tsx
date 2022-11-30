@@ -1,49 +1,29 @@
 import {ProductCarroussel} from "../common/product-caroussel";
-import {InstalledCarroussel} from "../common/product-caroussel";
 
 const carrousel_perg_bio = [
-    '/assets/pergolas/carroussel_pergola_bioclimatique_1.jpg',
-    '/assets/pergolas/carroussel_pergola_bioclimatique_2.jpg',
-    '/assets/pergolas/carroussel_pergola_bioclimatique_3.jpg',
-    '/assets/pergolas/carroussel_pergola_bioclimatique_4.jpg',
-    '/assets/pergolas/carroussel_pergola_bioclimatique_5.jpg',
-    '/assets/pergolas/carroussel_pergola_bioclimatique_6.jpg',
-    '/assets/pergolas/carroussel_pergola_bioclimatique_7.jpg',
-    '/assets/pergolas/carroussel_pergola_bioclimatique_8.jpg',
-    '/assets/pergolas/carroussel_pergola_bioclimatique_9.jpg',
+    '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_1.jpg',
+    '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_2.jpg',
+    '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_3.jpg',
+    '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_4.jpg',
+    '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_5.jpg',
+    '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_6.jpg',
+    '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_7.jpg',
+    '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_8.jpg',
+    '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_9.jpg',
 ];
 
 const carrousel_perg_toile = [
-    '/assets/pergolas/carrousel_pergola_toile_1.jpg',
-    '/assets/pergolas/carrousel_pergola_toile_2.jpg',
-    '/assets/pergolas/carrousel_pergola_toile_3.jpg',
-    '/assets/pergolas/carrousel_pergola_toile_4.jpg',
+    '/assets/pergolas/pergolas_toile/carrousel_pergola_toile_1.jpg',
+    '/assets/pergolas/pergolas_toile/carrousel_pergola_toile_2.jpg',
+    '/assets/pergolas/pergolas_toile/carrousel_pergola_toile_3.jpg',
+    '/assets/pergolas/pergolas_toile/carrousel_pergola_toile_4.jpg',
 ];
-
-const installed_pergolas = [
-    "/assets/pergolas/installed_pergola_1.jpg",
-    "/assets/pergolas/installed_pergola_2.jpg",
-    "/assets/pergolas/installed_pergola_3.jpg",
-    "/assets/pergolas/installed_pergola_4.jpg",
-    "/assets/pergolas/installed_pergola_5.jpg",
-    "/assets/pergolas/installed_pergola_6.jpg",
-    "/assets/pergolas/installed_pergola_7.jpg",
-    "/assets/pergolas/installed_pergola_8.jpg",
-    "/assets/pergolas/installed_pergola_9.jpg",
-    "/assets/pergolas/installed_pergola_10.jpg",
-    "/assets/pergolas/installed_pergola_11.jpg",
-    "/assets/pergolas/installed_pergola_12.jpg",
-    "/assets/pergolas/installed_pergola_13.jpg",
-    "/assets/pergolas/installed_pergola_14.jpg",
-    "/assets/pergolas/installed_pergola_15.jpg",
-
-]
 
 export default function Produit(){
     return(
         <>
             <div className="bg-white text-black text-primary-2">
-                <img src="/assets/pergolas/pergola_bandeau.jpg" alt={"Pergolas Bioclimatique posée par KANCOON en Vendée - spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
+                <img src="/assets/pergolas/bandeau/pergola_bandeau.jpg" alt={"Pergolas Bioclimatique posée par KANCOON en Vendée - spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
             </div>
 
             <div className="flex flex-col-reverse lg:flex-row lg:h-case-size">
@@ -123,18 +103,6 @@ export default function Produit(){
                     </div>
                 </div>
             </div>
-
-            <div className="bg-grey-realisation text-realisation-title-size text-center pt-realisation-top pb-realisation-bottom">
-                Nos Réalisations
-                <div className="text-realisation-corps-size">
-                    Les Sables d'Olonne, Saint Gilles Croix de Vie, La Roche sur Yon
-                </div>
-            </div>
-            <InstalledCarroussel 
-                    className="h-carrousel-case w-full"
-                    images= {installed_pergolas}
-            >
-            </InstalledCarroussel>
         </>
     )
 }

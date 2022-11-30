@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import HeaderAction from '../components/common/header'
-import Produit from '../components/stores-int/produit'
+import Produit from '../components/stores-int/produits'
 
 export default function StoresInt() {
     return (

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import HeaderAction from '../components/common/header'
-import Produit from '../components/pergolas/produit'
+import Produit from '../components/pergolas/produits'
 import Realisations from '../components/pergolas/realisations'
 
 export default function Pergolas() {

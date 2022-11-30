@@ -1,82 +1,84 @@
 import {ProductCarroussel} from "../common/product-caroussel";
-import {InstalledCarroussel} from "../common/product-caroussel";
 
 const stores_interieurs = [
-    '/assets/stores-int/store_interieur_1.jpg',
+    '/assets/stores-int/stores_interieurs/store_interieur_1.jpg',
 ];
 
 const stores_venitiens = [
-    '/assets/stores-int/store_venitien_1.jpg'
+    '/assets/stores-int/stores_venitiens/store_venitien_1.jpg'
 ]
 
 const stores_venitiens_alu = [
-    '/assets/stores-int/stores_venitiens_alu_1.jpg',
-    '/assets/stores-int/stores_venitiens_alu_2.jpg',
-    '/assets/stores-int/stores_venitiens_alu_1.jpg',
+    '/assets/stores-int/stores_venitiens_alu/stores_venitiens_alu_1.jpg',
+    '/assets/stores-int/stores_venitiens_alu/stores_venitiens_alu_2.jpg',
+    '/assets/stores-int/stores_venitiens_alu/stores_venitiens_alu_1.jpg',
 ];
 
 const stores_ombre_lumiere = [
-    "/assets/stores-int/stores_ombre_lumiere_1.jpg",
-    "/assets/stores-int/stores_ombre_lumiere_2.jpg",
-    "/assets/stores-int/stores_ombre_lumiere_3.jpg",
-    "/assets/stores-int/stores_ombre_lumiere_4.jpg",
+    "/assets/stores-int/stores_ombre_lumiere/stores_ombre_lumiere_1.jpg",
+    "/assets/stores-int/stores_ombre_lumiere/stores_ombre_lumiere_2.jpg",
+    "/assets/stores-int/stores_ombre_lumiere/stores_ombre_lumiere_3.jpg",
+    "/assets/stores-int/stores_ombre_lumiere/stores_ombre_lumiere_4.jpg",
 ]
 
 const stores_rouleaux = [
-    "/assets/stores-int/stores_rouleaux_1.jpg",
-    "/assets/stores-int/stores_rouleaux_2.jpg",
-    "/assets/stores-int/stores_rouleaux_3.jpg",
-    "/assets/stores-int/stores_rouleaux_4.jpg",
-    "/assets/stores-int/stores_rouleaux_5.jpg",
-    "/assets/stores-int/stores_rouleaux_6.jpg",
+    "/assets/stores-int/stores_rouleaux/stores_rouleaux_1.jpg",
+    "/assets/stores-int/stores_rouleaux/stores_rouleaux_2.jpg",
+    "/assets/stores-int/stores_rouleaux/stores_rouleaux_3.jpg",
+    "/assets/stores-int/stores_rouleaux/stores_rouleaux_4.jpg",
+    "/assets/stores-int/stores_rouleaux/stores_rouleaux_5.jpg",
+    "/assets/stores-int/stores_rouleaux/stores_rouleaux_6.jpg",
 ]
 
 const stores_verticaux = [
-    "/assets/stores-int/store_vertical_1.jpg",
-    "/assets/stores-int/store_vertical_2.jpg",
-    "/assets/stores-int/store_vertical_3.jpg",
-    "/assets/stores-int/store_vertical_4.jpg",
-    "/assets/stores-int/store_vertical_5.jpg",
-    "/assets/stores-int/store_vertical_6.jpg",
+    "/assets/stores-int/stores_verticaux/store_vertical_1.jpg",
+    "/assets/stores-int/stores_verticaux/store_vertical_2.jpg",
+    "/assets/stores-int/stores_verticaux/store_vertical_3.jpg",
+    "/assets/stores-int/stores_verticaux/store_vertical_4.jpg",
+    "/assets/stores-int/stores_verticaux/store_vertical_5.jpg",
+    "/assets/stores-int/stores_verticaux/store_vertical_6.jpg",
 ]
 
 const stores_duette = [
-    "/assets/stores-int/stores_duette_1.jpg",
-    "/assets/stores-int/stores_duette_2.jpg",
-    "/assets/stores-int/stores_duette_3.jpg",
-    "/assets/stores-int/stores_duette_4.jpg",
+    "/assets/stores-int/stores_duette/stores_duette_1.jpg",
+    "/assets/stores-int/stores_duette/stores_duette_2.jpg",
+    "/assets/stores-int/stores_duette/stores_duette_3.jpg",
+    "/assets/stores-int/stores_duette/stores_duette_4.jpg",
 ]
 
 const stores_japonais = [
-    "/assets/stores-int/stores_japonais_1.jpg",
-    "/assets/stores-int/stores_japonais_2.jpg",
-    "/assets/stores-int/stores_japonais_3.jpg",
-    "/assets/stores-int/stores_japonais_4.jpg",
-    "/assets/stores-int/stores_japonais_5.jpg",
+    "/assets/stores-int/stores_japonais/stores_japonais_1.jpg",
+    "/assets/stores-int/stores_japonais/stores_japonais_2.jpg",
+    "/assets/stores-int/stores_japonais/stores_japonais_3.jpg",
+    "/assets/stores-int/stores_japonais/stores_japonais_4.jpg",
+    "/assets/stores-int/stores_japonais/stores_japonais_5.jpg",
 ]
 
 const stores_fenetres = [
-    '/assets/stores-int/stores_fenetres_1.jpg',
+    '/assets/stores-int/stores_fenetres/stores_fenetres_1.jpg',
 ];
 
 const stores_toiture = [
-    '/assets/stores-int/stores_toiture_1.jpg',
+    '/assets/stores-int/stores_toiture/stores_toiture_1.jpg',
 ];
 
 const stores_velum = [
-    '/assets/stores-int/stores_velum_1.jpg',
+    '/assets/stores-int/stores_velum/stores_velum_1.jpg',
 ];
 
 const stores_rideau_feu = [
-    '/assets/stores-int/stores_rideaux_feu_1.jpg',
+    '/assets/stores-int/stores_rideau_feu/stores_rideaux_feu_1.jpg',
 ];
 
+const moustiquaires = [
+    '/assets/stores-int/moustiquaires/moustiquaire_1.jpg',
+];
 
 export default function Produit(){
     return(
         <>
             <div className="bg-white text-black text-primary-2">
-                <img src="/assets/stores-int/stores_int_bandeau.jpg" alt={"Stores Intérieur - KANCOON, spécialiste de la protection solaire en Vendée, les Sables d'Olonne, la Tranche sur Mer, Saint Gille Croix de Vie"}/>
+                <img src="/assets/stores-int/bandeau/stores_int_bandeau.jpg" alt={"Stores Intérieur - KANCOON, spécialiste de la protection solaire en Vendée, les Sables d'Olonne, la Tranche sur Mer, Saint Gille Croix de Vie"}/>
             </div>
 
             <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
@@ -101,7 +103,7 @@ export default function Produit(){
 
                 <div className=" h-carrousel-case lg:w-1/2 w-full">
                     <img 
-                        src="/assets/stores-int/store_interieur_1.jpg"
+                        src="/assets/stores-int/stores_interieurs/store_interieur_1.jpg"
                     >
                     </img>
                 </div>
@@ -110,7 +112,7 @@ export default function Produit(){
             <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
                 <div className=" h-carrousel-case lg:w-1/2 w-full">
                     <img 
-                        src="/assets/stores-int/store_venitien_1.jpg"
+                        src="/assets/stores-int/stores_venitiens/store_venitien_1.jpg"
                     >
                     </img>
                 </div>
@@ -315,7 +317,7 @@ export default function Produit(){
 
                 <div className=" h-carrousel-case lg:w-1/2 w-full">
                     <img 
-                        src="/assets/stores-int/store_interieur_1.jpg"
+                        src="/assets/stores-int/stores_fenetres/stores_fenetres_1.jpg"
                     >
                     </img>
                 </div>
@@ -324,7 +326,7 @@ export default function Produit(){
             <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
                 <div className=" h-carrousel-case lg:w-1/2 w-full">
                     <img 
-                        src="/assets/stores-int/stores_toiture_1.jpg"
+                        src="/assets/stores-int/stores_fenetres/stores_fenetres_1.jpg"
                     >
                     </img>
                 </div>
@@ -370,7 +372,7 @@ export default function Produit(){
 
                 <div className=" h-carrousel-case lg:w-1/2 w-full">
                     <img 
-                        src="/assets/stores-int/stores_velum_1.jpg"
+                        src="/assets/stores-int/stores_velum/stores_velum_1.jpg"
                     >
                     </img>
                 </div>
@@ -379,7 +381,7 @@ export default function Produit(){
             <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
                 <div className=" h-carrousel-case lg:w-1/2 w-full">
                     <img 
-                        src="/assets/stores-int/stores_rideaux_feu_1.jpg"
+                        src="/assets/stores-int/stores_rideau_feu/stores_rideaux_feu_1.jpg"
                     >
                     </img>
                 </div>
@@ -428,27 +430,11 @@ export default function Produit(){
 
                 <div className=" h-carrousel-case lg:w-1/2 w-full">
                     <img 
-                        src="/assets/stores-int/stores_velum_1.jpg"
+                        src="/assets/stores-int/moustiquaires/moustiquaire_1.jpg"
                     >
                     </img>
                 </div>
-            </div>
-
-            
-
-            {/* <div className="bg-grey-realisation text-realisation-title-size text-center pt-realisation-top pb-realisation-bottom">
-                Nos Réalisations
-                <div className="text-realisation-corps-size">
-                    Les Sables d'Olonne, Saint Gilles Croix de Vie, La Roche sur Yon
-                </div>
-            </div>
-            <InstalledCarroussel 
-                    className="h-carrousel-case w-full"
-                    images= {installed_pergolas}
-            >
-            </InstalledCarroussel> */}
-        
-        
+            </div>        
         </>
     )
 }
