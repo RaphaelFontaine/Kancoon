@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Hero from '../components/pergolas/hero'
 import HeaderAction from '../components/common/header'
-import Photo from '../components/pergolas/produit'
+import Produit from '../components/stores-int/produit'
 
 export default function StoresInt() {
     return (
@@ -14,8 +13,8 @@ export default function StoresInt() {
             </Head>
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>
-                <Photo></Photo>
-                <Hero></Hero>
+                <Produit></Produit>
+                
             </main>
 
         </div>
