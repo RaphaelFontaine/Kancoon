@@ -26,8 +26,8 @@ export default function Produit(){
                 <img src="/assets/pergolas/bandeau/pergola_bandeau.jpg" alt={"Pergolas Bioclimatique posée par KANCOON en Vendée - spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-case-size">
-                <div className="lg:w-1/2 w-full relative pt-[56.25%] lg:pt-[28.125%] overflow-hidden ">
+            <div className="flex flex-col-reverse bp:flex-row bp:h-case-size">
+                <div className="bp:w-1/2 w-full relative pt-[56.25%] bp:pt-[28.125%] overflow-hidden ">
                     <iframe
                         className="absolute w-full h-full top-0 left-0 bottom-0 right-0"
                         id="inlineFrameExample"
@@ -38,7 +38,7 @@ export default function Produit(){
                     >
                     </iframe>
                 </div>
-                <div className="flex flex-row bg-white w-full lg:w-1/2 text-title-color">
+                <div className="flex flex-row bg-white w-full bp:w-1/2 text-title-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
                         </div>
@@ -53,8 +53,8 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+            <div className="flex flex-col bp:flex-row bp:h-auto">
+                <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band  pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band ">
                         </div>
@@ -72,7 +72,7 @@ export default function Produit(){
                         </div>
                     </div>
                 </div>
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+                <div className=" h-auto bp:w-1/2 w-full">
                     <ProductCarroussel
                         images= {carrousel_perg_bio}
                     >
@@ -80,14 +80,14 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+            <div className="flex flex-col-reverse bp:flex-row bp:h-auto">
+                <div className=" h-auto bp:w-1/2 w-full">
                         <ProductCarroussel
                             images= {carrousel_perg_toile}
                         >
                         </ProductCarroussel>
                 </div>
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+                <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
                         </div>

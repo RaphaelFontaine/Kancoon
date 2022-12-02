@@ -52,8 +52,8 @@ export default function Produit(){
                 <img src="/assets/stores-ext/bandeau/stores_ext_bandeau.jpg" alt={"Stores bannes et pergola KANCOON à la Tranche sur Mer -  spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+            <div className="flex flex-col bp:flex-row bp:h-auto">
+                <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
                         </div>
@@ -72,7 +72,7 @@ export default function Produit(){
                     </div>
                 </div>
 
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+                <div className=" h-auto bp:w-1/2 w-full">
                     <img 
                         src="/assets/stores-ext/stores_exterieur/store_exterieur_1.jpg"
                     >
@@ -80,14 +80,14 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+            <div className="flex flex-col-reverse bp:flex-row bp:h-auto">
+                <div className=" h-auto bp:w-1/2 w-full">
                         <ProductCarroussel
                             images= {stores_banne}
                         >
                         </ProductCarroussel>
                 </div>
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+                <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
                         </div>
@@ -107,8 +107,8 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+            <div className="flex flex-col bp:flex-row bp:h-auto">
+                <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
                         </div>
@@ -127,7 +127,7 @@ export default function Produit(){
                     </div>
                 </div>
 
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+                <div className=" h-auto bp:w-1/2 w-full">
                     <img 
                         src="/assets/stores-ext/stores_verticaux/store_vertical_1.jpg"
                     >
@@ -135,14 +135,14 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+            <div className="flex flex-col-reverse bp:flex-row bp:h-auto">
+                <div className=" h-auto bp:w-1/2 w-full">
                         <ProductCarroussel
                             images= {stores_projection}
                         >
                         </ProductCarroussel>
                 </div>
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+                <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
                         </div>
@@ -162,8 +162,8 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+            <div className="flex flex-col bp:flex-row bp:h-auto">
+                <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band  pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band ">
                         </div>
@@ -181,7 +181,7 @@ export default function Produit(){
                         </div>
                     </div>
                 </div>
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+                <div className=" h-auto bp:w-1/2 w-full">
                     <ProductCarroussel
                         images={stores_veranda}
                     >
@@ -189,14 +189,14 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+            <div className="flex flex-col-reverse bp:flex-row bp:h-auto">
+                <div className=" h-auto bp:w-1/2 w-full">
                         <ProductCarroussel
                             images= {stores_bso}
                         >
                         </ProductCarroussel>
                 </div>
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+                <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
                         </div>
@@ -216,8 +216,8 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+            <div className="flex flex-col bp:flex-row bp:h-auto">
+                <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band  pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band ">
                         </div>
@@ -235,7 +235,7 @@ export default function Produit(){
                         </div>
                     </div>
                 </div>
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+                <div className=" h-auto bp:w-1/2 w-full">
                     <ProductCarroussel
                         images={stores_terrasses}
                     >

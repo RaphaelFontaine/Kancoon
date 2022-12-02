@@ -19,8 +19,8 @@ export default function Produit(){
                 <img src="/assets/terrasses/bandeau/terrasse_bandeau.jpg" alt={"Terrasse - KANCOON, spécialiste de la protection solaire en Vendée, les Sables d'Olonne, la Tranche sur Mer, Saint Gille Croix de Vie"}/>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+            <div className="flex flex-col bp:flex-row bp:h-carrousel-case">
+                <div className="h-carrousel-case flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
                         </div>
@@ -39,7 +39,7 @@ export default function Produit(){
                     </div>
                 </div>
 
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+                <div className=" h-carrousel-case bp:w-1/2 w-full">
                     <img 
                         src="/assets/terrasses/terrasses_bois/terrasse_bois_1.jpg"
                     >
@@ -47,14 +47,14 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+            <div className="flex flex-col-reverse bp:flex-row bp:h-carrousel-case">
+                <div className=" h-carrousel-case bp:w-1/2 w-full">
                     <img 
                         src="/assets/terrasses/terrasses_ipe/terrasse_ipe_1.jpg"
                     >
                     </img>
                 </div>
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+                <div className="h-carrousel-case flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
                         </div>
@@ -76,8 +76,8 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
-                <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
+            <div className="flex flex-col bp:flex-row bp:h-carrousel-case">
+                <div className="h-carrousel-case flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
                         </div>
@@ -98,7 +98,7 @@ export default function Produit(){
                     </div>
                 </div>
 
-                <div className=" h-carrousel-case lg:w-1/2 w-full">
+                <div className=" h-carrousel-case bp:w-1/2 w-full">
                     <img 
                         src="/assets/terrasses/terrasses_cumaru/terrasse_cumaru_1.jpg"
                     >
