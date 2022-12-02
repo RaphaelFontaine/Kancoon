@@ -6,7 +6,7 @@ export default function Produit(){
                 <img src="/assets/parasols/bandeau/parasol_bandeau.jpg" alt={"Stores bannes et pergola KANCOON à la Tranche sur Mer -  spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-case-size">
+            <div className="flex flex-col lg:flex-row lg:h-case-size">
                 <div className="flex flex-row bg-white w-full lg:w-1/2 text-title-color">
                 <div className="flex flex-row bg-white h-grey-band  pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band ">
@@ -25,14 +25,17 @@ export default function Produit(){
                         </div>
                     </div>
                 </div>
-                <iframe
-                    id="inlineFrameExample"
-                    title="Inline Frame Example"
-                    width="50%"
-                    height="100%"
-                    src={`https://www.youtube.com/embed/a_hSuy8W1XY`}
-                >
-                </iframe>
+                <div className="lg:w-1/2 w-full relative pt-[56.25%] lg:pt-[28.125%] overflow-hidden ">
+                    <iframe
+                        className="absolute w-full h-full top-0 left-0 bottom-0 right-0"
+                        id="inlineFrameExample"
+                        title="Inline Frame Example"
+                        width="100%"
+                        height="auto"
+                        src={`https://www.youtube.com/embed/jP4kk6YNMr0`}
+                    >
+                    </iframe>
+                </div>
             </div>
         </>
     )

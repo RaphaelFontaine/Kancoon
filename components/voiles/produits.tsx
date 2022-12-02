@@ -52,7 +52,7 @@ export default function Produit(){
                 <img src="/assets/voile/bandeau/voile_bandeau.jpg" alt={"Voile d'Ombrage KANCOON aux Achards -  spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
+            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
                 <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">

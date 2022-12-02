@@ -81,7 +81,7 @@ export default function Produit(){
                 <img src="/assets/stores-int/bandeau/stores_int_bandeau.jpg" alt={"Stores Intérieur - KANCOON, spécialiste de la protection solaire en Vendée, les Sables d'Olonne, la Tranche sur Mer, Saint Gille Croix de Vie"}/>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
+            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
                 <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
@@ -295,7 +295,7 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
+            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
                 <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
@@ -350,7 +350,7 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
+            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
                 <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
@@ -408,7 +408,7 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
+            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
                 <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">

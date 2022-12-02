@@ -52,7 +52,7 @@ export default function Produit(){
                 <img src="/assets/stores-ext/bandeau/stores_ext_bandeau.jpg" alt={"Stores bannes et pergola KANCOON à la Tranche sur Mer -  spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
+            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
                 <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
@@ -107,7 +107,7 @@ export default function Produit(){
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse lg:flex-row lg:h-carrousel-case">
+            <div className="flex flex-col lg:flex-row lg:h-carrousel-case">
                 <div className="h-carrousel-case flex flex-row bg-white lg:w-1/2 w-full text-corps-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
