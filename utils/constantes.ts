@@ -1,3 +1,33 @@
+export const PERGOLAS_PRODUCT = [
+    {
+        left: true,
+        title: "La Pergola Bioclimatique",
+        core: "La pergola bioclimatique est un système de protection solaire utilisable en période de grand vent, mais peut aussi protéger de la pluie. Ses lames orientables, permettent de filtrer la lumière tout au long de la journée.  Equipée de LEDS intégrés dans les lames, elle permet de profiter de son extérieur y compris dans les soirées de printemps, d’été et d’automne. De nombreuses options sont proposées permettant une personnalisation (lames rétractables, stores toile latéraux, parois vitrées, chauffage, LEDS de couleurs en périphérie, pilotable de son smartphone). La pergola offre une expérience de confort inédite, utilisable une très grande partie l’année et totalement adaptée à la douceur de notre climat Vendéen.",
+        images: [
+            '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_1.jpg',
+            '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_2.jpg',
+            '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_3.jpg',
+            '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_4.jpg',
+            '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_5.jpg',
+            '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_6.jpg',
+            '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_7.jpg',
+            '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_8.jpg',
+            '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_9.jpg',
+        ]
+    }, 
+    {
+        left: false,
+        title: "La Pergola Toile",
+        core: " La pergola toile est une excellente alternative à la pergola bioclimatique. Qu’elle soit rétractable ou enroulable, la toile utilisée protège des rayons du soleil et résiste aux intempéries. Montées sur une structure aluminium légère mais solide, elle s’intègre facilement dans tout type d’habitation et apporte une touche de modernité. Créer une zone d’ombre pour manger par exemple est essentielle lorsque le soleil est à son zénith. C’est le pari de la pergola toile. Avec sa motorisation, aucun effort pour l’enrouler ou la dérouler. L’hiver, vous pouvez retirer la toile pour éviter qu’elle s’abîme. Une solution parfaite et esthétique pour vous protéger du soleil.",
+        images: [
+            '/assets/pergolas/pergolas_toile/carrousel_pergola_toile_1.jpg',
+            '/assets/pergolas/pergolas_toile/carrousel_pergola_toile_2.jpg',
+            '/assets/pergolas/pergolas_toile/carrousel_pergola_toile_3.jpg',
+            '/assets/pergolas/pergolas_toile/carrousel_pergola_toile_4.jpg',
+        ]
+    }
+]
+
 export const STORES_INT_PRODUCT = [
     {
         left : true,
@@ -121,4 +151,118 @@ export const STORES_INT_PRODUCT = [
             "/assets/stores-int/moustiquaires/moustiquaire_1.jpg"
         ]
     }
+]
+
+export const STORES_EXT_PRODUCT = [
+    {
+        left: true,
+        title: "Stores Extérieurs",
+        core: "Le store extérieur vous protège du soleil mais aussi habille votre façade ou s’efface dans celle-ci. Pour profiter de votre terrasse, balcon, loggia ou véranda en bénéficiant d’un soleil filtré, découvrez nos solutions de stores extérieurs.",
+        images: [
+            '/assets/stores-ext/stores_exterieur/store_exterieur_1.jpg',
+        ],
+    },
+    {
+        left: false,
+        title: "Stores Bannes",
+        core: "Situé au-dessus de votre terrasse ou balcon, il constitue un rempart anti-éblouissement. Il permet aussi de réduire la surchauffe solaire dans votre habitation. Personnalisable à souhait (taille, couleurs de toile, texture & matériaux, lumière intégrée), il peut aussi protéger votre intimité avec un lambrequin déroulable. Ainsi, vous pourrez profiter de vos extérieurs avec un confort renforcé.",
+        images: [
+            '/assets/stores-ext/stores_banne/store_banne_1.jpg',
+            '/assets/stores-ext/stores_banne/store_banne_2.jpg',
+            '/assets/stores-ext/stores_banne/store_banne_3.jpg',
+            '/assets/stores-ext/stores_banne/store_banne_4.jpg',
+            '/assets/stores-ext/stores_banne/store_banne_5.jpg',
+            '/assets/stores-ext/stores_banne/store_banne_6.jpg',
+            '/assets/stores-ext/stores_banne/store_banne_7.jpg',
+            '/assets/stores-ext/stores_banne/store_banne_8.jpg',
+            '/assets/stores-ext/stores_banne/store_banne_9.jpg',
+            '/assets/stores-ext/stores_banne/store_banne_10.jpg',
+            '/assets/stores-ext/stores_banne/store_banne_11.jpg',
+            '/assets/stores-ext/stores_banne/store_banne_12.jpg'
+        ],
+    },
+    {
+        left: true,
+        title: "Stores Verticaux",
+        core: "Vos fenêtres, baies vitrées et vérandas sont des éléments de votre habitat permettant de bénéficier de lumière et de vision vers l’extérieur. Mais pour mieux en profiter, il convient de pouvoir gérer ces apports lumineux, ces apports solaires et cette vue sur l’extérieur. Nos différents modèles de stores verticaux apportent des réponses modulées à ces différents besoins. Enfin, les différentes solutions proposées, leur design spécifique et une palette de plus de 500 coloris de tissus permettent une intégration harmonieuse à votre façade.",
+        images: [
+            '/assets/stores-ext/stores_verticaux/store_vertical_1.jpg',
+        ],
+    },
+    {
+        left: false,
+        title: "Stores à projection",
+        core: "Solution alternative aux store verticaux, le store à projection permet une bonne gestion des apports lumineux, apports solaires et intimité visuelle. Leur design spécifique en fait un objet d’animation de façade position ouverte et un objet discret et élégant en position fermé.",
+        images: [
+            "/assets/stores-ext/stores_projection/store_projection_1.jpg",
+            "/assets/stores-ext/stores_projection/store_projection_2.jpg",
+        ],
+    },
+    {
+        left: true,
+        title: "Stores de véranda",
+        core: "Pièce à vivre en lien étroit avec l’extérieur, la véranda peut procurer des désagréments en période estivale. Comme toutes les pièces vitrées, l’ajout d’une solution de protection solaire permet de retrouver le bien être attendu et rendre son usage confortable tout au long de l’année.",
+        images: [
+            "/assets/stores-ext/stores_veranda/store_veranda_1.jpg",
+            "/assets/stores-ext/stores_veranda/store_veranda_2.jpg",
+            "/assets/stores-ext/stores_veranda/store_veranda_3.jpg",
+        ],
+    },
+    {
+        left: false,
+        title: "Brise soleil orientable (BSO)",
+        core: "Le BSO orientable fait partie des protections solaires les plus efficaces. Ils permettent un contrôle avancé de la luminosité, de chaleur et de l’intimité. Résolument moderne, il s’intègre dans les architectures contemporaines.",
+        images: [
+            "/assets/stores-ext/stores_bso/store_bso_1.jpg",
+            "/assets/stores-ext/stores_bso/store_bso_2.jpg",
+        ],
+    },
+    {
+        left: true,
+        title: "Store terrasse -double pente-",
+        core: "Ce store permet de profiter sa terrasse ou de son jardin tout en étant protégé du soleil. Le store double pente peut couvrir une surface de 10 à 35m2 permettant de grandes réceptions aux jours. L’option pare-soleil couchant est utile pour se protéger des derniers rayons du soleil.",
+        images: [
+            "/assets/stores-ext/stores_terrasses/store_terrasses_1.jpg",
+            "/assets/stores-ext/stores_terrasses/store_terrasses_2.jpg",
+            "/assets/stores-ext/stores_terrasses/store_terrasses_3.jpg",
+        ],
+    },
+]
+
+export const VOILES_PRODUCT = [
+    {
+        left: true,
+        title: "Voiles d'Ombrage",
+        core: "Les voiles d’ombrage proposent un niveau limité de protection solaire mais leur design, très tendance depuis quelques années, peuvent donner une tonalité très contemporaine à votre extérieur. Véritable parasol suspendu, résistant à l’eau, elles sont conçues pour durer. Les coloris sont quasi infinis ! Du design dans votre jardin ou sur votre terrasse!",
+        images: [
+            "assets/voile/voile/voile_1.jpg"
+        ],
+    }
+]
+
+export const TERRASSES_PRODUCT = [
+    {
+        left: true,
+        title: "Terrasses Bois",
+        core: "Les compagnons de chez Kancoon sont spécialistes de l’aménagement extérieur. Donc la pose de terrasse bois fait partie de leur savoir-faire en menuiserie. Au-delà de l’installation, nous pouvons vous conseiller quant à la meilleure essence de bois pour les lames de votre terrasse, vous proposer des spots intégrés.",
+        images: [
+            '/assets/terrasses/terrasses_bois/terrasse_bois_1.jpg',
+        ]
+    },
+    {
+        left: false,
+        title: "Terrasses IPÉ",
+        core: "Très stable, durable et incontournable, également appelée l’ébène verte, cette essence d’Amérique du Sud est idéale pour la réalisation de terrasses haut de gamme. Ce bois parfait est d’une couleur brun jaunâtre et brun sombre olive.",
+        images: [
+            '/assets/terrasses/terrasses_ipe/terrasse_ipe_1.jpg'
+        ]
+    },
+    {
+        left: true,
+        title: "Terrasses Exotique Cumaru",
+        core: "Stable et indémodable, cette essence d’Amérique du Sud utilisée en ouvrage extérieur est une bonne alternative économique à l’IPÉ. Ce bois parfait est de couleur brun orangé.",
+        images: [
+            '/assets/terrasses/terrasses_cumaru/terrasse_cumaru_1.jpg',
+        ]
+    },
 ]
