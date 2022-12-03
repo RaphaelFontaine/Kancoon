@@ -18,27 +18,27 @@ module.exports = {
       'light-grey': '#868688',
       'footer-grey': '#24262d',
       'title-color': '#54595F',
-      'corps-color': '#474746',
+      'corps-color': '#37393e',
       'grey-realisation': "#7A7A7A"
     },
     fontFamily: {
       police: 'Poppins'
     },
     fontSize: {
-      'title-size': 'calc(2vw + 2px)',
-      'corps-size': 'calc(1vw + 2px)',
+      'title-size': 'calc(1.5vw + 7px)',
+      'corps-size': 'calc(0.75vw + 7px)',
       'realisation-title-size': '50px',
       'realisation-corps-size': '20px'
     },
     extend: {
       width: {
-        'grey-band': '34px',
-        'green-band': '34px'
+        'grey-band': 'calc(1.5vw + 7.5px)',
+        'green-band': 'calc(1.5vw + 7.5px)'
       },
       height: {
         'case-size': '540px',
-        'grey-band': '130px',
-        'green-band': '100px',
+        'grey-band': 'calc(8vw + 25px)',
+        'green-band': 'calc(5vw + 25px)',
         'carrousel-case': '576px'
       },
       padding: {
@@ -46,10 +46,14 @@ module.exports = {
         'title-y': '36px',
         'corps-right': '48px',
         'realisation-top': '10px',
-        'realisation-bottom': '30px'
+        'realisation-bottom': '30px',
+        'band-between': 'calc(1vw + 3px)',
+        'band-left': 'calc(2vw + 10px)',
+
       },
       lineHeight: {
-        'text': '30px'
+        'text': '30px',
+        'phone-text': '20px',
       }
     },
   },

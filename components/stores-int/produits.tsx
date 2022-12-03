@@ -32,19 +32,19 @@ function Showcase(props : ShowcaseProps){
     return(
         <div className={`flex flex-col bp:flex-row h-auto ${left ? "" : "bp:flex-row-reverse"}`}>
             <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
-                <div className="flex flex-row bg-white h-grey-band pl-[40px]">
+                <div className="absolute flex flex-row z-1 h-grey-band pl-band-left">
                     <div className="bg-dark-grey w-grey-band h-grey-band">
                     </div>
-                    <div className="bg-white pl-[20px]">
+                    <div className="bg-white pl-band-between">
                         <div className="bg-green w-green-band h-green-band">
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col">
-                    <div className="text-title-size px-title-x py-title-y">
+                <div className="flex flex-col z-0 pt-[8%] px-[15%]">
+                    <div className="text-title-size text-center">
                         {title}
                     </div>
-                    <div className=" text-corps-size text-corps-color pr-corps-right leading-text items-center">
+                    <div className=" text-corps-size pt-[10%] pb-[13%] text-corps-color leading-phone-text bp:leading-text">
                         {core} 
                     </div>
                 </div>
