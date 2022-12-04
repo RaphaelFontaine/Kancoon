@@ -1,12 +1,12 @@
-import { PERGOLAS_PRODUCT } from "../../utils/constantes";
+import { BANDEAU_PERGOLA } from "../../utils/bandeau";
+import { PERGOLAS_PRODUCT } from "../../utils/produits";
+import { Band } from "../common/bandeau";
 import { Showcase } from "../common/product";
 
 export default function Produit(){
     return(
         <>
-            <div className="bg-white text-black text-primary-2">
-                <img src="/assets/pergolas/bandeau/pergola_bandeau.jpg" alt={"Pergolas Bioclimatique posée par KANCOON en Vendée - spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
-            </div>
+            <Band image={BANDEAU_PERGOLA.image} alt={BANDEAU_PERGOLA.alt}/>
 
             <div className="flex flex-col-reverse bp:flex-row bp:h-case-size">
                 <div className="bp:w-1/2 w-full relative pt-[56.25%] bp:pt-[28.125%] overflow-hidden ">

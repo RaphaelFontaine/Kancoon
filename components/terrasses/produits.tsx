@@ -1,12 +1,13 @@
-import { TERRASSES_PRODUCT } from "../../utils/constantes";
+import { BANDEAU_TERRASSE } from "../../utils/bandeau";
+import { TERRASSES_PRODUCT } from "../../utils/produits";
+import { Band } from "../common/bandeau";
 import { Showcase } from "../common/product";
 
 export default function Produit(){
     return(
         <>
-            <div className="bg-white text-black text-primary-2">
-                <img src="/assets/terrasses/bandeau/terrasse_bandeau.jpg" alt={"Terrasse - KANCOON, spécialiste de la protection solaire en Vendée, les Sables d'Olonne, la Tranche sur Mer, Saint Gille Croix de Vie"}/>
-            </div>
+        
+            <Band image={BANDEAU_TERRASSE.image} alt={BANDEAU_TERRASSE.alt}/>
 
             {TERRASSES_PRODUCT.map((product, index) => 
                 <Showcase key={index}

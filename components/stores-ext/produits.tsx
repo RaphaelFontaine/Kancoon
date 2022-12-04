@@ -1,4 +1,6 @@
-import { STORES_EXT_PRODUCT } from "../../utils/constantes";
+import { BANDEAU_STORE_EXT } from "../../utils/bandeau";
+import { STORES_EXT_PRODUCT } from "../../utils/produits";
+import { Band } from "../common/bandeau";
 import { Showcase } from "../common/product";
 
 
@@ -6,9 +8,7 @@ import { Showcase } from "../common/product";
 export default function Produit(){
     return(
         <>
-            <div className="bg-white text-black text-primary-2">
-                <img src="/assets/stores-ext/bandeau/stores_ext_bandeau.jpg" alt={"Stores bannes et pergola KANCOON à la Tranche sur Mer -  spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
-            </div>
+            <Band image={BANDEAU_STORE_EXT.image} alt={BANDEAU_STORE_EXT.alt}/>
 
             {STORES_EXT_PRODUCT.map((product, index) => 
                 <Showcase key={index}

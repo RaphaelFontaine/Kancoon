@@ -1,13 +1,13 @@
+import { BANDEAU_PARASOLS } from "../../utils/bandeau";
+import { Band } from "../common/bandeau";
 
 export default function Produit(){
     return(
         <>
-            <div className="bg-white text-black text-primary-2">
-                <img src="/assets/parasols/bandeau/parasol_bandeau.jpg" alt={"Stores bannes et pergola KANCOON à la Tranche sur Mer -  spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
-            </div>
+            <Band image={BANDEAU_PARASOLS.image} alt={BANDEAU_PARASOLS.alt}/>
 
             <div className="flex flex-col-reverse bp:flex-row bp:h-case-size">
-            <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
+                <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="absolute flex flex-row z-1 h-grey-band pl-band-left">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
                         </div>

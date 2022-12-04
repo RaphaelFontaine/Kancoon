@@ -1,12 +1,12 @@
-import { VOILES_PRODUCT } from "../../utils/constantes";
+import { BANDEAU_VOILE } from "../../utils/bandeau";
+import { VOILES_PRODUCT } from "../../utils/produits";
+import { Band } from "../common/bandeau";
 import { Showcase } from "../common/product";
 
 export default function Produit(){
     return(
         <>
-            <div className="bg-white text-black text-primary-2">
-                <img src="/assets/voile/bandeau/voile_bandeau.jpg" alt={"Voile d'Ombrage KANCOON aux Achards -  spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée"}/>
-            </div>
+            <Band image={BANDEAU_VOILE.image} alt={BANDEAU_VOILE.alt}/>
 
             {VOILES_PRODUCT.map((product, index) => 
                 <Showcase key={index}
