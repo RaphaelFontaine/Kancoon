@@ -1,25 +1,20 @@
 import { BANDEAU_PERGOLA } from "../../utils/bandeau";
 import { PERGOLAS_PRODUCT } from "../../utils/produits";
+import { VIDEO_PERGOLA } from "../../utils/video";
 import { Band } from "../common/bandeau";
 import { Showcase } from "../common/product";
+import { VideoResponsive } from "../common/video";
 
 export default function Produit(){
     return(
         <>
             <Band image={BANDEAU_PERGOLA.image} alt={BANDEAU_PERGOLA.alt}/>
 
+
             <div className="flex flex-col-reverse bp:flex-row bp:h-case-size">
-                <div className="bp:w-1/2 w-full relative pt-[56.25%] bp:pt-[28.125%] overflow-hidden ">
-                    <iframe
-                        className="absolute w-full h-full top-0 left-0 bottom-0 right-0"
-                        id="inlineFrameExample"
-                        title="Inline Frame Example"
-                        width="100%"
-                        height="auto"
-                        src={`https://www.youtube.com/embed/jP4kk6YNMr0`}
-                    >
-                    </iframe>
-                </div>
+                <VideoResponsive 
+                    source={VIDEO_PERGOLA.source}>
+                </VideoResponsive>
                 <div className="flex flex-row bg-white w-full bp:w-1/2 text-title-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">

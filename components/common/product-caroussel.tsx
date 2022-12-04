@@ -29,7 +29,12 @@ export function InstalledCarroussel(props: any) {
 export function ProductCarroussel(props: any) {
   const slides = props.images.map((url: string) => (
     <Carousel.Slide key={url}>
-      <Image src={url} height='576px' width='full'/>
+      <Image 
+        src={url} 
+        height='576px' 
+        width='full'
+        
+        />
     </Carousel.Slide>
   ));
   const autoplay = useRef(Autoplay({ delay: 2000 }));
