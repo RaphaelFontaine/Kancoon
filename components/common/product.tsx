@@ -11,13 +11,12 @@ export function Showcase(props : ShowcaseProps){
 
     return(
         <div className={`flex flex-col bp:flex-row h-auto ${left ? "" : "bp:flex-row-reverse"}`}>
-            {/* <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color"> */}
             <div className={`${left ? "bg-white text-corps-color" : "bg-dark-grey text-white"} h-auto flex flex-row bp:w-1/2 w-full`}>
-                <div className="absolute flex flex-row z-1 h-grey-band pl-band-left">
-                    <div className="bg-dark-grey w-grey-band h-grey-band">
+                <div className={`${left ? "pl-band-left" : "right-0 pr-band-left"} absolute flex flex-row z-1 h-grey-band`}>
+                    <div className={`${left ? "bg-dark-grey h-grey-band" : "bg-green h-green-band"}  w-grey-band`}>
                     </div>
-                    <div className="bg-white pl-band-between">
-                        <div className="bg-green w-green-band h-green-band">
+                    <div className={`${left ? "bg-white" : "bg-dark-grey"}  pl-band-between`}>
+                        <div className={`${left ? "bg-green h-green-band" : " bg-white h-grey-band"}  w-green-band`}>
                         </div>
                     </div>
                 </div>
