@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import HeaderAction from '../components/common/header'
+import { MentionsLegales } from '../components/common/mentions-legales'
 import Produit from '../components/stores-int/produits'
 import Realisations from '../components/stores-int/realisations'
 
@@ -18,6 +19,7 @@ export default function StoresInt() {
                 <Realisations></Realisations>
                 
             </main>
+            <MentionsLegales></MentionsLegales>
 
         </div>
     )

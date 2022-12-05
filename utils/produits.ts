@@ -9,7 +9,7 @@ export const LA_SOCIETE_PRODUCT = [
     }, 
     {
         left: true,
-        title: "Kantin le Pingouin, mascotte de KANCOON",
+        title: "Kantin, mascotte de KANCOON",
         core: "Kantin est le pingouin mascotte de l’entreprise. Cette espèce polaire est paradoxalement l’une des rares à profiter du réchauffement climatique puisque son développement s’est accru de façon significative ces dernières années. Mais, elle symbolise aussi la fidélité et la relation durable. Ces deux valeurs symbolisent aussi l’ADN de KANCOON : nous souhaitons établir une relation durable avec nos clients en leur apportant avec le sourire du bien-être extérieur et intérieur.",
         images: [
             '/assets/la-societe/corps/kantin_site.jpg',

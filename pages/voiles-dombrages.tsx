@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import HeaderAction from '../components/common/header'
+import { MentionsLegales } from '../components/common/mentions-legales'
 import Produit from '../components/voiles/produits'
 
 export default function Voiles() {
@@ -15,6 +16,7 @@ export default function Voiles() {
             <main className='pt-[95px] bg-dark-grey'>
                 <Produit></Produit> 
             </main>
+            <MentionsLegales></MentionsLegales>
 
         </div>
     )

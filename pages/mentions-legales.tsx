@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
-import Produit from '../components/parasols/produits'
-import Realisations from '../components/parasols/realisations'
+import MentionsLegalesContent from '../components/mentions-legales/mentions-legales-content'
 
 export default function Parasols() {
     return (
@@ -14,12 +13,9 @@ export default function Parasols() {
             </Head>
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>
-                <Produit></Produit>
-                <Realisations></Realisations>
-                
+                <MentionsLegalesContent></MentionsLegalesContent>
             </main>
             <MentionsLegales></MentionsLegales>
-
         </div>
     )
 }

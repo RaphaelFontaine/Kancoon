@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import HeaderAction from '../components/common/header'
+import { MentionsLegales } from '../components/common/mentions-legales'
 import Produit from '../components/la-societe/produits'
+
 
 export default function Parasols() {
     return (
@@ -14,6 +16,7 @@ export default function Parasols() {
             <main className='pt-[95px] bg-dark-grey'>
                 <Produit></Produit>                
             </main>
+            <MentionsLegales></MentionsLegales>
 
         </div>
     )

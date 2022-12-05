@@ -20,11 +20,11 @@ export function Showcase(props : ShowcaseProps){
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col z-0 pt-[8%] px-[14%]">
+                <div className="flex flex-col z-0 pt-[7%] px-[14%]">
                     <div className="text-title-size text-center">
                         {title}
                     </div>
-                    <div className="text-corps-size pt-[9%] pb-[12%] leading-phone-text bp:leading-text lg:leading-max-text">
+                    <div className="text-corps-size py-[12%] bp:py-[9%] lg:py-[12%] leading-phone-text bp:leading-text lg:leading-max-text">
                         {core} 
                     </div>
                 </div>
