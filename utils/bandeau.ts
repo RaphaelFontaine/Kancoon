@@ -1,3 +1,8 @@
+export const BANDEAU_LA_SOCIETE = {
+    image: "/assets/la-societe/bandeau/bandeau_la_societe.jpg",
+    alt: "Pergolas Bioclimatique posée par KANCOON en Vendée - spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée",
+}
+
 export const BANDEAU_PERGOLA = {
     image: "/assets/pergolas/bandeau/pergola_bandeau.jpg",
     alt: "Pergolas Bioclimatique posée par KANCOON en Vendée - spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée",
@@ -15,7 +20,7 @@ export const BANDEAU_STORE_EXT = {
 
 export const BANDEAU_PARASOLS = {
     image: "/assets/parasols/bandeau/parasol_bandeau.jpg",
-    alt: "Stores bannes et pergola KANCOON à la Tranche sur Mer -  spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée",
+    alt: "Parasols, stores bannes et pergola KANCOON à la Tranche sur Mer -  spécialiste de la protection solaire : pergolas, stores, terrasses aux Sables d'Olonne et en Vendée",
 }
 
 export const BANDEAU_VOILE = {

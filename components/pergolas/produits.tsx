@@ -21,7 +21,7 @@ export default function Produit(){
                             </div>
                         </div>
                     </div>
-                    <div className="text-title-size flex items-center ">
+                    <div className="text-title-size flex items-center">
                         Exemple d'installation d'une pergola bioclimatique
                     </div>
                 </div>

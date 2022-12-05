@@ -24,7 +24,7 @@ export function Showcase(props : ShowcaseProps){
                     <div className="text-title-size text-center">
                         {title}
                     </div>
-                    <div className=" text-corps-size pt-[9%] pb-[12%] leading-phone-text bp:leading-text lg:leading-max-text">
+                    <div className="text-corps-size pt-[9%] pb-[12%] leading-phone-text bp:leading-text lg:leading-max-text">
                         {core} 
                     </div>
                 </div>

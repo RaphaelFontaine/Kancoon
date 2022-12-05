@@ -1,3 +1,22 @@
+export const LA_SOCIETE_PRODUCT = [
+    {
+        left: false,
+        title: "Une entreprise artisanale engagée",
+        core: " Bien que Reconnu Garant de l’Environnement (RGE) KANCOON ne se satisfait pas de ce label. Les notions de développement durable font écho à notre conception de l’entreprise. Dans cette optique, nous avons une démarche d’amélioration continue pour réduire l’empreinte carbone liée à notre activité. De plus, nous veillons à ce que tous nos employés aient des conditions de travail confortables et sécures afin d’être totalement focalisé sur votre satisfaction.",
+        images: [
+            '/assets/la-societe/corps/artisan.jpg',
+        ]
+    }, 
+    {
+        left: true,
+        title: "Kantin le Pingouin, mascotte de KANCOON",
+        core: "Kantin est le pingouin mascotte de l’entreprise. Cette espèce polaire est paradoxalement l’une des rares à profiter du réchauffement climatique puisque son développement s’est accru de façon significative ces dernières années. Mais, elle symbolise aussi la fidélité et la relation durable. Ces deux valeurs symbolisent aussi l’ADN de KANCOON : nous souhaitons établir une relation durable avec nos clients en leur apportant avec le sourire du bien-être extérieur et intérieur.",
+        images: [
+            '/assets/la-societe/corps/kantin_site.jpg',
+        ]
+    }
+]
+
 export const PERGOLAS_PRODUCT = [
     {
         left: false,
