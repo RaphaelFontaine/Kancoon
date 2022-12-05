@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      'phone': '500px',
       'lg': '1024px',
       'bp': '930px',
     },
@@ -26,6 +27,7 @@ module.exports = {
     },
     fontSize: {
       'title-size': 'calc(1.5vw + 7px)',
+      'partenaire-size': 'calc(3vw + 10px)',
       'corps-size': 'calc(0.75vw + 7px)',
       'realisation-title-size': '50px',
       'realisation-corps-size': '20px'
