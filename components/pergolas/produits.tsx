@@ -11,10 +11,7 @@ export default function Produit(){
             <Band image={BANDEAU_PERGOLA.image} alt={BANDEAU_PERGOLA.alt}/>
 
 
-            <div className="flex flex-col-reverse bp:flex-row bp:h-case-size">
-                <VideoResponsive 
-                    source={VIDEO_PERGOLA.source}>
-                </VideoResponsive>
+            <div className="flex flex-col bp:flex-row bp:h-case-size">
                 <div className="flex flex-row bg-white w-full bp:w-1/2 text-title-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-dark-grey w-grey-band h-grey-band">
@@ -28,6 +25,9 @@ export default function Produit(){
                         Exemple d'installation d'une pergola bioclimatique
                     </div>
                 </div>
+                <VideoResponsive 
+                    source={VIDEO_PERGOLA.source}>
+                </VideoResponsive>
             </div>
 
             {PERGOLAS_PRODUCT.map((product, index) => 

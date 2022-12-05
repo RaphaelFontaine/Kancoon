@@ -52,7 +52,8 @@ module.exports = {
 
       },
       lineHeight: {
-        'text': '30px',
+        'max-text': '29.5px',
+        'text': '27.5px',
         'phone-text': '20px',
       }
     },
