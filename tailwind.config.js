@@ -20,17 +20,21 @@ module.exports = {
       'footer-grey': '#24262d',
       'title-color': '#54595F',
       'corps-color': '#37393e',
-      'grey-realisation': "#7A7A7A"
+      'grey-realisation': '#7A7A7A',
+      'general-grey': '#525252',
     },
     fontFamily: {
       police: 'Poppins'
     },
     fontSize: {
       'title-size': 'calc(1.5vw + 7px)',
-      'partenaire-size': 'calc(3vw + 10px)',
+      'partenaire-size': 'calc(2.5vw + 8px)',
+      'satisfaction-size': 'calc(2vw + 7px)',
       'corps-size': 'calc(0.75vw + 7px)',
       'realisation-title-size': '50px',
-      'realisation-corps-size': '20px'
+      'realisation-corps-size': '20px',
+      'footer-title': 'calc(1vw + 5px)',
+      'footer-corps': 'calc(0.7vw + 3px)',
     },
     extend: {
       width: {

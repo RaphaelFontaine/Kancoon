@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import HeaderAction from '../components/common/header'
-import Demo from '../components/common/product-caroussel'
 import HomeCaroussel from '../components/accueil/home-caroussel'
 import FooterLinks from '../components/common/footer'
+import Footer from '../components/common/footer'
 
 export default function Home() {
     return (
@@ -15,8 +15,9 @@ export default function Home() {
             </Head>
             <HeaderAction></HeaderAction>
     
-            <main>
+            <main className='pt-[95px] bg-dark-grey'>
             </main>
+            <Footer></Footer>
 
            
 

@@ -11,7 +11,7 @@ export default function Produit(){
             <div className="flex flex-col bp:flex-row bp:h-case-size">
                 <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="absolute flex flex-row z-1 h-grey-band pl-band-left">
-                        <div className="bg-dark-grey w-grey-band h-grey-band">
+                        <div className="bg-general-grey w-grey-band h-grey-band">
                         </div>
                         <div className="bg-white pl-band-between">
                             <div className="bg-green w-green-band h-green-band">

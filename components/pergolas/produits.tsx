@@ -14,7 +14,7 @@ export default function Produit(){
             <div className="flex flex-col bp:flex-row bp:h-case-size">
                 <div className="flex flex-row bg-white w-full bp:w-1/2 text-title-color">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
-                        <div className="bg-dark-grey w-grey-band h-grey-band">
+                        <div className="bg-general-grey w-grey-band h-grey-band">
                         </div>
                         <div className="bg-white pl-[20px]">
                             <div className="bg-green w-green-band h-green-band">
