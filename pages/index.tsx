@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import HeaderAction from '../components/common/header'
-import HomeCaroussel from '../components/accueil/home-caroussel'
-import FooterLinks from '../components/common/footer'
 import Footer from '../components/common/footer'
+import { MentionsLegales } from '../components/common/mentions-legales'
 
 export default function Home() {
     return (
@@ -18,7 +16,7 @@ export default function Home() {
             <main className='pt-[95px] bg-dark-grey'>
             </main>
             <Footer></Footer>
-
+            <MentionsLegales></MentionsLegales>
            
 
         </div>

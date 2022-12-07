@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from '../components/common/footer'
 import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
 import Produit from '../components/stores-int/produits'
@@ -19,6 +20,7 @@ export default function StoresInt() {
                 <Realisations></Realisations>
                 
             </main>
+            <Footer></Footer>
             <MentionsLegales></MentionsLegales>
 
         </div>

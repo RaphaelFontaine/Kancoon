@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/common/footer'
 import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
 import Produit from '../components/pergolas/produits'
@@ -17,6 +18,7 @@ export default function Pergolas() {
                 <Produit></Produit>
                 <Realisations></Realisations>
             </main>
+            <Footer></Footer>
             <MentionsLegales></MentionsLegales>
 
         </div>
