@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      'ft': '765px',
       'phone': '500px',
       'lg': '1024px',
       'bp': '930px',
@@ -33,8 +34,8 @@ module.exports = {
       'corps-size': 'calc(0.75vw + 7px)',
       'realisation-title-size': '50px',
       'realisation-corps-size': '20px',
-      'footer-title': 'calc(1vw + 5px)',
-      'footer-corps': 'calc(0.7vw + 3px)',
+      'footer-title': 'calc(1vw + 7px)',
+      'footer-corps': 'calc(0.7vw + 5px)',
     },
     extend: {
       width: {
