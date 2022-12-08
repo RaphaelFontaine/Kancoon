@@ -1,9 +1,9 @@
 import { Carousel } from '@mantine/carousel';
-import { useMediaQuery } from '@mantine/hooks';
-import { createStyles, Paper, Text, Title, Button, useMantineTheme } from '@mantine/core';
+import { Paper, Button, useMantineTheme } from '@mantine/core';
 import { HOME_DATA } from '../../utils/home';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
+import { IconArrowLeft, IconArrowRight, IconBounceRight, IconSignLeft, IconSignRight } from '@tabler/icons';
 
 interface CardProps {
   image: string;
@@ -19,16 +19,16 @@ function Card({ image, link, TransparentText, WhiteText }: CardProps) {
       shadow="md"
       p="xl"
       radius="md"
-      sx={{ backgroundImage: `url(${image})` }}
+      sx={{ backgroundImage: `url(${image})`}}
       className="w-full h-[720px]"
     >
-      <div className='flex flex-col items-center justify-center align-middle pt-[18%] '>
+      <div className='flex flex-col items-center justify-center align-middle pt-[50%] phone:pt-[18%]'>
         <div className='flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
           <div className='text-white '>
-              {TransparentText}
-          </div>
-          <div className='text-black bg-white'>
+            {TransparentText}
+            <div className='text-black bg-white'>
               {WhiteText}
+            </div>
           </div>
         </div>
         <div className='flex flex-col phone:flex-row pt-[2%] space-x-0 phone:space-x-8 space-y-2 items-center justify-center'>
@@ -61,7 +61,8 @@ export function HomeCarousel() {
   return (
     <Carousel
       classNames={{
-        "control" : "bg-transparent text-white text-[100px]",
+        "control" : "hidden phone:flex bg-transparent text-white ",
+
       }}
       slideSize="100%"
       align="start"
@@ -69,8 +70,8 @@ export function HomeCarousel() {
       mx='auto'
       loop
       height={'720px'}
-      onMouseEnter={autoplay.current.stop}
-      onMouseLeave={autoplay.current.reset}
+      plugins={[autoplay.current]}
+      controlSize={60}
     >
       {slides}
     </Carousel>
