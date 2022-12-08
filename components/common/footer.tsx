@@ -11,7 +11,7 @@ export default function Footer(){
                 </Link>
               </div>
             
-              <div className="flex flex-col pl-[30%] ft:pl-[3%] ">
+              <div className="flex flex-col pl-[30%] ft:pl-[3%] justify-center items-center ft:items-start ft:justify-start">
                   <div className="font-semibold text-footer-title">
                     HORAIRES D'OUVERTURES <br/> <br/>
                   </div>

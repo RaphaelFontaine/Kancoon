@@ -12,7 +12,7 @@ export default function Produit(){
 
 
             <div className="flex flex-col bp:flex-row bp:h-case-size">
-                <div className="flex flex-row bg-white w-full bp:w-1/2 text-title-color">
+                <div className="flex flex-row bg-white w-full bp:w-1/2 text-title-color ">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
                         <div className="bg-general-grey w-grey-band h-grey-band">
                         </div>
@@ -21,7 +21,7 @@ export default function Produit(){
                             </div>
                         </div>
                     </div>
-                    <div className="text-title-size flex items-center">
+                    <div className="text-title-size w-full pr-[13%] bp:pr-[0%] py-[15%] bp:py-[0%] flex items-center justify-center">
                         Exemple d'installation d'une pergola bioclimatique
                     </div>
                 </div>

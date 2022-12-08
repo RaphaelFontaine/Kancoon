@@ -1,10 +1,10 @@
 export default function MentionsLegalesContent(){
     return(
-        <div className="bg-corps-color p-[10%]">
+        <div className="bg-corps-color text-white py-[5%] px-[10%]">
             <div className="text-center text-[50px]">
                 Mentions Légales
             </div>
-            <div>
+            <div className="pt-[5%]">
             SASSA Développement KANCOON <br/> <br/>
 
             Siège social : 19, Rue Clément Ader <br/> <br/>

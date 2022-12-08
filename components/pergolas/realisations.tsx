@@ -1,3 +1,5 @@
+import { PERGOLAS_REALISATIONS } from "../../utils/realisations";
+import { Showcase } from "../common/product";
 import {InstalledCarroussel} from "../common/product-caroussel";
 
 const installed_pergolas = [
@@ -29,11 +31,12 @@ export default function Realisations(){
                     Les Sables d'Olonne, Saint Gilles Croix de Vie, La Roche sur Yon
                 </div>
             </div>
-            <InstalledCarroussel 
-                    className="h-carrousel-case w-full"
-                    images= {installed_pergolas}
-            >
-            </InstalledCarroussel>
+            {PERGOLAS_REALISATIONS.map((product, index) => 
+                <InstalledCarroussel key={index}
+                    legendes={product.legendes}
+                    images={product.images}
+                />
+            )}
         </div>
     )
 }

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import HeaderAction from '../components/common/header'
 import Footer from '../components/common/footer'
 import { MentionsLegales } from '../components/common/mentions-legales'
+import { HomeCarousel } from '../components/accueil/home-caroussel'
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <HeaderAction></HeaderAction>
     
             <main className='pt-[95px] bg-dark-grey'>
+                <HomeCarousel></HomeCarousel>
             </main>
             <Footer></Footer>
             <MentionsLegales></MentionsLegales>

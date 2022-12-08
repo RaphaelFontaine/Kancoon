@@ -15,6 +15,7 @@ module.exports = {
     colors: {
       'white': '#fff',
       'black': '#000',
+      'transparent': '#fff0000',
       'dark-grey': '#474746',
       'green': '#ADC906',
       'light-grey': '#868688',
@@ -36,6 +37,8 @@ module.exports = {
       'realisation-corps-size': '20px',
       'footer-title': 'calc(1vw + 7px)',
       'footer-corps': 'calc(0.7vw + 5px)',
+      'home-carroussel-title': 'calc(2.5vw + 15px)',
+      'home-carroussel-button': 'calc(1vw + 7px)',
     },
     extend: {
       width: {

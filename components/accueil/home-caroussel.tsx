@@ -1,43 +1,18 @@
 import { Carousel } from '@mantine/carousel';
 import { useMediaQuery } from '@mantine/hooks';
 import { createStyles, Paper, Text, Title, Button, useMantineTheme } from '@mantine/core';
-
-const useStyles = createStyles((theme) => ({
-  card: {
-    height: 440,
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  },
-
-  title: {
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-    fontWeight: 900,
-    color: theme.white,
-    lineHeight: 1.2,
-    fontSize: 32,
-    marginTop: theme.spacing.xs,
-  },
-
-  category: {
-    color: theme.white,
-    opacity: 0.7,
-    fontWeight: 700,
-    textTransform: 'uppercase',
-  },
-}));
+import { HOME_DATA } from '../../utils/home';
+import { useRef } from 'react';
+import Autoplay from 'embla-carousel-autoplay';
 
 interface CardProps {
   image: string;
-  title: string;
-  category: string;
+  link: string;
+  TransparentText: string;
+  WhiteText: string;
 }
 
-function Card({ image, title, category }: CardProps) {
-  const { classes } = useStyles();
+function Card({ image, link, TransparentText, WhiteText }: CardProps) {
 
   return (
     <Paper
@@ -45,72 +20,57 @@ function Card({ image, title, category }: CardProps) {
       p="xl"
       radius="md"
       sx={{ backgroundImage: `url(${image})` }}
-      className={classes.card}
+      className="w-full h-[720px]"
     >
-      <div>
-        <Text className={classes.category} size="xs">
-          {category}
-        </Text>
-        <Title order={3} className={classes.title}>
-          {title}
-        </Title>
+      <div className='flex flex-col items-center justify-center align-middle pt-[18%] '>
+        <div className='flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
+          <div className='text-white '>
+              {TransparentText}
+          </div>
+          <div className='text-black bg-white'>
+              {WhiteText}
+          </div>
+        </div>
+        <div className='flex flex-col phone:flex-row pt-[2%] space-x-0 phone:space-x-8 space-y-2 items-center justify-center'>
+          <a href={link}>
+            <Button className="bg-white text-black hover:bg-black text-home-carroussel-button hover:text-white transition-all duration-[500ms] rounded-none " color="black">
+              En Savoir +
+            </Button>
+          </a>
+          <a href="/contact">
+            <Button className="bg-transparent text-white hover:text-black text-home-carroussel-button border-white border-1 hover:bg-white transition-all duration-[500ms] rounded-none">
+              Contactez Nous
+            </Button>
+          </a>
+        </div>
       </div>
-      <Button variant="white" color="dark">
-        Read article
-      </Button>
     </Paper>
   );
 }
 
-const data = [
-  {
-    image: process.env.PUBLIC_URL + "/assets/accueil/Photo_Caroussel/pro-particulier.png",
-    title: 'Particuliers et Professionnels',
-    category: 'nature',
-  },
-  {
-    image: process.env.PUBLIC_URL + "/assets/accueil/Photo_Caroussel/pergola.png",
-    title: 'Pergolas',
-    category: 'beach',
-  },
-  {
-    image: process.env.PUBLIC_URL + "/assets/accueil/Photo_Caroussel/ext_blinds.jpg",
-    title: 'Stores Extérieurs',
-    category: 'nature',
-  },
-  {
-    image: process.env.PUBLIC_URL + "/assets/accueil/Photo_Caroussel/terrace.jpg",
-    title: 'Aurora in Norway: when to visit for best experience',
-    category: 'nature',
-  },
-  {
-    image: process.env.PUBLIC_URL + "/assets/accueil/Photo_Caroussel/parasols.jpg",
-    title: 'Best places to visit this winter',
-    category: 'tourism',
-  },
-  {
-    image: process.env.PUBLIC_URL + "/assets/accueil/Photo_Caroussel/Voile-dombrage.jpg",
-    title: 'Active volcanos reviews: travel at your own risk',
-    category: 'nature',
-  },
-];
+const data = HOME_DATA
 
-export default function HomeCaroussel() {
+export function HomeCarousel() {
   const theme = useMantineTheme();
-  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
   const slides = data.map((item) => (
-    <Carousel.Slide key={item.title}>
+    <Carousel.Slide key={item.WhiteText}>
       <Card {...item} />
     </Carousel.Slide>
   ));
-
+  const autoplay = useRef(Autoplay({ delay: 2000 }));
   return (
     <Carousel
-      slideSize="50%"
-      breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 2 }]}
-      slideGap="xl"
+      classNames={{
+        "control" : "bg-transparent text-white text-[100px]",
+      }}
+      slideSize="100%"
       align="start"
-      slidesToScroll={mobile ? 1 : 2}
+      withIndicators={false}
+      mx='auto'
+      loop
+      height={'720px'}
+      onMouseEnter={autoplay.current.stop}
+      onMouseLeave={autoplay.current.reset}
     >
       {slides}
     </Carousel>
