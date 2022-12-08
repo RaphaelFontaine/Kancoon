@@ -61,7 +61,7 @@ export function HomeCarousel() {
   return (
     <Carousel
       classNames={{
-        "control" : "hidden phone:flex bg-transparent text-white ",
+        "control" : "hidden phone:flex bg-transparent text-white",
 
       }}
       slideSize="100%"
