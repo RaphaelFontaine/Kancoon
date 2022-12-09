@@ -17,7 +17,6 @@ export default function StoresInt() {
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>
                 <Produit></Produit>
-                <Realisations></Realisations>
                 
             </main>
             <Footer></Footer>

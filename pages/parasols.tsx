@@ -16,7 +16,7 @@ export default function Parasols() {
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>
                 <Produit></Produit>
-                <Realisations></Realisations>
+                {/* <Realisations></Realisations> */}
                 
             </main>
             <Footer></Footer>
