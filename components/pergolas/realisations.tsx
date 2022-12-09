@@ -24,19 +24,21 @@ const installed_pergolas = [
 
 export default function Realisations(){
     return(
-        <div>
-            <div className="bg-grey-realisation text-realisation-title-size text-center pt-realisation-top pb-realisation-bottom">
-                Nos Réalisations
-                <div className="text-realisation-corps-size">
-                    Les Sables d'Olonne, Saint Gilles Croix de Vie, La Roche sur Yon
-                </div>
-            </div>
-            {PERGOLAS_REALISATIONS.map((product, index) => 
-                <InstalledCarroussel key={index}
-                    legendes={product.legendes}
-                    images={product.images}
-                />
-            )}
-        </div>
+        <></>
+        // <div>
+        //     <div className="bg-grey-realisation text-realisation-title-size text-center pt-realisation-top pb-realisation-bottom">
+        //         Nos Réalisations
+        //         <div className="text-realisation-corps-size">
+        //             Les Sables d'Olonne, Saint Gilles Croix de Vie, La Roche sur Yon
+        //         </div>
+        //     </div>
+        //     {PERGOLAS_REALISATIONS.map((product, index) => 
+        //         <InstalledCarroussel key={index}
+        //             legendes={product.legendes}
+        //             images={product.images}
+        //         />
+        //     )}
+
+        // </div>
     )
 }
