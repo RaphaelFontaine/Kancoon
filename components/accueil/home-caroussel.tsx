@@ -18,20 +18,19 @@ function Card({ image, link, TransparentText, WhiteText }: CardProps) {
     <Paper
       shadow="md"
       p="xl"
-      radius="md"
       sx={{ backgroundImage: `url(${image})`}}
-      className="w-full h-[720px]"
+      className="w-full h-[720px] bg-cover bg-no-repeat backdrop-brightness-50 backdrop-contrast-75"
     >
       <div className='flex flex-col items-center justify-center align-middle pt-[50%] phone:pt-[18%]'>
         <div className='flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
-          <div className='text-white '>
+          <div className='text-white'>
             {TransparentText}
             <div className='text-black bg-white'>
               {WhiteText}
             </div>
           </div>
         </div>
-        <div className='flex flex-col phone:flex-row pt-[2%] space-x-0 phone:space-x-8 space-y-2 items-center justify-center'>
+        <div className='flex flex-col phone:flex-row pt-[2%] space-x-0 phone:space-x-8 space-y-2 items-align justify-center'>
           <a href={link}>
             <Button className="bg-white text-black hover:bg-black text-home-carroussel-button hover:text-white transition-all duration-[500ms] rounded-none " color="black">
               En Savoir +
