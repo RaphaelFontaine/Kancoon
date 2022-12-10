@@ -3,6 +3,7 @@ import HeaderAction from '../components/common/header'
 import Footer from '../components/common/footer'
 import { MentionsLegales } from '../components/common/mentions-legales'
 import { HomeCarousel } from '../components/accueil/home-caroussel'
+import { Services } from '../components/accueil/services'
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
     
             <main className='pt-[95px] bg-dark-grey'>
                 <HomeCarousel></HomeCarousel>
+                <Services></Services>
             </main>
             <Footer></Footer>
             <MentionsLegales></MentionsLegales>

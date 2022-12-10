@@ -3,7 +3,7 @@ import { Paper, Button, useMantineTheme } from '@mantine/core';
 import { HOME_DATA } from '../../utils/home';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
-import { IconArrowLeft, IconArrowRight, IconBounceRight, IconSignLeft, IconSignRight } from '@tabler/icons';
+import { IconArrowLeft, IconArrowRight, IconBounceRight, IconBrightness, IconSignLeft, IconSignRight } from '@tabler/icons';
 
 interface CardProps {
   image: string;
@@ -18,8 +18,8 @@ function Card({ image, link, TransparentText, WhiteText }: CardProps) {
     <Paper
       shadow="md"
       p="xl"
-      sx={{ backgroundImage: `url(${image})`}}
-      className="w-full h-[720px] bg-cover bg-no-repeat backdrop-brightness-50 backdrop-contrast-75"
+      sx={{ backgroundImage: `url(${image})` }}
+      className="w-full h-[720px] bg-cover bg-no-repeat"
     >
       <div className='flex flex-col items-center justify-center align-middle pt-[50%] phone:pt-[18%]'>
         <div className='flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>

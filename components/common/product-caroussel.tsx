@@ -53,7 +53,7 @@ export function ProductCarroussel(props: any) {
     <Carousel 
       classNames={{
         "indicator" : "bg-white",
-        "control" : "bg-white",
+        "control" : "hidden phone:flex bg-white",
       }}
       slideSize= '100%'
       mx="auto" 

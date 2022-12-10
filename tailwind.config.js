@@ -24,6 +24,9 @@ module.exports = {
       'corps-color': '#37393e',
       'grey-realisation': '#7A7A7A',
       'general-grey': '#525252',
+      'service-title': '#353858',
+      'service-corps': '#7d7d7f'
+
     },
     fontFamily: {
       police: 'Poppins'
