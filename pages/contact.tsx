@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Footer from '../components/common/footer'
 import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
+import { Icon } from '../components/contact/icon'
 import { MapsMap } from '../components/contact/maps'
 
 export default function Parasols() {
@@ -14,6 +15,7 @@ export default function Parasols() {
             </Head>
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>
+                <Icon></Icon>
                 <MapsMap></MapsMap>
             </main>
             <Footer></Footer>

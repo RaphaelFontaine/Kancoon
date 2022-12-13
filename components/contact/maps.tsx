@@ -1,4 +1,3 @@
-import { AspectRatio } from '@mantine/core';
 
 export function MapsMap() {
   return (
