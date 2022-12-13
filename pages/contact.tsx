@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Footer from '../components/common/footer'
 import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
+import { MapsMap } from '../components/contact/maps'
 
 export default function Parasols() {
     return (
@@ -13,7 +14,7 @@ export default function Parasols() {
             </Head>
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>
-
+                <MapsMap></MapsMap>
             </main>
             <Footer></Footer>
             <MentionsLegales></MentionsLegales>

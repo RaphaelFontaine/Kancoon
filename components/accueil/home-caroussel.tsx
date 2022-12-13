@@ -3,7 +3,6 @@ import { Paper, Button, useMantineTheme } from '@mantine/core';
 import { HOME_DATA } from '../../utils/home';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
-import { IconArrowLeft, IconArrowRight, IconBounceRight, IconBrightness, IconSignLeft, IconSignRight } from '@tabler/icons';
 
 interface CardProps {
   image: string;
