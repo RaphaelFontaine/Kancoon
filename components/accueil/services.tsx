@@ -12,7 +12,7 @@ export function Services() {
             <div className=" text-service-corps px-[10%] space-x-[3%] space-y-[3%] text-center flex flex-col bp:flex-row bp:items-end items-center justify-center">
                 <div className="flex flex-col border-[1px] px-[2%] py-[3%] mt-[2%] border-[#E6E6E6] hover:shadow-2xl transition-shadow duration-700 w-[80%] bp:w-[30%] bp:h-[600px]">
                     <div className="mx-auto">
-                        <img src='/assets/accueil/service_logo/conseil.png' width="151px" height="161px" loading="lazy" alt="icon" decoding="async">
+                        <img src='/assets/accueil/service_logo/Conseil.png' width="151px" height="161px" loading="lazy" alt="icon" decoding="async">
                         </img>
                     </div>
                     <div className="uppercase text-service-title my-6 font-medium text-title-size">
