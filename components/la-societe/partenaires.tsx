@@ -24,18 +24,6 @@ export default function Partenaires(){
                             <img src={"/assets/la-societe/partenaires/marchand.png"} alt={"Koxx"} loading="lazy"/>
                         </a>
                     </div>
-                    {/* <div className="flex flex-col bp:flex-row items-center w-1/2 justify-center ">
-                        <div className="">
-                            <a style={{display: 'flex',  justifyContent:'center', alignItems:'center'}} target="_blank" href="https://www.reseau-entreprendre.org/vendee/">
-                                <img src={"/assets/la-societe/partenaires/reseau-entreprendre.png"} width="60%" alt={"Réseau Entreprendre Vendée"} loading="lazy"/>
-                            </a>
-                        </div>
-                        <div className="">
-                            <a style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}  target="_blank" href="https://marchand-construction85.fr/"> 
-                                <img src={"/assets/la-societe/partenaires/marchand.png"} width="60%" alt={"Marchand Construction"} loading="lazy"/>
-                            </a>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </>
