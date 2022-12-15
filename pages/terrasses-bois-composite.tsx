@@ -4,6 +4,7 @@ import Footer from '../components/common/footer'
 import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
 import Produit from '../components/terrasses/produits'
+import RealisationsTerrasses from '../components/terrasses/realisations'
 import Realisations from '../components/terrasses/realisations'
 
 export default function Terrasses() {
@@ -17,7 +18,7 @@ export default function Terrasses() {
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>
                 <Produit></Produit>
-                {/* <Realisations></Realisations> */}
+                <RealisationsTerrasses/>
                 
             </main>
             <Footer></Footer>

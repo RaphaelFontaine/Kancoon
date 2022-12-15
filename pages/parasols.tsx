@@ -3,6 +3,7 @@ import Footer from '../components/common/footer'
 import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
 import Produit from '../components/parasols/produits'
+import RealisationsParasols from '../components/parasols/realisations'
 import Realisations from '../components/parasols/realisations'
 
 export default function Parasols() {
@@ -16,7 +17,7 @@ export default function Parasols() {
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>
                 <Produit></Produit>
-                {/* <Realisations></Realisations> */}
+                <RealisationsParasols/>
                 
             </main>
             <Footer></Footer>

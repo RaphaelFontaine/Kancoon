@@ -1,10 +1,14 @@
 import { PERGOLAS_REALISATIONS } from "../../utils/realisations";
+import { RealisationBandeau } from "../common/realisation";
 import { RealisationCarousel } from "../common/realisation-carousel";
 
 
 
-export default function Realisations(){
+export default function RealisationsPergolas(){
     return(
-        <RealisationCarousel items={PERGOLAS_REALISATIONS}/>
+        <>
+            <RealisationBandeau></RealisationBandeau>
+            <RealisationCarousel items={PERGOLAS_REALISATIONS}/>
+        </>
     )
 }

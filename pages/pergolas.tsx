@@ -3,6 +3,7 @@ import Footer from '../components/common/footer'
 import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
 import Produit from '../components/pergolas/produits'
+import RealisationsPergolas from '../components/pergolas/realisations'
 import Realisations from '../components/pergolas/realisations'
 
 export default function Pergolas() {
@@ -16,7 +17,7 @@ export default function Pergolas() {
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>
                 <Produit></Produit>
-                <Realisations></Realisations>
+                <RealisationsPergolas/>
             </main>
             <Footer></Footer>
             <MentionsLegales></MentionsLegales>
