@@ -4,6 +4,7 @@ import Footer from '../components/common/footer'
 import { MentionsLegales } from '../components/common/mentions-legales'
 import { HomeCarousel } from '../components/accueil/home-caroussel'
 import { Services } from '../components/accueil/services'
+import Clients from '../components/accueil/clients'
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
             <main className='pt-[95px] bg-dark-grey'>
                 <HomeCarousel></HomeCarousel>
                 <Services></Services>
+                <Clients></Clients>
             </main>
             <Footer></Footer>
             <MentionsLegales></MentionsLegales>

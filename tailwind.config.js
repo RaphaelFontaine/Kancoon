@@ -33,9 +33,11 @@ module.exports = {
     },
     fontSize: {
       'title-size': 'calc(1.5vw + 7px)',
+      'corps-size': 'calc(0.75vw + 7px)',
       'partenaire-size': 'calc(2.5vw + 8px)',
       'satisfaction-size': 'calc(2vw + 7px)',
-      'corps-size': 'calc(0.75vw + 7px)',
+      'client-size-titre': 'calc(1.5vw + 10px)',
+      'client-size-texte': 'calc(1vw + 7px)',
       'realisation-title-size': '50px',
       'realisation-corps-size': '20px',
       'footer-title': 'calc(1vw + 7px)',
