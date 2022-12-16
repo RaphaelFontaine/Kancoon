@@ -20,6 +20,7 @@ module.exports = {
       'green': '#ADC906',
       'light-grey': '#868688',
       'footer-grey': '#24262d',
+      'mentions-grey': '#383b45',
       'title-color': '#54595F',
       'corps-color': '#37393e',
       'grey-realisation': '#7A7A7A',

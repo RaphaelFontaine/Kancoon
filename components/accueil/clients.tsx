@@ -18,7 +18,7 @@ export function Clients_Carousel({items}: ClientsProps){
                 <h1 className="text-white py-4 font-bold text-center text-client-size-titre">
                     {item.titre}
                 </h1>
-                <h1 className="text-client-size-texte text-center px-80 py-6">
+                <h1 className="text-client-size-texte text-center px-80 py-8">
                     {item.texte}
                 </h1>
                 <Image className="mx-auto"
@@ -32,12 +32,13 @@ export function Clients_Carousel({items}: ClientsProps){
     return (
         <Carousel 
             classNames={{
-            "indicators" : "mt-60",
+            "indicators" : "pt-10",
             "indicator" : "bg-white focus:bg-green focus:h-[20px] h-[10px] w-[8px]",
-            "control" : "hidden phone:flex bg-transparent text-white px-44 border-none",
+            "controls": "h-10 hover:text-green",
+            "control" : "hidden phone:flex bg-transparent text-white px-48 h-10 border-none hover:text-green focus:scale-[3] scale-[3]",
             "slide" : "relative flex flex-col",
             }}
-            height='340px'
+            height='370px'
             slideSize= '100%'
             withIndicators
             plugins={[autoplay.current]}
