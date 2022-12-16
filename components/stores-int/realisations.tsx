@@ -1,4 +1,4 @@
-import { PERGOLAS_REALISATIONS, STORES_INT_REALISATIONS } from "../../utils/realisations";
+import { STORES_INT_REALISATIONS } from "../../utils/realisations";
 import { RealisationBandeau } from "../common/realisation";
 import { RealisationCarousel } from "../common/realisation-carousel";
 
