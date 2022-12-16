@@ -1,81 +1,78 @@
-import { Carousel } from '@mantine/carousel';
-import { Paper, Button, useMantineTheme } from '@mantine/core';
-import { HOME_DATA } from '../../utils/home';
-import { useRef } from 'react';
+import { Carousel } from "@mantine/carousel";
+import { useRef } from "react";
 import Autoplay from 'embla-carousel-autoplay';
+import { Button, Image } from "@mantine/core";
+import { HOME_DATA } from "../../utils/home";
 
-interface CardProps {
-  image: string;
-  link: string;
-  TransparentText: string;
-  WhiteText: string;
+interface HomeCarouselProps {
+    items : {
+        image : string
+        link : string
+        TransparentText : string
+        WhiteText : string
+    }[]
 }
 
-function Card({ image, link, TransparentText, WhiteText }: CardProps) {
+export function HomeCarouselContent({items}: HomeCarouselProps){
+    const slides = items.map((item) => (
+        <Carousel.Slide>
+                <Image 
+                    className="mx-auto z-10 brightness-75 relative"
+                    src={item.image} 
+                    width='full'
+                    height='720px'
+                />   
 
-  return (
-    <Paper
-      shadow="md"
-      p="xl"
-      sx={{ backgroundImage: `url(${image})`}}
-      className="w-full h-[720px] bg-cover bg-no-repeat backdrop-brightness-50"
-    >
-        <div className='flex flex-col items-center justify-center align-middle pt-[50%] phone:pt-[18%]'>
-            <div className='flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
-                <div className='text-white'>
-                    {TransparentText}
-                    <div className='text-black bg-white'>
-                        {WhiteText}
+                <div className='z-20 absolute w-full mx-auto mt-60 flex flex-col items-center justify-center'>
+                    <div className='flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
+                        <div className='text-white'>
+                            {item.TransparentText}
+                            <div className='text-black bg-white'>
+                                {item.WhiteText}
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex flex-col items-center justify-center w-full mx-auto phone:flex-row py-4 space-x-0 phone:space-x-8 space-y-2 phone:space-y-0'>
+                        <a href={item.link}>
+                            <Button className=" w-40 h-16 leading-3 bg-white text-black hover:bg-black text-home-carroussel-button hover:text-white transition-all duration-[500ms] rounded-none " color="black">
+                                En Savoir +
+                            </Button>
+                        </a>
+                        <a href="/contact">
+                            <Button className="bg-transparent w-52 h-16 leading-3 text-white hover:text-black text-home-carroussel-button border-white border-1 hover:bg-white transition-all duration-[500ms] rounded-none">
+                                Contactez Nous
+                            </Button>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div className='flex flex-col phone:flex-row pt-[2%] space-x-0 phone:space-x-8 space-y-2 items-align justify-center'>
-                <a href={link}>
-                    <Button className="bg-white text-black hover:bg-black text-home-carroussel-button hover:text-white transition-all duration-[500ms] rounded-none " color="black">
-                        En Savoir +
-                    </Button>
-                </a>
-                <a href="/contact">
-                    <Button className="bg-transparent text-white hover:text-black text-home-carroussel-button border-white border-1 hover:bg-white transition-all duration-[500ms] rounded-none">
-                        Contactez Nous
-                    </Button>
-                </a>
-            </div>
-        </div>
-    </Paper>
-  );
-}
-
-const data = HOME_DATA
-
-export function HomeCarousel() {
-    const theme = useMantineTheme();
-    const slides = data.map((item) => (
-        <Carousel.Slide key={item.WhiteText}>
-            <Card {...item} />
         </Carousel.Slide>
-    ));
-    const autoplay = useRef(Autoplay({ delay: 2000 }));
+    ))
+    const autoplay = useRef(Autoplay({ delay: 5000 }));
     return (
-        <Carousel
-        classNames={{
-            "control" : "hidden phone:flex bg-transparent text-white",
-
-        }}
-        slideSize="100%"
-        align="start"
-        withIndicators={false}
-        mx='auto'
-        loop
-        height={'720px'}
-        plugins={[autoplay.current]}
-        controlSize={60}
-        >
-        {slides}
+        <Carousel 
+            classNames={{
+                "controls": "h-5 hover:text-green rounded-full",
+                "control" : "hidden phone:flex bg-transparent h-5 text-white px-10 rounded-full focus:scale-[3] scale-[3]",
+                "slide" : "relative flex flex-col",
+            }}
+            height='720px'
+            slideSize= '100%'
+            plugins={[autoplay.current]}
+            loop
+            onMouseEnter={autoplay.current.stop}
+            onMouseLeave={autoplay.current.reset}
+            >
+            {slides}
         </Carousel>
     );
 }
 
-function rgba(arg0: number, arg1: number, arg2: number, arg3: number) {
-    throw new Error('Function not implemented.');
+
+
+export default function HomeCarousel(){
+    return(
+        <div className="bg-black flex flex-col text-white text-center">
+            <HomeCarouselContent items={HOME_DATA}/>
+        </div>
+    )
 }

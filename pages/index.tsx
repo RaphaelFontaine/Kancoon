@@ -2,9 +2,9 @@ import Head from 'next/head'
 import HeaderAction from '../components/common/header'
 import Footer from '../components/common/footer'
 import { MentionsLegales } from '../components/common/mentions-legales'
-import { HomeCarousel } from '../components/accueil/home-caroussel'
 import { Services } from '../components/accueil/services'
 import Clients from '../components/accueil/clients'
+import HomeCarousel from '../components/accueil/home-caroussel'
 
 export default function Home() {
     return (
