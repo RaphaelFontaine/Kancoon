@@ -65,7 +65,7 @@ export function GetInTouchSimple() {
         />
         
         <Group position="center" mt="xl">
-            <Button type="submit" size="md" className='bg-black text-white hover:bg-green transition-all duration-1000 mb-10'>
+            <Button type="submit" size="md" className='bg-black text-white hover:bg-green hover:scale-110 transition-all duration-1000 mb-10'>
             Envoyer
             </Button>
         </Group>
