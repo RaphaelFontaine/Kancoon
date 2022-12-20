@@ -1,5 +1,6 @@
-import { TextInput, Textarea, SimpleGrid, Group, Title, Button } from '@mantine/core';
+import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
 import { useForm } from '@mantine/form';
+import ReCAPTCHA from 'react-google-recaptcha'
 
 export function GetInTouchSimple() {
   const form = useForm({
@@ -21,50 +22,50 @@ export function GetInTouchSimple() {
         <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
         <SimpleGrid className='px-10 pt-10 space-x-5' cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
             <TextInput
-            className='hover:border-green'
-            placeholder="Nom/Prénom (obligatoire)"
-            name="name"
-            variant="filled"
-            {...form.getInputProps('name')}
-            />
-            <TextInput
-            className='hover:border-green'
-            placeholder="E-mail (obligatoire)"
-            name="email"
-            variant="filled"
-            {...form.getInputProps('email')}
+              className='hover:border-green'
+              placeholder="Nom/Prénom (obligatoire)"
+              name="name"
+              variant="filled"
+              {...form.getInputProps('name')}
+              />
+              <TextInput
+              className='hover:border-green'
+              placeholder="E-mail (obligatoire)"
+              name="email"
+              variant="filled"
+              {...form.getInputProps('email')}
             />
         </SimpleGrid>
         <SimpleGrid className='px-10 py-10 space-x-5' cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
             <TextInput
-            className='focus:border-green'
-            placeholder="Téléphone (obligatoire)"
-            name="phone"
-            variant="filled"
-            {...form.getInputProps('phone')}
-            />
-            <TextInput
-            className='hover:border-green'
-            placeholder="Sujet"
-            name="sujet"
-            variant="filled"
-            {...form.getInputProps('sujet')}
+              className='focus:border-green'
+              placeholder="Téléphone (obligatoire)"
+              name="phone"
+              variant="filled"
+              {...form.getInputProps('phone')}
+              />
+              <TextInput
+              className='hover:border-green'
+              placeholder="Sujet"
+              name="sujet"
+              variant="filled"
+              {...form.getInputProps('sujet')}
             />
         </SimpleGrid>
         <Textarea
-            className='hover:border-green px-10'
+            className='mx-10'
             mt="md"
-            placeholder="Your message"
+            placeholder="Message"
             maxRows={10}
             minRows={5}
             autosize
             name="message"
             variant="filled"
-            {...form.getInputProps('subject')}
+            {...form.getInputProps('message')}
         />
-
+        
         <Group position="center" mt="xl">
-            <Button type="submit" size="md" className='bg-black text-white hover:bg-green  transition-all duration-1000 mb-10'>
+            <Button type="submit" size="md" className='bg-black text-white hover:bg-green transition-all duration-1000 mb-10'>
             Envoyer
             </Button>
         </Group>

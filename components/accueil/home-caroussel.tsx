@@ -47,7 +47,7 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
             </div>
         </Carousel.Slide>
     ))
-    const autoplay = useRef(Autoplay({ delay: 5000 }));
+    const autoplay = useRef(Autoplay({ delay: 3500 }));
     return (
         <Carousel 
             classNames={{
@@ -59,8 +59,6 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
             slideSize= '100%'
             plugins={[autoplay.current]}
             loop
-            onMouseEnter={autoplay.current.stop}
-            onMouseLeave={autoplay.current.reset}
             >
             {slides}
         </Carousel>

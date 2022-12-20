@@ -17,11 +17,11 @@ export default function Parasols() {
             </Head>
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-general-grey'>
-                <SocialNetwork></SocialNetwork>
                 <div className='flex flex-wrap items-center justify-center space-x-10'>
                     <GetInTouchSimple></GetInTouchSimple>
                     <Icon></Icon>
                 </div>
+                <SocialNetwork></SocialNetwork>
                 <MapsMap></MapsMap>
             </main>
             <Footer></Footer>
