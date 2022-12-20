@@ -4,6 +4,7 @@ import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
 import { Icon } from '../components/contact/icon'
 import { MapsMap } from '../components/contact/maps'
+import { SocialNetwork } from '../components/contact/social-network'
 
 export default function Parasols() {
     return (
@@ -14,7 +15,8 @@ export default function Parasols() {
                 <link rel="icon" href= "/FAVICON-transparent.png" />
             </Head>
             <HeaderAction></HeaderAction>
-            <main className='pt-[95px] bg-dark-grey'>
+            <main className='pt-[95px] bg-general-grey'>
+                <SocialNetwork></SocialNetwork>
                 <Icon></Icon>
                 <MapsMap></MapsMap>
             </main>

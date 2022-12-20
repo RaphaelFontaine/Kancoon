@@ -26,7 +26,11 @@ module.exports = {
       'grey-realisation': '#7A7A7A',
       'general-grey': '#525252',
       'service-title': '#353858',
-      'service-corps': '#7d7d7f'
+      'service-corps': '#7d7d7f',
+      'facebook': '#3b5998',
+      'youtube': '#cd201f',
+      'linkedin': '#0077b5',
+      'instagram': '#262626',
 
     },
     fontFamily: {

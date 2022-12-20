@@ -1,7 +1,7 @@
 export function Icon() {
     return (
-      <div className="flex flex-col space-y-8 px-[15%] py-[15%] items-center justify-center "> 
-          <div className="flex flex-col items-center justify-center w-[330px] h-[200px] bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl">
+      <div className="flex flex-col space-y-8 px-[15%] py-[15%] items-center justify-center text-white"> 
+          <div className="flex flex-col items-center justify-center hover:bg-dark-grey w-[330px] h-[200px] bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl">
             <img className="bg-green rounded-[50%]"
                 src="/assets/contact/tel.png"
                 width="43px"
@@ -10,7 +10,7 @@ export function Icon() {
                 >
             </img>
             <div className="px-[15%]">
-                <a className="hover:text-green transition-all duration-500 flex items-center justify-center" href="tel:+33251959400">02 51 95 94 00 <br/> <br/></a> 
+                <a className="hover:text-green hover:bg-dark-grey transition-all duration-500 flex items-center justify-center" href="tel:+33251959400">02 51 95 94 00 <br/> <br/></a> 
             </div>
           </div>
           <div className="flex flex-col items-center justify-center w-[330px] h-[200px] bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl">
@@ -25,7 +25,7 @@ export function Icon() {
                 <a className="hover:text-green transition-all duration-500" href="mailto:contact@kancoon.fr">contact@kancoon.fr</a>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center w-[330px] h-[200px] bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl">
+          <div className="flex flex-col hover:bg-dark-grey items-center justify-center w-[330px] h-[200px] bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl">
             <img className="bg-green rounded-[50%]"
                 src="/assets/contact/kancoon.png"
                 width="43px"

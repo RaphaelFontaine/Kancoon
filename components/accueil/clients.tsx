@@ -20,7 +20,7 @@ export function Clients_Carousel({items}: ClientsProps){
                 </h1>
                 <h1 className="text-client-size-texte text-center px-80 py-8">
                     {item.texte}
-                </h1> 
+                </h1>
                 <Image className="mx-auto"
                     src={item.image} 
                     width='100px'
