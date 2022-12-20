@@ -19,7 +19,7 @@ export function GetInTouchSimple() {
   return (
     <form onSubmit={form.onSubmit(() => {})}>
         <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
-        <SimpleGrid cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+        <SimpleGrid className='px-10 pt-10 space-x-5' cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
             <TextInput
             className='hover:border-green'
             placeholder="Nom/Prénom (obligatoire)"
@@ -35,7 +35,7 @@ export function GetInTouchSimple() {
             {...form.getInputProps('email')}
             />
         </SimpleGrid>
-        <SimpleGrid cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+        <SimpleGrid className='px-10 py-10 space-x-5' cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
             <TextInput
             className='focus:border-green'
             placeholder="Téléphone (obligatoire)"
@@ -52,7 +52,7 @@ export function GetInTouchSimple() {
             />
         </SimpleGrid>
         <Textarea
-            className='hover:border-green'
+            className='hover:border-green px-10'
             mt="md"
             placeholder="Your message"
             maxRows={10}
@@ -64,7 +64,7 @@ export function GetInTouchSimple() {
         />
 
         <Group position="center" mt="xl">
-            <Button type="submit" size="md" className='bg-black text-white hover:text-black hover:bg-white transition-all duration-500'>
+            <Button type="submit" size="md" className='bg-black text-white hover:bg-green  transition-all duration-1000 mb-10'>
             Envoyer
             </Button>
         </Group>
