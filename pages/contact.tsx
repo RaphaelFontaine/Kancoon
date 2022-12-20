@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Footer from '../components/common/footer'
 import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
+import { GetInTouchSimple } from '../components/contact/formulaire'
 import { Icon } from '../components/contact/icon'
 import { MapsMap } from '../components/contact/maps'
 import { SocialNetwork } from '../components/contact/social-network'
@@ -17,7 +18,10 @@ export default function Parasols() {
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-general-grey'>
                 <SocialNetwork></SocialNetwork>
-                <Icon></Icon>
+                <div className='flex flex-wrap items-center justify-center space-x-10'>
+                    <GetInTouchSimple></GetInTouchSimple>
+                    <Icon></Icon>
+                </div>
                 <MapsMap></MapsMap>
             </main>
             <Footer></Footer>
