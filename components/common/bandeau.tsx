@@ -14,8 +14,5 @@ export function Band(props : any){
                 </div>
             )}
         </Transition>
-        // <div className="bg-white text-black text-primary-2">
-        //     <img src={props.image} alt={props.alt} loading="lazy"/>
-        // </div>
     )
 }

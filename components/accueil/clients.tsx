@@ -15,17 +15,18 @@ interface ClientsProps {
 export function Clients_Carousel({items}: ClientsProps){
     const slides = items.map((item) => (
         <Carousel.Slide>
-                <h1 className="text-white py-4 font-bold text-center text-client-size-titre">
-                    {item.titre}
-                </h1>
-                <h1 className="text-client-size-texte text-center px-80 py-8">
-                    {item.texte}
-                </h1>
-                <Image className="mx-auto"
-                    src={item.image} 
-                    width='100px'
-                    height='78px'
-                />            
+            <h1 className="text-white py-4 font-bold text-center text-client-size-titre">
+                {item.titre}
+            </h1>
+            <h1 className="text-client-size-texte text-center px-80 py-8">
+                {item.texte}
+            </h1>
+            <Image 
+                className="mx-auto flex text-center justify-center"
+                src={item.image} 
+                width='100px'
+                height='78px'
+            />  
         </Carousel.Slide>
     ))
     const autoplay = useRef(Autoplay({ delay: 5000 }));
@@ -35,7 +36,7 @@ export function Clients_Carousel({items}: ClientsProps){
             "indicators" : "pt-10",
             "indicator" : "bg-white focus:bg-green focus:h-[20px] h-[10px] w-[8px]",
             "controls": "h-10 hover:text-green",
-            "control" : "hidden phone:flex bg-transparent text-white px-48 h-10 border-none hover:text-green focus:scale-[3] scale-[3]",
+            "control" : "hidden phone:flex bg-transparent text-white px-48 h-10 border-none hover:text-green hover:scale-[3] scale-[3]",
             "slide" : "relative flex flex-col",
             }}
             height='370px'

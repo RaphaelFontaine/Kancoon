@@ -1,5 +1,3 @@
-
-
 export function SocialNetwork() {
     return (
         <div className="py-20 space-x-14 flex flex-wrap text-footer-corps items-center justify-center">
