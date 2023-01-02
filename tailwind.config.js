@@ -47,6 +47,7 @@ module.exports = {
       'realisation-corps-size': '20px',
       'footer-title': 'calc(1vw + 7px)',
       'footer-corps': 'calc(0.7vw + 5px)',
+      'satisfaction': 'calc(0.7vw + 5px)',
       'home-carroussel-title': 'calc(2.5vw + 15px)',
       'home-carroussel-button': 'calc(1vw + 5px)',
     },
