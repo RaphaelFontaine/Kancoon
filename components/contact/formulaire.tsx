@@ -1,19 +1,20 @@
 import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
 import { useForm } from '@mantine/form';
-import ReCAPTCHA from 'react-google-recaptcha'
+
 
 export function GetInTouchSimple() {
   const form = useForm({
     initialValues: {
       name: '',
       email: '',
+      phone:'',
       subject: '',
       message: '',
     },
     validate: {
       name: (value) => value.trim().length < 2,
       email: (value) => !/^\S+@\S+$/.test(value),
-      subject: (value) => value.trim().length === 0,
+      phone: (value) => value.trim().length < 9 ,
     },
   });
 
@@ -22,6 +23,9 @@ export function GetInTouchSimple() {
         <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
         <SimpleGrid className='px-10 pt-10 space-x-5' cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
             <TextInput
+              classNames={{
+                "input": "focus:border-green"
+              }}
               className='hover:border-green'
               placeholder="Nom/Prénom (obligatoire)"
               name="name"
@@ -29,6 +33,9 @@ export function GetInTouchSimple() {
               {...form.getInputProps('name')}
               />
               <TextInput
+              classNames={{
+                "input": "focus:border-green"
+              }}
               className='hover:border-green'
               placeholder="E-mail (obligatoire)"
               name="email"
@@ -38,6 +45,9 @@ export function GetInTouchSimple() {
         </SimpleGrid>
         <SimpleGrid className='px-10 py-10 space-x-5' cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
             <TextInput
+              classNames={{
+                "input": "focus:border-green"
+              }}
               className='focus:border-green'
               placeholder="Téléphone (obligatoire)"
               name="phone"
@@ -45,6 +55,9 @@ export function GetInTouchSimple() {
               {...form.getInputProps('phone')}
               />
               <TextInput
+              classNames={{
+                "input": "focus:border-green"
+              }}
               className='hover:border-green'
               placeholder="Sujet"
               name="sujet"
@@ -53,6 +66,9 @@ export function GetInTouchSimple() {
             />
         </SimpleGrid>
         <Textarea
+            classNames={{
+              "input": "focus:border-green"
+            }}
             className='mx-10'
             mt="md"
             placeholder="Message"
@@ -65,7 +81,7 @@ export function GetInTouchSimple() {
         />
         
         <Group position="center" mt="xl">
-            <Button type="submit" size="md" className='bg-black text-white hover:bg-green hover:scale-110 transition-all duration-1000 mb-10'>
+            <Button type="submit" size="md" className='bg-black text-white hover:bg-green transition-all duration-1000 mb-10'>
             Envoyer
             </Button>
         </Group>

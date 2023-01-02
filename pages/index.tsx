@@ -5,7 +5,6 @@ import { MentionsLegales } from '../components/common/mentions-legales'
 import { Services } from '../components/accueil/services'
 import Clients from '../components/accueil/clients'
 import HomeCarousel from '../components/accueil/home-caroussel'
-import { Demo } from '../components/common/transition'
 
 export default function Home() {
     return (
@@ -18,7 +17,6 @@ export default function Home() {
             <HeaderAction></HeaderAction>
     
             <main className='pt-[95px] bg-dark-grey'>
-            <Demo></Demo>
                 <HomeCarousel></HomeCarousel>
                 <Services></Services>
                 <Clients></Clients>
