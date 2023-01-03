@@ -118,7 +118,7 @@ export default function HeaderAction() {
                             <Link 
                                 key={link.label}
                                 href={link.link}
-                                className={`transition-all duration-500 text-white hover:text-green font-police ${link.label == 'Stores' ? "cursor-default" : "cursor-pointer" }`}
+                                className={`transition-all duration-500 text-white hover:text-green  font-police ${link.label == 'Stores' ? "cursor-default" : "cursor-pointer" }`}
                                 target={link.label == 'Menuiserie IZY' ? "_blank" : "_self"}
                             >
                                 <Center>

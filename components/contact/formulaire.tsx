@@ -1,6 +1,8 @@
 import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
 import { useForm } from '@mantine/form';
-
+import ReCAPTCHA from 'react-google-recaptcha';
+import axios from 'axios';
+import { useRef } from 'react';
 
 export function GetInTouchSimple() {
   const form = useForm({
@@ -81,9 +83,10 @@ export function GetInTouchSimple() {
         />
         
         <Group position="center" mt="xl">
-            <Button type="submit" size="md" className='bg-black text-white hover:bg-green transition-all duration-1000 mb-10'>
+
+          <Button type="submit" size="md" className='bg-black text-white hover:bg-green transition-all duration-1000 mb-10'>
             Envoyer
-            </Button>
+          </Button>
         </Group>
         </div>
     </form>
