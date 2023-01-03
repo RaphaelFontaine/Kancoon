@@ -1,8 +1,6 @@
-import { Transition } from "@mantine/core"
 import React from 'react';
 import { fadeInDown } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
-
 
 interface BandProps {
     image : string
@@ -12,7 +10,7 @@ interface BandProps {
 export function Band(props : any){
     const styles = {
         fadeInDown: {
-          animation: 'x 1s',
+          animation: 'x 1.5s',
           animationName: Radium.keyframes(fadeInDown, 'fadeInDown')
         }
       }

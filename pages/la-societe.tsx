@@ -2,10 +2,10 @@ import Head from 'next/head'
 import Footer from '../components/common/footer'
 import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
+import ScrollTopButton from '../components/common/scroll-top'
 import Partenaires from '../components/la-societe/partenaires'
 import Produit from '../components/la-societe/produits'
 import Satisfaction from '../components/la-societe/satisfaction'
-
 
 export default function Parasols() {
     return (
@@ -20,6 +20,7 @@ export default function Parasols() {
                 <Produit></Produit>
                 <Satisfaction></Satisfaction>
                 <Partenaires></Partenaires>
+                <ScrollTopButton></ScrollTopButton>
             </main>
             <Footer></Footer>
             <MentionsLegales></MentionsLegales>
