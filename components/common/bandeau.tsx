@@ -1,10 +1,4 @@
 import React from 'react';
-// import { fadeInDown } from 'react-animations';
-// import Radium, {StyleRoot} from 'radium';
-// import { fadeInDown } from 'react-animations';
-// import jss from 'jss'
-// import preset from 'jss-preset-default'
-// import { FadeInDown } from 'react-native-reanimated'; 
 
 interface BandProps {
     image : string
