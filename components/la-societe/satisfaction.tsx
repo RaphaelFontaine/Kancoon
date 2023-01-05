@@ -82,7 +82,7 @@ export default function Satisfaction(){
                     </div>
                         <div className='flex flex-col space-y-2'>
                             <div className='flex flex-row space-x-4 items-center justify-center font-black'>
-                                <CountUp end={500} duration={3} redraw={false}>
+                                <CountUp end={50} duration={3} redraw={false}>
                                     {({ countUpRef, start }) => (
                                         <VisibilitySensor onChange={() => {triggerStart(start)}} delayedCall>
                                             <span ref={countUpRef} />

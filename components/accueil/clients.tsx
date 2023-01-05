@@ -18,7 +18,7 @@ export function Clients_Carousel({items}: ClientsProps){
             <h1 className="text-white py-4 font-bold text-center text-client-size-titre">
                 {item.titre}
             </h1>
-            <h1 className="text-client-size-texte text-center px-80 py-8">
+            <h1 className="text-client-size-texte text-center px-[22%] py-8">
                 {item.texte}
             </h1>
             <Image 
@@ -36,7 +36,7 @@ export function Clients_Carousel({items}: ClientsProps){
             "indicators" : "pt-10",
             "indicator" : "bg-white active:bg-green active:h-[20px] h-[10px] w-[8px]",
             "controls": "h-10",
-            "control" : "hidden phone:flex bg-transparent text-white px-48 h-10 border-none hover:text-green hover:scale-[3] scale-[3]",
+            "control" : "hidden phone:flex bg-transparent text-white px-[15%] h-10 border-none hover:text-green hover:scale-[3] scale-[3]",
             "slide" : "relative flex flex-col",
             
             }}
