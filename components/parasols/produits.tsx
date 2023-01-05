@@ -2,14 +2,34 @@ import { BANDEAU_PARASOLS } from "../../utils/bandeau";
 import { VIDEO_PARASOL } from "../../utils/video";
 import { Band } from "../common/bandeau";
 import { VideoResponsive } from "../common/video";
+import {useEffect} from 'react';
 
 export default function Produit(){
+    useEffect(() => {
+        const targets = document.querySelectorAll(".js-show-on-scroll");
+
+        const callback = function(entries : any) {
+            entries.forEach(function(entry : any) {
+                const animationType = entry.target.dataset.animateType;
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add(animationType);
+                  }
+            });
+        };
+
+        const observer = new IntersectionObserver(callback);
+        targets.forEach(function(target) {
+            observer.observe(target);
+        });
+    }, []);
+    
     return(
         <>
             <Band image={BANDEAU_PARASOLS.image} alt={BANDEAU_PARASOLS.alt}/>
 
             <div className="flex flex-col bp:flex-row bp:h-case-size">
-                <div className="h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
+                <div data-animate-type="motion-safe:animate-fadeInLeft" className="js-show-on-scroll h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">
                     <div className="absolute flex flex-row z-1 h-grey-band pl-band-left">
                         <div className="bg-general-grey w-grey-band h-grey-band">
                         </div>
