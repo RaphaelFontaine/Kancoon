@@ -1,4 +1,5 @@
 import React from 'react';
+import {useEffect} from 'react';
 
 interface BandProps {
     image : string
@@ -6,14 +7,28 @@ interface BandProps {
 }
 
 export function Band(props : any){
-    // const styles = {
-    //     fadeInDown: {
-    //       animation: 'x 1.5s',
-    //       animationName: Radium.keyframes(fadeInDown, 'fadeInDown')
-    //     }
-    //   }
+
+    useEffect(() => {
+        const targets = document.querySelectorAll(".js-show-on-scroll");
+
+        const callback = function(entries : any) {
+            entries.forEach(function(entry : any) {
+                const animationType = entry.target.dataset.animateType;
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add(animationType);
+                  }
+            });
+        };
+
+        const observer = new IntersectionObserver(callback);
+        targets.forEach(function(target) {
+            observer.observe(target);
+        });
+    }, []);
+
     return(
-            <div className="bg-white text-black text-primary-2 motion-safe:animate-fadeInDown" >
+            <div data-animate-type="motion-safe:animate-fadeInDown" className="js-show-on-scroll bg-white text-black text-primary-2" >
                 <img src={props.image} alt={props.alt} loading="lazy"/>
             </div>
     )
