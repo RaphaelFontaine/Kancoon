@@ -1,8 +1,5 @@
 import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
 import { useForm } from '@mantine/form';
-import ReCAPTCHA from 'react-google-recaptcha';
-import axios from 'axios';
-import { useRef } from 'react';
 
 export function GetInTouchSimple() {
   const form = useForm({

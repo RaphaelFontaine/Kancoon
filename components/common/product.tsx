@@ -11,23 +11,17 @@ export function Showcase(props : ShowcaseProps){
     let {left, title, core, images} = props
 
     useEffect(() => {
-        const targets = document.querySelectorAll(".Left");
+        const targets = document.querySelectorAll(".js-show-on-scroll");
 
         const callback = function(entries : any) {
             entries.forEach(function(entry : any) {
                 const animationType = entry.target.dataset.animateType;
                 if (entry.isIntersecting) {
-            
+
                     entry.target.classList.add(animationType);
-                } else {
-            
-                    entry.target.classList.add(animationType);
-                }
+                  }
             });
         };
-
-
-    
 
         const observer = new IntersectionObserver(callback);
         targets.forEach(function(target) {
@@ -38,7 +32,7 @@ export function Showcase(props : ShowcaseProps){
 
     return(
         <div className={`flex flex-col bp:flex-row h-auto ${left ? "" : "bp:flex-row-reverse"}`}>
-            <div className={`${left ? "bg-white text-corps-color animate-fadeInLeft" : "bg-general-grey text-white animate-fadeInRigth"} h-auto flex flex-row bp:w-1/2 w-full`}>
+            <div data-animate-type={`${left ? "motion-safe:animate-fadeInLeft" : "motion-safe:animate-fadeInRight"}`} className={`${left ? "bg-white text-corps-color" : "bg-general-grey text-white"} js-show-on-scroll h-auto flex flex-row bp:w-1/2 w-full`}>
                 <div className={`${left ? "pl-band-left" : "right-0 pr-band-left"} absolute flex flex-row z-1 h-grey-band`}>
                     <div className={`${left ? "bg-general-grey h-grey-band" : "bg-green h-green-band"}  w-grey-band`}>
                     </div>
@@ -57,7 +51,7 @@ export function Showcase(props : ShowcaseProps){
                 </div>
             </div>
 
-            <div data-animate-type={`${left ? "motion-safe:animate-fadeInRight" : "motion-safe:animate-fadeInLeft"}`} className={`${left ? "Left" : "Left"} " h-auto bp:w-1/2 w-full`}>
+            <div data-animate-type={`${left ? "motion-safe:animate-fadeInRight" : "motion-safe:animate-fadeInLeft"}`} className="js-show-on-scroll h-auto bp:w-1/2 w-full">
                 {
                     images.length === 1 ?
                     <img 
