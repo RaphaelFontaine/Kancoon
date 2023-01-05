@@ -51,6 +51,9 @@ module.exports = {
       'home-carroussel-title': 'calc(2.5vw + 15px)',
       'home-carroussel-button': 'calc(1vw + 5px)',
     },
+    variants: {
+      animation: ["motion-safe"]
+    },
     extend: {
       keyframes: {
         fadeInDown: {
@@ -67,9 +70,9 @@ module.exports = {
         },
       },
       animation: {
-        'fadeInDown': 'fadeInDown 2s linear',
-        'fadeInLeft': 'fadeInLeft 2s linear',
-        'fadeInRigth': 'fadeInRight 2s linear',
+        'fadeInDown': 'fadeInDown 2s linear ',
+        'fadeInLeft': 'fadeInLeft 2s linear ',
+        'fadeInRight': 'fadeInRight 2s linear ',
       },
       width: {
         'grey-band': 'calc(1.5vw + 7.5px)',

@@ -25,7 +25,6 @@
     "embla-carousel-autoplay": "^7.0.5",
     "embla-carousel-react": "^7.0.4",
     "eslint": "8.27.0",
-    "eslint-config-next": "^12.0.4",
     "jss-preset-default": "^10.9.2",
     "next": "13.0.2",
     "radium": "^0.26.2",

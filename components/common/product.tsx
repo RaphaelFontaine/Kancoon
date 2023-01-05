@@ -1,4 +1,5 @@
 import {ProductCarroussel} from "../common/product-caroussel";
+import {useEffect} from 'react';
 
 interface ShowcaseProps {
     left : boolean
@@ -8,6 +9,32 @@ interface ShowcaseProps {
 }
 export function Showcase(props : ShowcaseProps){
     let {left, title, core, images} = props
+
+    useEffect(() => {
+        const targets = document.querySelectorAll(".Left");
+
+        const callback = function(entries : any) {
+            entries.forEach(function(entry : any) {
+                const animationType = entry.target.dataset.animateType;
+                if (entry.isIntersecting) {
+            
+                    entry.target.classList.add(animationType);
+                } else {
+            
+                    entry.target.classList.add(animationType);
+                }
+            });
+        };
+
+
+    
+
+        const observer = new IntersectionObserver(callback);
+        targets.forEach(function(target) {
+            observer.observe(target);
+        });
+    }, []);
+    
 
     return(
         <div className={`flex flex-col bp:flex-row h-auto ${left ? "" : "bp:flex-row-reverse"}`}>
@@ -30,7 +57,7 @@ export function Showcase(props : ShowcaseProps){
                 </div>
             </div>
 
-            <div className={`${left ? "animate-fadeInRigth" : "animate-fadeInLeft"} "h-auto bp:w-1/2 w-full`}>
+            <div data-animate-type={`${left ? "motion-safe:animate-fadeInRight" : "motion-safe:animate-fadeInLeft"}`} className={`${left ? "Left" : "Left"} " h-auto bp:w-1/2 w-full`}>
                 {
                     images.length === 1 ?
                     <img 
