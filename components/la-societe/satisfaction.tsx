@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from 'react-visibility-sensor';
-import { Box } from "@material-ui/core";
 
 export default function Satisfaction(){
     const [startView, SetStartView] = useState(0)

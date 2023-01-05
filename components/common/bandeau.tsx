@@ -19,7 +19,7 @@ export function Band(props : any){
     //     }
     //   }
     return(
-            <div className="bg-white text-black text-primary-2" >
+            <div className="bg-white text-black text-primary-2 animate-fadeInDown" >
                 <img src={props.image} alt={props.alt} loading="lazy"/>
             </div>
     )

@@ -6,12 +6,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    keyframes: {
-      wiggle: {
-        '0%, 100%': { transform: 'rotate(-3deg)' },
-        '50%': { transform: 'rotate(3deg)' },
-      }
-    },
     screens: {
       'ft': '765px',
       'phone': '500px',
@@ -58,6 +52,25 @@ module.exports = {
       'home-carroussel-button': 'calc(1vw + 5px)',
     },
     extend: {
+      keyframes: {
+        fadeInDown: {
+          '0%': { opacity: '0.5', transform: 'translateY(-200px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeInLeft: {
+          '0%': { opacity: '0.5', transform: 'translateX(-200px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        fadeInRight: {
+          '0%': { opacity: '0.5', transform: 'translateX(+200px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        'fadeInDown': 'fadeInDown 2s linear',
+        'fadeInLeft': 'fadeInLeft 2s linear',
+        'fadeInRigth': 'fadeInRight 2s linear',
+      },
       width: {
         'grey-band': 'calc(1.5vw + 7.5px)',
         'green-band': 'calc(1.5vw + 7.5px)'
