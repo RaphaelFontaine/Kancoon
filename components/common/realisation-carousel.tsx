@@ -2,6 +2,7 @@ import { Carousel } from "@mantine/carousel";
 import { Image } from "@mantine/core";
 import { useRef } from "react";
 import Autoplay from 'embla-carousel-autoplay';
+import {useEffect} from 'react';
 
 interface RealisationCarouselProps {
     items : {
@@ -23,8 +24,30 @@ export function RealisationCarousel({ items }: RealisationCarouselProps) {
         </Carousel.Slide>
     ))
     const autoplay = useRef(Autoplay({ delay: 2000 }));
+
+    useEffect(() => {
+        const targets = document.querySelectorAll(".js-show-on-scroll");
+
+        const callback = function(entries : any) {
+            entries.forEach(function(entry : any) {
+                const animationType = entry.target.dataset.animateType;
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add(animationType);
+                  }
+            });
+        };
+
+        const observer = new IntersectionObserver(callback);
+        targets.forEach(function(target) {
+            observer.observe(target);
+        });
+    }, []);
+
     return (
         <Carousel 
+            data-animate-type="motion-safe:animate-fadeInUp"
+            className="js-show-on-scroll"
             classNames={{
             "indicators" : "mb-16",
             "indicator" : "bg-white",
