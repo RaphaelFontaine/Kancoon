@@ -17,7 +17,7 @@ export default function Parasols() {
             </Head>
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-general-grey'>
-                <div className='flex flex-wrap items-center justify-center space-x-10 space-y-5 phone:space-y-0 mt-16'>
+                <div className='flex flex-wrap items-center justify-center gap-10 phone:space-y-0 mt-16'>
                     <GetInTouchSimple></GetInTouchSimple>
                     <Icon></Icon>
                 </div>
