@@ -49,7 +49,7 @@ export function GetInTouchSimple() {
   return (
     <form onSubmit={handleOnSubmit}>
         <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
-        <SimpleGrid className='px-10 pt-10 space-x-5' cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+        <SimpleGrid className='px-10 pt-10 space-x-5' cols={2} mt="xl" >
             <TextInput
               classNames={{
                 "input": "focus:border-green"
@@ -71,7 +71,7 @@ export function GetInTouchSimple() {
               {...form.getInputProps('email')}
             />
         </SimpleGrid>
-        <SimpleGrid className='px-10 py-10 space-x-5' cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+        <SimpleGrid className='px-10 py-10 space-x-5' cols={2} mt="xl" >
             <TextInput
               classNames={{
                 "input": "focus:border-green"
