@@ -1,5 +1,7 @@
 import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
 import { useForm } from '@mantine/form';
+import ReCAPTCHA from "react-google-recaptcha"
+import React, { useRef } from 'react';
 
 export function GetInTouchSimple() {
   const form = useForm({
@@ -79,9 +81,10 @@ export function GetInTouchSimple() {
             {...form.getInputProps('message')}
         />
         
-        <Group position="center" mt="xl">
-
-          <Button type="submit" size="md" className='bg-black text-white hover:bg-green transition-all duration-1000 mb-10'>
+        <Group position="center" mt="xl" className='flex flex-col '>
+          <ReCAPTCHA className='mt-7' sitekey='6LcdHcsZAAAAAJqdcjHkgjydMxHY-jtTU-Jl0FrO'
+          />
+          <Button type="submit" size="md" className='bg-black text-white mt-7 hover:bg-green transition-all duration-1000 mb-10'>
             Envoyer
           </Button>
         </Group>

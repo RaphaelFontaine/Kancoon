@@ -46,7 +46,7 @@ export function RealisationCarousel({ items }: RealisationCarouselProps) {
 
     return (
         <Carousel 
-            data-animate-type="motion-safe:animate-fadeInUp"
+            data-animate-type="motion-safe:animate-fadeIn"
             className="js-show-on-scroll"
             classNames={{
             "indicators" : "mb-16",

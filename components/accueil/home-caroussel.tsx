@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Autoplay from 'embla-carousel-autoplay';
 import { Button, Image } from "@mantine/core";
 import { HOME_DATA } from "../../utils/home";
+import {useEffect} from 'react';
 
 interface HomeCarouselProps {
     items : {
@@ -14,6 +15,25 @@ interface HomeCarouselProps {
 }
 
 export function HomeCarouselContent({items}: HomeCarouselProps){
+    useEffect(() => {
+        const targets = document.querySelectorAll(".js-show-on-scroll");
+
+        const callback = function(entries : any) {
+            entries.forEach(function(entry : any) {
+                const animationType = entry.target.dataset.animateType;
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add(animationType);
+                  }
+            });
+        };
+
+        const observer = new IntersectionObserver(callback);
+        targets.forEach(function(target) {
+            observer.observe(target);
+        });
+    }, []);
+
     const slides = items.map((item) => (
         <Carousel.Slide>
             <Image 
@@ -24,7 +44,7 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
             />   
 
             <div className='z-20 absolute w-full mx-auto mt-60 flex flex-col items-center justify-center'>
-                <div className='flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
+                <div data-animate-type="motion-safe:animate-fadeInLeft" className='js-show-on-scroll flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
                     <div className='text-white'>
                         {item.TransparentText}
                         <div className='text-black bg-white'>
@@ -48,6 +68,7 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
         </Carousel.Slide>
     ))
     const autoplay = useRef(Autoplay({ delay: 3500 }));
+
     return (
         <Carousel 
             classNames={{

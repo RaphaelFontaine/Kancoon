@@ -1,6 +1,6 @@
 export function SocialNetwork() {
     return (
-        <div className="py-20 space-x-14 flex flex-wrap text-footer-corps items-center justify-center">
+        <div className="pt-20 space-x-14 flex flex-wrap text-footer-corps items-center justify-center">
             <a className="transition-all duration-500 px-[1%]" target="_blank" href= "https://www.facebook.com/kancoonolonne">
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler rounded-lg hover:scale-110 bg-facebook icon-tabler-brand-facebook transition-all duration-300" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"  stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

@@ -68,16 +68,16 @@ module.exports = {
           '0%': { opacity: '0.5', transform: 'translateX(+200px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
-        fadeInUp: {
-          '0%': { opacity: '0.5', transform: 'translateY(+200px)' },
-          '100%': { opacity: '1', transform: 'translate(0)' },
+        fadeIn: {
+          '0%': { opacity: '0'},
+          '100%': { opacity: '1'},
         }
       },
       animation: {
         'fadeInDown': 'fadeInDown 2s linear ',
         'fadeInLeft': 'fadeInLeft 2s linear ',
         'fadeInRight': 'fadeInRight 2s linear ',
-        'fadeInUp': 'fadeInUp 2s linear ',
+        'fadeIn': 'fadeIn 2s linear ',
       },
       width: {
         'grey-band': 'calc(1.5vw + 7.5px)',
