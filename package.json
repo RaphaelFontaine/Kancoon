@@ -22,6 +22,7 @@
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
+    "emailjs-com": "^3.2.0",
     "embla-carousel-autoplay": "^7.0.5",
     "embla-carousel-react": "^7.0.4",
     "eslint": "8.27.0",
@@ -35,6 +36,9 @@
     "react-icons": "^4.7.1",
     "react-visibility-sensor": "^5.1.1",
     "reaptcha": "^1.12.1",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4",
+    "sweetalert2": "^11.6.16",
     "tailwindcss-animation-delay": "^1.0.7",
     "typescript": "4.8.4"
   },
