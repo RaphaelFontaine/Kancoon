@@ -1,7 +1,7 @@
 import { GrMapLocation } from 'react-icons/gr';
 
 export function Icon() {
-    const style = { color: "white", fontSize: "1.5em" }
+    // const style = { color: "white", fontSize: "1.5em" }
     return (
       <div className="flex flex-col space-y-6 items-center justify-center text-white"> 
           <div className="flex flex-col hover:scale-105 space-y-8 items-center justify-center hover:bg-dark-grey w-[330px] h-[200px] bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl">
