@@ -31,7 +31,7 @@ export function Services() {
                         La Qualité
                     </div>
                     <div className="leading-7 text-corps-size">
-                        Nous travaillons avec des fournisseurs à 95% français. Pergolas, stores, bois de terrasse, … tous nos produits ont été rigoureusement sélectionné pour leur qualité et leur durabilité. Nous attachons beaucoup d’important aux normes NF et CE afin de garantir une prestation de qualité.
+                        Nous travaillons avec des fournisseurs à 95% français. Pergolas, stores, bois de terrasse, … tous nos produits ont été rigoureusement sélectionné pour leur qualité et leur durabilité. Nous attachons beaucoup d’importance aux normes NF et CE afin de garantir une prestation de qualité.
                     </div>
                 </div>
                 <div className="flex flex-col border-[1px] px-[2%] py-[4.75%] mt-[2%] border-[#E6E6E6] hover:shadow-2xl hover:scale-105 transition-all duration-700 w-[80%] bp:w-[30%] bp:h-[600px]">
@@ -49,7 +49,7 @@ export function Services() {
             </div>
             </div>
             )}
-      </Transition>
+        </Transition>
         // <div className="flex flex-col bg-white pb-[5%]">
         //     <div className="text-black font-bold uppercase text-partenaire-size text-center my-[5%]">
         //         Nos Services
