@@ -5,6 +5,7 @@ import { MentionsLegales } from '../components/common/mentions-legales'
 import { Services } from '../components/accueil/services'
 import Clients from '../components/accueil/clients'
 import HomeCarousel from '../components/accueil/home-caroussel'
+import FooterBis from '../components/common/footer-2'
 
 export default function Home() {
     return (
@@ -22,7 +23,7 @@ export default function Home() {
                 <Clients></Clients>
                 
             </main>
-            <Footer></Footer>
+            <FooterBis></FooterBis>
             <MentionsLegales></MentionsLegales>
            
 
