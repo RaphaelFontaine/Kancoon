@@ -1,5 +1,4 @@
 import {
-    createStyles,
     Menu,
     Center,
     Collapse,
@@ -8,6 +7,7 @@ import {
 import { IconChevronDown } from '@tabler/icons';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 interface Link {
     link: string;
@@ -94,9 +94,10 @@ const links : Link[]=[
 
 export default function HeaderAction() {
     const [opened, setOpened] = useState(false);
+    const router = useRouter();
     const items = links.map((link) => {
         const menuItems = link.links?.map((item) => (
-            <Menu.Item className="transition-all duration-500 text-white hover:text-green font-police" key={item.link}>
+            <Menu.Item className={`${item.link == router.pathname ? "text-green" : " text-white"} transition-all duration-500 text-white hover:text-green font-police`} key={item.link}>
                 <Link
                     key={item.label}
                     href={item.link}
@@ -118,7 +119,7 @@ export default function HeaderAction() {
                             <Link 
                                 key={link.label}
                                 href={link.link}
-                                className={`transition-all duration-500 text-white hover:text-green  font-police ${link.label == 'Stores' ? "cursor-default" : "cursor-pointer" }`}
+                                className={`transition-all duration-500 text-white hover:text-green font-police ${link.label == 'Stores' ? "cursor-default" : "cursor-pointer" }`}
                                 target={link.label == 'Menuiserie IZY' ? "_blank" : "_self"}
                             >
                                 <Center>
@@ -136,12 +137,11 @@ export default function HeaderAction() {
                 </Menu>
             );
         }
-  
         return (
             <Link
                 key={link.label}
                 href={link.link}
-                className="transition-all duration-500 text-white hover:text-green font-police"
+                className={`${link.link == router.pathname ? "text-green" : " text-white"} transition-all duration-500 text-white hover:text-green font-police`}
             >
                 {link.label}
             </Link>
