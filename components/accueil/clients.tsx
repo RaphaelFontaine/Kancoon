@@ -22,7 +22,7 @@ export function Clients_Carousel({items}: ClientsProps){
                 {item.texte}
             </h1>
             <Image 
-                className="mx-auto flex text-center justify-center hover:scale-110 hover:shadow-md transition-all duration-700"
+                className="mx-auto flex text-center pt-6 justify-center hover:scale-110 hover:shadow-md transition-all duration-700"
                 src={item.image} 
                 width='100px'
                 height='78px'
@@ -40,7 +40,7 @@ export function Clients_Carousel({items}: ClientsProps){
             "slide" : "relative flex flex-col",
             
             }}
-            height='370px'
+            height='420px'
             slideSize= '100%'
             withIndicators
             plugins={[autoplay.current]}
