@@ -71,6 +71,10 @@ module.exports = {
         fadeIn: {
           '0%': { opacity: '0'},
           '100%': { opacity: '1'},
+        },
+        ZoomIn: {
+          '0%': { opacity: '1', transform: 'scale-100'},
+          '100%': { opacity: '1', transform: 'scale-120'},
         }
       },
       animation: {
@@ -78,6 +82,7 @@ module.exports = {
         'fadeInLeft': 'fadeInLeft 2s linear ',
         'fadeInRight': 'fadeInRight 2s linear ',
         'fadeIn': 'fadeIn 2s linear ',
+        'ZoomIn': 'ZoomIn 2s linear',
       },
       width: {
         'grey-band': 'calc(1.5vw + 7.5px)',

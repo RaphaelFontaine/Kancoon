@@ -28,7 +28,7 @@ export function Band(props : any){
     }, []);
 
     return(
-            <div data-animate-type="motion-safe:animate-fadeInDown" className="js-show-on-scroll bg-white text-black text-primary-2" >
+            <div data-animate-type="motion-safe:animate-fadeInDown" className="js-show-on-scroll  bg-white text-black text-primary-2" >
                 <img src={props.image} alt={props.alt} loading="lazy"/>
             </div>
     )

@@ -4,6 +4,8 @@ import ReCAPTCHA from "react-google-recaptcha"
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+import Link from 'next/link';
+
 
 export function GetInTouchSimple() {
   const form = useForm({
@@ -111,7 +113,7 @@ export function GetInTouchSimple() {
         <Group position="center" mt="xl" className='flex flex-col '>
           <ReCAPTCHA className='mt-7' sitekey='6LcdHcsZAAAAAJqdcjHkgjydMxHY-jtTU-Jl0FrO'
           />
-          <Button type="submit" size="md" className='bg-black text-white mt-7 hover:bg-green transition-all duration-500 mb-10'>
+          <Button type="submit" size="md" className='bg-white button-form text-green hover:text-white mt-7 hover:bg-green transition-all active:scale-90 duration-500 mb-10'>
             Envoyer
           </Button>
         </Group>
