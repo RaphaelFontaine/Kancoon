@@ -113,7 +113,7 @@ export function GetInTouchSimple() {
         <Group position="center" mt="xl" className='flex flex-col '>
           <ReCAPTCHA className='mt-7' sitekey='6LcdHcsZAAAAAJqdcjHkgjydMxHY-jtTU-Jl0FrO'
           />
-          <Button type="submit" size="md" className='bg-white button-form text-green hover:text-white mt-7 hover:bg-green transition-all active:scale-90 duration-500 mb-10'>
+          <Button type="submit" size="md" className='bg-white button-form text-green hover:text-white mt-7 hover:bg-green transition-all active:scale-90 duration-1000 mb-10'>
             Envoyer
           </Button>
         </Group>
