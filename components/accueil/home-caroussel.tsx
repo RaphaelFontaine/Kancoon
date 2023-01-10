@@ -47,7 +47,7 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
                 <div data-animate-type="motion-safe:animate-fadeInLeft" className='js-show-on-scroll delay-700 flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
                     <div className='text-white'>
                         {item.TransparentText}
-                        <div className='text-white border-green border-4'>
+                        <div className='text-white uppercase  border-green border-4'>
                             {item.WhiteText}
                         </div>
                     </div>

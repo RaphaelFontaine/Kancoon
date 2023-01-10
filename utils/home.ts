@@ -2,7 +2,7 @@ export const HOME_DATA = [
     {
       image: '/assets/accueil/Photo_Caroussel/pro-particulier.jpg',
       link: '/la-societe',
-      TransparentText: 'Particuliers Et ',
+      TransparentText: 'Particuliers et ',
       WhiteText: 'Professionnels',
     },
     {
