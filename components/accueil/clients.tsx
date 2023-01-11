@@ -34,7 +34,7 @@ export function Clients_Carousel({items}: ClientsProps){
         <Carousel 
             classNames={{
                 "indicators" : "pt-10",
-                "indicator" : "bg-white  focus-within:bg-green focus-within:h-[20px] h-[10px] w-[8px]",
+                "indicator" : "bg-white focus-within:bg-green focus-within:h-[20px] h-[10px] w-[8px]",
                 "controls": "h-10",
                 "control" : "hidden phone:flex bg-transparent text-white px-[15%] h-10 border-none hover:text-green hover:scale-[3] scale-[3]",
                 "slide" : "relative flex flex-col",

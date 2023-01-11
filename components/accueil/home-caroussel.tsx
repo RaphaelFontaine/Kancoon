@@ -36,8 +36,10 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
 
     const slides = items.map((item) => (
         <Carousel.Slide>
+            
             <Image 
-                className="mx-auto z-10 brightness-75 relative"
+                data-animate-type="motion-safe:animate-ZoomIn"
+                className="js-show-on-scroll mx-auto z-10 brightness-75 absolute"
                 src={item.image} 
                 width='full'
                 height='720px'
@@ -54,12 +56,12 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
                 </div>
                 <div className='flex flex-col items-center justify-center w-full mx-auto phone:flex-row py-4 space-x-0 phone:space-x-8 space-y-2 phone:space-y-0'>
                     <a href={item.link}>
-                        <Button className="button-home w-40 h-16 leading-3 hover:bg-dark-grey text-home-carroussel-button transition-all duration-[500ms] rounded-none " color="black">
+                        <Button data-animate-type="motion-safe:animate-fadeInLeft" className="js-show-on-scroll button-home w-40 h-16 leading-3 hover:bg-dark-grey text-home-carroussel-button transition-all duration-[500ms] rounded-none " color="black">
                             En Savoir +
                         </Button>
                     </a>
                     <a href="/contact">
-                        <Button className="button-home-right bg-transparent w-52 h-16 leading-3 text-white hover:text-black text-home-carroussel-button border-white border-1 hover:bg-white transition-all duration-[500ms] rounded-none">
+                        <Button data-animate-type="motion-safe:animate-fadeInRight" className="js-show-on-scroll button-home-right bg-transparent w-52 h-16 leading-3 text-white hover:text-black text-home-carroussel-button border-white border-1 hover:bg-white transition-all duration-[500ms] rounded-none">
                             Contactez Nous
                         </Button>
                     </a>
