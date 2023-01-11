@@ -1,6 +1,6 @@
 export const LA_SOCIETE_PRODUCT = [
     {
-        left: false,
+        left: true,
         title: "Une entreprise artisanale engagée",
         core: " Bien que Reconnu Garant de l’Environnement (RGE) KANCOON ne se satisfait pas de ce label. Les notions de développement durable font écho à notre conception de l’entreprise. Dans cette optique, nous avons une démarche d’amélioration continue pour réduire l’empreinte carbone liée à notre activité. De plus, nous veillons à ce que tous nos employés aient des conditions de travail confortables et sécures afin d’être totalement focalisé sur votre satisfaction.",
         images: [

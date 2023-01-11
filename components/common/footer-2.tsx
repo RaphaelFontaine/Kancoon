@@ -7,7 +7,7 @@ export default function FooterBis(){
                   <img src="/assets/all/logo-kancoon.png" alt={"Kancoon"} width="100%"/>
             </Link>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col max-w-[25%]">
                 <div className="font-semibold text-footer-title">
                     HORAIRES D'OUVERTURES <br/> <br/>
                 </div>
@@ -31,7 +31,7 @@ export default function FooterBis(){
                 </div>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col max-w-[25%]">
                 <div className="font-semibold text-footer-title">
                     RETROUVEZ NOUS <br/> <br/>
                 </div>

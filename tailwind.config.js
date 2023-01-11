@@ -18,6 +18,7 @@ module.exports = {
       'transparent': '#fff0000',
       'dark-grey': '#474746',
       'green': '#ADC906',
+      'green-2': '#e3f59d',
       'light-grey': '#868688',
       'footer-grey': '#24262d',
       'mentions-grey': '#383b45',
@@ -79,6 +80,7 @@ module.exports = {
       },
       animation: {
         'fadeInDown': 'fadeInDown 2s linear ',
+        'fadeInDownBand': 'fadeInDown 4s linear ',
         'fadeInLeft': 'fadeInLeft 2s linear ',
         'fadeInRight': 'fadeInRight 2s linear ',
         'fadeIn': 'fadeIn 2s linear ',

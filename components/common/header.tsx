@@ -97,7 +97,7 @@ export default function HeaderAction() {
     const router = useRouter();
     const items = links.map((link) => {
         const menuItems = link.links?.map((item) => (
-            <Menu.Item className={`${item.link == router.pathname ? "text-green" : " text-white"} transition-all duration-500 text-white hover:text-green font-police`} key={item.link}>
+            <Menu.Item className={`${item.link == router.pathname ? "text-green" : " text-white"} transition-all duration-500 text-white hover:text-green-2 font-police`} key={item.link}>
                 <Link
                     key={item.label}
                     href={item.link}
@@ -119,7 +119,7 @@ export default function HeaderAction() {
                             <Link 
                                 key={link.label}
                                 href={link.link}
-                                className={`transition-all duration-500 text-white hover:text-green font-police ${link.label == 'Stores' ? "cursor-default" : "cursor-pointer" }`}
+                                className={`transition-all duration-500 text-white hover:text-green-2 font-police ${link.label == 'Stores' ? "cursor-default" : "cursor-pointer" }`}
                                 target={link.label == 'Menuiserie IZY' ? "_blank" : "_self"}
                             >
                                 <Center>
@@ -141,7 +141,7 @@ export default function HeaderAction() {
             <Link
                 key={link.label}
                 href={link.link}
-                className={`${link.link == router.pathname ? "text-green" : " text-white"} transition-all duration-500 text-white hover:text-green font-police`}
+                className={`${link.link == router.pathname ? "text-green" : " text-white"} transition-all duration-500 text-white hover:text-green-2 font-police`}
             >
                 {link.label}
             </Link>
@@ -174,32 +174,31 @@ export default function HeaderAction() {
 
 function Phone_menu_item({link} : {link : Link}){
     const [opened_phone, setOpened] = useState(false);
-
     return(
         <>
             <div className='flex border-b-2 text-white border-b-white hover:bg-white/20'>
                 <Link 
                     href={link.link}
                     target={link.label == 'Menuiserie IZY' ? "_blank" : "_self"}
-                    className={`flex item-center pl-4 py-3 hover:text-green transition-all ${link.label == 'Stores' ? "cursor-default" : "cursor-pointer" }`}>
+                    className={`flex item-center pl-4 py-3 hover:text-green-2 transition-all ${link.label == 'Stores' ? "cursor-default" : "cursor-pointer" }`}>
                         {link.label.toUpperCase()}
                 </Link> 
                 {
                     link?.links && 
                     <button 
-                        className='ml-auto px-4 py-3 border-2 border-black hover:bg-footer-grey hover:text-green transition-all'
+                        className='ml-auto px-4 py-3 border-2 border-black hover:bg-footer-grey hover:text-green-2 transition-all'
                         onClick={() => setOpened(!opened_phone)}>
                             {opened_phone ? '-' : '+'}
                     </button>
                 }
             </div>
             {link?.links && 
-                <Collapse in={opened_phone} className='ml-auto px-4 hover:text-green transition-all'>
+                <Collapse in={opened_phone} className='ml-auto px-4 hover:text-green-2 transition-all'>
                     {link.links.map(sublink => 
                         <Link
                             key={sublink.label}
                             href={sublink.link}
-                            className="flex item-center pl-6 py-3 border-b-2 border-white hover:bg-white/20 transition-all duration-500 text-white hover:text-green text-sm font-police"
+                            className="flex item-center pl-6 py-3 border-b-2 border-white hover:bg-white/20 transition-all duration-500 text-white hover:text-green-2 text-sm font-police"
                             target={link.label == 'Menuiserie IZY' ? "_blank" : "_self"}
                         >
                             {sublink.label.toUpperCase()}
