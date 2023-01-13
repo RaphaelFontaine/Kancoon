@@ -4,7 +4,6 @@ import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
 import Produit from '../components/pergolas/produits'
 import RealisationsPergolas from '../components/pergolas/realisations'
-import Realisations from '../components/pergolas/realisations'
 
 export default function Pergolas() {
     return (
@@ -21,7 +20,6 @@ export default function Pergolas() {
             </main>
             <Footer></Footer>
             <MentionsLegales></MentionsLegales>
-
         </div>
     )
 }

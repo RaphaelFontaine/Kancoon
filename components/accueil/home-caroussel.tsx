@@ -46,7 +46,7 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
             />   
 
             <div className='z-20 absolute w-full mx-auto mt-60 flex flex-col items-center justify-center'>
-                <div data-animate-type="motion-safe:animate-fadeInLeft" className='js-show-on-scroll delay-700 flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
+                <div data-animate-type="motion-safe:animate-fadeInLeftHome" className='js-show-on-scroll delay-700 flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
                     <div className='text-white'>
                         {item.TransparentText}
                         <div className='text-white uppercase border-green border-4'>
@@ -56,12 +56,12 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
                 </div>
                 <div className='flex flex-col items-center justify-center w-full mx-auto phone:flex-row py-4 space-x-0 phone:space-x-8 space-y-2 phone:space-y-0'>
                     <a href={item.link}>
-                        <Button data-animate-type="motion-safe:animate-fadeInLeft" className="js-show-on-scroll button-home w-40 h-16 leading-3 hover:bg-dark-grey text-home-carroussel-button transition-all duration-[500ms] rounded-none " color="black">
+                        <Button data-animate-type="motion-safe:animate-fadeInLeftHome" className="js-show-on-scroll button-home w-40 h-16 leading-3 hover:bg-dark-grey text-home-carroussel-button transition-all duration-[500ms] rounded-none " color="black">
                             En Savoir +
                         </Button>
                     </a>
                     <a href="/contact">
-                        <Button data-animate-type="motion-safe:animate-fadeInRight" className="js-show-on-scroll button-home-right bg-transparent w-52 h-16 leading-3 text-white hover:text-black text-home-carroussel-button border-white border-1 hover:bg-white transition-all duration-[500ms] rounded-none">
+                        <Button data-animate-type="motion-safe:animate-fadeInRightHome" className="js-show-on-scroll button-home-right bg-transparent w-52 h-16 leading-3 text-white hover:text-black text-home-carroussel-button border-white border-1 hover:bg-white transition-all duration-[500ms] rounded-none">
                             Contactez Nous
                         </Button>
                     </a>

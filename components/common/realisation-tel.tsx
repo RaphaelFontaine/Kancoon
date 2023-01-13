@@ -3,7 +3,6 @@ import { Button, Modal, Group } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import { Image } from "@mantine/core";
 import Autoplay from 'embla-carousel-autoplay';
-
 interface RealisationCarouselProps {
     items : {
         image : string,
@@ -17,11 +16,9 @@ export default function RealisationTel({ items }: RealisationCarouselProps) {
 
   const slides = items.map((item) => (
     <Carousel.Slide>
-        <Image 
-            // className='rotate-90'
+        <Image
             src={item.image} 
-            height='auto' 
-            width='100vh'
+            width={'600px'}
         />
     </Carousel.Slide>
 ))
@@ -29,39 +26,47 @@ const autoplay = useRef(Autoplay({ delay: 2000 }));
 
   return (
     <>
-      <Group className='visible bp:hidden' position="center">
+      {/* <Group className='visible phone:hidden' position="center">
         <Button className='button-real' onClick={() => setOpened(true)}>NOS RÉALISATIONS</Button>
       </Group>
       <Modal
-        className='visible bp:hidden'
+        className='visible phone:hidden bg-transparent h-full'
         opened={opened}
         size="100%"
-        // padding={0}
         transitionDuration={TRANSITION_DURATION}
         withCloseButton={true}
         onClose={() => setOpened(false)}
       >
-        <Carousel 
-            // className="transition-all duration-1000"
-            // classNames={{
-            //     "indicators" : "mb-16",
-            //     "indicator" : "bg-white",
-            //     "control" : "hidden phone:flex bg-white",
-            //     "slide" : "relative flex flex-col",
-            // }}
-            orientation="vertical"
-            slideSize= '100%'
-            withIndicators 
-            sx={{ maxWidth: 320 }}
-            mx="auto"
-            plugins={[autoplay.current]}
-            loop
-            onMouseEnter={autoplay.current.stop}
-            onMouseLeave={autoplay.current.reset}
-            >
-                {slides}
+       <Carousel 
+          classNames={{
+            "container" : "w-auto h-[800px]",
+            "slide" : "rotate-90 h-[800px] flex items-center justify-center"
+          }}
+          // className="h-full"
+          orientation="vertical" 
+          height={'100vw'} 
+          // sx={{ maxWidth: 820 }}
+          loop
+          slideSize= '100%'
+          >
+            {slides}
         </Carousel>
-      </Modal>
+      </Modal> */}
+
+      <Carousel 
+          classNames={{
+            "root" : "h-[600px] bg-black",
+            "slide" : "rotate-90 w-[600px] bg-green flex items-center justify-center",
+            "container" : "w-auto h-[600px] flex items-center justify-center",
+          }}
+          // className="h-full"
+          orientation="vertical"
+          // sx={{ maxWidth: 820 }}
+          loop
+          slideSize= '100%'
+          >
+            {slides}
+        </Carousel>
     </>
   );
 }

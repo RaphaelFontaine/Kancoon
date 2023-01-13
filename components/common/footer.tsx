@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer(){
     return(
-        <div className="flex flex-wrap gap-20 bg-footer-grey text-white p-8 font-light items-center justify-center">
+        <div className="flex flex-wrap gap-10 bg-footer-grey text-white p-8 font-light items-top justify-center">
             <Link href={"/"}>
                   <img src="/assets/all/logo-kancoon.png" alt={"Kancoon"} width="100%"/>
             </Link>

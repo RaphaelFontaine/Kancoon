@@ -65,8 +65,18 @@ module.exports = {
           '0%': { opacity: '0.5', transform: 'translateX(-200px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
+        fadeInLeftHome: {
+          '0%': { opacity: '0', transform: 'translateX(-200px)' },
+          '10%': { opacity: '1', transform: 'translateX(-180px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
         fadeInRight: {
           '0%': { opacity: '0.5', transform: 'translateX(+200px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        fadeInRightHome: {
+          '0%': { opacity: '0', transform: 'translateX(+200px)' },
+          '10%': { opacity: '1', transform: 'translateX(+180px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
         fadeIn: {
@@ -82,7 +92,9 @@ module.exports = {
         'fadeInDown': 'fadeInDown 2s linear ',
         'fadeInDownBand': 'fadeInDown 4s linear ',
         'fadeInLeft': 'fadeInLeft 2s linear ',
+        'fadeInLeftHome': 'fadeInLeftHome 0.5s linear ',
         'fadeInRight': 'fadeInRight 2s linear ',
+        'fadeInRightHome': 'fadeInRightHome 0.5s linear ',
         'fadeIn': 'fadeIn 2s linear ',
         'ZoomIn': 'ZoomIn 5s linear',
       },
