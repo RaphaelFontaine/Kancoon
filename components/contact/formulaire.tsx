@@ -4,7 +4,6 @@ import ReCAPTCHA from "react-google-recaptcha"
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
-import Link from 'next/link';
 
 
 export function GetInTouchSimple() {
@@ -56,16 +55,18 @@ export function GetInTouchSimple() {
               classNames={{
                 "input": "focus:border-green"
               }}
+              required={true}
               className='hover:border-green'
               placeholder="Nom/Prénom (obligatoire)"
               name="name"
               variant="filled"
               {...form.getInputProps('name')}
-              />
-              <TextInput
+            />
+            <TextInput
               classNames={{
                 "input": "focus:border-green"
               }}
+              required={true}
               className='hover:border-green'
               placeholder="E-mail (obligatoire)"
               name="email"
@@ -78,13 +79,14 @@ export function GetInTouchSimple() {
               classNames={{
                 "input": "focus:border-green"
               }}
+              required={true}
               className='focus:border-green'
               placeholder="Téléphone (obligatoire)"
               name="phone"
               variant="filled"
               {...form.getInputProps('phone')}
-              />
-              <TextInput
+            />
+            <TextInput
               classNames={{
                 "input": "focus:border-green"
               }}

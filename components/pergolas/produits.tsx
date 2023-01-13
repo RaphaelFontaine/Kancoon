@@ -30,7 +30,6 @@ export default function Produit(){
         <>
             <Band computer={BANDEAU_PERGOLA.computer} phone={BANDEAU_PERGOLA.phone} alt={BANDEAU_PERGOLA.alt}/>
 
-
             <div  className="flex flex-col bp:flex-row bp:h-case-size">
                 <div data-animate-type="motion-safe:animate-fadeInLeft" className="js-show-on-scroll flex flex-row bg-white w-full bp:w-1/2 text-title-color ">
                     <div className="flex flex-row bg-white h-grey-band pl-[40px]">
