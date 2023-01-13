@@ -26,7 +26,7 @@ export default function Produit(){
     
     return(
         <>
-            <Band image={BANDEAU_PARASOLS.image} alt={BANDEAU_PARASOLS.alt}/>
+            <Band computer={BANDEAU_PARASOLS.computer} phone={BANDEAU_PARASOLS.phone} alt={BANDEAU_PARASOLS.alt}/>
 
             <div className="flex flex-col bp:flex-row bp:h-case-size">
                 <div data-animate-type="motion-safe:animate-fadeInLeft" className="js-show-on-scroll h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">

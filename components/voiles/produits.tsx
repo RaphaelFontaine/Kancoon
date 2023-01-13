@@ -6,7 +6,7 @@ import { Showcase } from "../common/product";
 export default function Produit(){
     return(
         <>
-            <Band image={BANDEAU_VOILE.image} alt={BANDEAU_VOILE.alt}/>
+            <Band computer={BANDEAU_VOILE.computer} phone={BANDEAU_VOILE.phone} alt={BANDEAU_VOILE.alt}/>
 
             {VOILES_PRODUCT.map((product, index) => 
                 <Showcase key={index}

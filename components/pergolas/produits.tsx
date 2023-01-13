@@ -28,7 +28,7 @@ export default function Produit(){
 
     return(
         <>
-            <Band image={BANDEAU_PERGOLA.image} alt={BANDEAU_PERGOLA.alt}/>
+            <Band computer={BANDEAU_PERGOLA.computer} phone={BANDEAU_PERGOLA.phone} alt={BANDEAU_PERGOLA.alt}/>
 
 
             <div  className="flex flex-col bp:flex-row bp:h-case-size">

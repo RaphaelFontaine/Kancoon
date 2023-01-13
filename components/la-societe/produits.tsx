@@ -28,7 +28,7 @@ export default function Produit(){
 
     return(
         <>
-            <Band image={BANDEAU_LA_SOCIETE.image} alt={BANDEAU_LA_SOCIETE.alt}/>
+            <Band computer={BANDEAU_LA_SOCIETE.computer} phone={BANDEAU_LA_SOCIETE.phone} alt={BANDEAU_LA_SOCIETE.alt}/>
 
             <div className="flex flex-col bp:flex-row bp:h-case-size">
                 <div data-animate-type="motion-safe:animate-fadeInLeft" className="js-show-on-scroll h-auto flex flex-row bg-white bp:w-1/2 w-full text-corps-color">

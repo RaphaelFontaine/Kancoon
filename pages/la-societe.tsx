@@ -20,7 +20,6 @@ export default function Parasols() {
                 <Produit></Produit>
                 <Satisfaction></Satisfaction>
                 <Partenaires></Partenaires>
-                <ScrollTopButton></ScrollTopButton>
             </main>
             <Footer></Footer>
             <MentionsLegales></MentionsLegales>

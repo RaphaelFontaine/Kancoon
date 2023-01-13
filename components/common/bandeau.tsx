@@ -1,12 +1,18 @@
 import React from 'react';
 import {useEffect} from 'react';
+import { useScrollIntoView } from '@mantine/hooks';
+import { Button, Text } from '@mantine/core';
+import { FiArrowDownCircle } from 'react-icons/fi';
 
 interface BandProps {
-    image : string
+    computer : string
+    phone: string
     alt : string
 }
 
-export function Band(props : any){
+export function Band(props : BandProps){
+
+    const { scrollIntoView, targetRef } = useScrollIntoView<HTMLDivElement>({ offset: 60 });
 
     useEffect(() => {
         const targets = document.querySelectorAll(".js-show-on-scroll");
@@ -28,8 +34,12 @@ export function Band(props : any){
     }, []);
 
     return(
-            <div data-animate-type="motion-safe:animate-fadeInDown" className="js-show-on-scroll  bg-white text-black text-primary-2" >
-                <img src={props.image} alt={props.alt} loading="lazy"/>
+        <>
+            <div data-animate-type="motion-safe:animate-fadeInDown" className="js-show-on-scroll bg-white text-black text-primary-2" >
+                <img className="hidden phone:flex" src={props.computer} alt={props.alt} loading="lazy"/>
+                <img className="flex phone:hidden" src={props.phone} alt={props.alt} loading="lazy"/>
             </div>
+            
+        </>  
     )
 }

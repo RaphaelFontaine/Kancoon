@@ -7,7 +7,7 @@ export default function Produit(){
     return(
         <>
         
-            <Band image={BANDEAU_TERRASSE.image} alt={BANDEAU_TERRASSE.alt}/>
+            <Band computer={BANDEAU_TERRASSE.computer} phone={BANDEAU_TERRASSE.phone} alt={BANDEAU_TERRASSE.alt}/>
 
             {TERRASSES_PRODUCT.map((product, index) => 
                 <Showcase key={index}
