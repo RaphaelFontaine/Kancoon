@@ -1,77 +1,59 @@
 import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
-import { useForm } from '@mantine/form';
 import ReCAPTCHA from "react-google-recaptcha"
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
-import Swal from 'sweetalert2';
+import { useForm } from "react-hook-form";
+import { IMail } from 'models';
+import { RequestOptions } from 'https';
 
 
 export function GetInTouchSimple() {
-  const form = useForm({
-    initialValues: {
-      name: '',
-      email: '',
-      phone:'',
-      subject: '',
-      message: '',
-    },
-    validate: {
-      name: (value) => value.trim().length < 2,
-      email: (value) => !/^\S+@\S+$/.test(value),
-      phone: (value) => value.trim().length < 9 ,
-    },
-  });
+  const { register, trigger, getValues, formState : { errors } } = useForm<IMail>()
 
-  const SERVICE_ID = "service_sipof9q";
-  const TEMPLATE_ID = "template_cyyla5d";
-  const USER_ID = "YxQrxY5PhiyAwfHUq";
-
-  const handleOnSubmit = (e : any) => {
-    e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-      .then((result) => {
-        console.log(result.text);
-        Swal.fire({
-          icon: 'success',
-          title: 'Message envoyé !'
-        })
-      }, (error) => {
-        console.log(error.text);
-        Swal.fire({
-          icon: 'error',
-          title: 'Erreur lors de l\'envoi',
-          text: error.text,
-        })
-      });
-    e.target.reset()
-  };
-  
+  const submitForm = async() => {
+    const is_valid = await trigger()
+    if(!is_valid) return
+    try {
+      const requestOptions : RequestInit = {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json' 
+        },
+        body: JSON.stringify(getValues())
+      }
+      const response = await fetch('api/send_email', requestOptions)
+      console.log(response)
+    } catch (error) {
+      
+    }
+  }
 
   return (
-    <form onSubmit={handleOnSubmit}>
+    <div>
         <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
         <SimpleGrid className='px-10 pt-10 space-x-5' cols={2} mt="xl" >
-            <TextInput
-              classNames={{
-                "input": "focus:border-green"
-              }}
-              required={true}
+            <TextInput label="Nom complet" placeholder="Ahmed Sila"
+              {...register('full_name', {
+                required : { value : true, message : "Ce champ est requis !"},
+                minLength : { value : 2, message : ""}
+              })}
+              error={errors.full_name?.message}
               className='hover:border-green'
-              placeholder="Nom/Prénom (obligatoire)"
-              name="name"
-              variant="filled"
-              {...form.getInputProps('name')}
+              classNames={{
+                "input": "focus:border-green",
+                'label' : "text-white"
+              }}
             />
             <TextInput
               classNames={{
                 "input": "focus:border-green"
               }}
-              required={true}
               className='hover:border-green'
               placeholder="E-mail (obligatoire)"
-              name="email"
-              variant="filled"
-              {...form.getInputProps('email')}
+              {...register('email', {
+                required : { value : true, message : "Ce champ est requis !"},
+                minLength : { value : 2, message : ""}
+              })}
+              error={errors.email?.message}
             />
         </SimpleGrid>
         <SimpleGrid className='px-10 py-10 space-x-5' cols={2} mt="xl" >
@@ -79,12 +61,13 @@ export function GetInTouchSimple() {
               classNames={{
                 "input": "focus:border-green"
               }}
-              required={true}
               className='focus:border-green'
               placeholder="Téléphone (obligatoire)"
-              name="phone"
-              variant="filled"
-              {...form.getInputProps('phone')}
+              {...register('phone', {
+                required : { value : true, message : "Ce champ est requis !"},
+                minLength : { value : 2, message : ""}
+              })}
+              error={errors.phone?.message}
             />
             <TextInput
               classNames={{
@@ -92,9 +75,8 @@ export function GetInTouchSimple() {
               }}
               className='hover:border-green'
               placeholder="Sujet"
-              name="sujet"
-              variant="filled"
-              {...form.getInputProps('sujet')}
+              {...register('subject')}
+              error={errors.subject?.message}
             />
         </SimpleGrid>
         <Textarea
@@ -107,19 +89,19 @@ export function GetInTouchSimple() {
             maxRows={10}
             minRows={5}
             autosize
-            name="message"
-            variant="filled"
-            {...form.getInputProps('message')}
+            {...register('message')}
+            error={errors.message?.message}
         />
         
         <Group position="center" mt="xl" className='flex flex-col '>
-          <ReCAPTCHA className='mt-7' sitekey='6LcdHcsZAAAAAJqdcjHkgjydMxHY-jtTU-Jl0FrO'
-          />
-          <Button type="submit" size="md" className='bg-white button-form text-green hover:text-white mt-7 hover:bg-green transition-all active:scale-90 duration-1000 mb-10'>
+          {/* <ReCAPTCHA className='mt-7' sitekey='6LcdHcsZAAAAAJqdcjHkgjydMxHY-jtTU-Jl0FrO'
+          /> */}
+          <Button onClick={submitForm}
+          type="submit" size="md" className='bg-white button-form text-green hover:text-white mt-7 hover:bg-green transition-all active:scale-90 duration-1000 mb-10'>
             Envoyer
           </Button>
         </Group>
         </div>
-    </form>
+    </div>
   );
 }
