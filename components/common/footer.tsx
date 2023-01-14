@@ -2,49 +2,53 @@ import Link from "next/link";
 
 export default function Footer(){
     return(
-        <div className="flex flex-wrap gap-10 bg-footer-grey text-white p-8 font-light items-top justify-center">
-            <Link href={"/"}>
-                  <img src="/assets/all/logo-kancoon.png" alt={"Kancoon"} width="100%"/>
+        <div className="flex flex-wrap gap-x-16 gap-y-10 bg-footer-grey text-white p-8 font-light items-top justify-center">
+            <Link href={"/"} className="flex items-center">
+                  <img src="/assets/all/logo-kancoon.png" alt={"Kancoon"}/>
             </Link>
 
-            <div className="flex flex-col max-w-[25%]">
+            <div className="flex flex-col space-y-6">
                 <div className="font-semibold text-footer-title">
-                    HORAIRES D'OUVERTURES <br/> <br/>
+                    HORAIRES D'OUVERTURES
                 </div>
-                <div className="text-footer-corps">
-                    Ouvert du lundi au vendredi de 9h30 à 12h et de 14h30 à 18h.  <br/> <br/>
-                </div>
-                <div className="text-footer-corps">
-                    Possibilité de prendre RDV sur d’autres horaires.
+                <div className="space-y-3 max-w-xs text-footer-corps">
+                  <p>
+                      Ouvert du lundi au vendredi de 9h30 à 12h et de 14h30 à 18h.
+                  </p>
+                  <p>
+                      Possibilité de prendre RDV sur d’autres horaires.
+                  </p>
                 </div>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col space-y-6">
                 <div className="font-semibold text-footer-title">
-                    CONTACTEZ NOUS <br/> <br/>
+                    CONTACTEZ NOUS
                 </div>
-                <div className="text-footer-corps">
-                    Tel : <a className="hover:text-green transition-all duration-500" href="tel:+33251959400">02 51 95 94 00 <br/> <br/></a> 
-                </div>
-                <div className="text-footer-corps">
-                    Email : <a className="hover:text-green transition-all duration-500" href="mailto:contact@kancoon.fr">contact@kancoon.fr</a>
+                <div  className="space-y-3 max-w-xs text-footer-corps">
+                  <p>
+                      Tel : <a className="hover:text-green transition-all duration-500" href="tel:+33251959400">02 51 95 94 00</a> 
+                  </p>
+                  <p>
+                      Email : <a className="hover:text-green transition-all duration-500" href="mailto:contact@kancoon.fr">contact@kancoon.fr</a>
+                  </p>
                 </div>
             </div>
 
-            <div className="flex flex-col max-w-[25%]">
+            <div className="flex flex-col space-y-6">
                 <div className="font-semibold text-footer-title">
-                    RETROUVEZ NOUS <br/> <br/>
+                    RETROUVEZ NOUS
                 </div>
-                <div className="text-footer-corps">
+                <div className="text-footer-corps max-w-xs">
                     <a className="hover:text-green transition-all duration-500" href="https://www.google.com/maps/place/Kancoon/@46.5190377,-1.7813082,15z/data=!4m2!3m1!1s0x0:0xae810b9969796b41?sa=X&ved=2ahUKEwjDgf3cxcDtAhUyxIUKHfn4AJoQ_BIwDHoECBYQBQ" target={"_blank"}> 
                         19 rue Clément Ader Olonne sur Mer 85340 Les Sables d’Olonne
                     </a>
                 </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center space-y-6">
                 <div className="font-semibold text-footer-title">
-                  NOS RESEAUX SOCIAUX <br/> <br/>
+                  NOS RESEAUX SOCIAUX
                 </div>
                 <div className="flex flex-row text-footer-corps">
 
