@@ -18,7 +18,8 @@ export default function RealisationTel({ items }: RealisationCarouselProps) {
     <Carousel.Slide>
         <Image
             src={item.image} 
-            width={'600px'}
+            className="rotate-90 h-80 w-[600px] bg-black"
+            // width={'600px'}
         />
     </Carousel.Slide>
 ))
@@ -33,23 +34,23 @@ const autoplay = useRef(Autoplay({ delay: 2000 }));
       <Modal
         className='visible phone:hidden bg-transparent h-full'
         opened={opened}
-        size="100%"
+        // size="100%"
         transitionDuration={TRANSITION_DURATION}
         withCloseButton={true}
         onClose={() => setOpened(false)}
       >
-       <Carousel
-          classNames={{
-            "root" : "h-[600px] bg-black",
-            "viewport" : "rotate-90 bg-youtube w-[600px] flex items-center justify-center",
-            // "slide" : "rotate-90 w-[900px] bg-green",
-          }}
-          orientation="vertical"
-          loop
-          slideSize= '100%'
-        >
+        <Carousel
+            classNames={{
+              "root" : "bg-black",
+              "viewport" : "bg-youtube flex items-center justify-center",
+              "slide" : "bg-green h-[600px] ",
+            }}
+            orientation="vertical"
+            height={600}
+            loop
+          >
             {slides}
-      </Carousel>
+        </Carousel>
       </Modal>
 
       {/* <Carousel 

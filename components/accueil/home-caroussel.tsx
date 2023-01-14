@@ -34,12 +34,11 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
         });
     }, []);
 
-    const slides = items.map((item) => (
+    const slides = items.map((item, index) => (
         <Carousel.Slide>
-            
             <Image 
                 data-animate-type="motion-safe:animate-ZoomIn"
-                className="js-show-on-scroll mx-auto z-10 brightness-75 absolute"
+                className="mx-auto z-10 brightness-75 absolute"
                 src={item.image} 
                 width='full'
                 height='720px'
@@ -70,12 +69,11 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
         </Carousel.Slide>
     ))
     const autoplay = useRef(Autoplay({ delay: 3500 }));
-
     return (
         <Carousel 
             classNames={{
                 "controls": "h-5 hover:text-green rounded-full px-10",
-                "control" : "hidden phone:flex bg-transparent h-5 text-white rounded-full hover:scale-[3] scale-[3]",
+                "control" : "hidden phone:flex bg-transparent h-5 text-white rounded-full scale-[3]",
                 "slide" : "relative flex flex-col",
             }}
             height='720px'

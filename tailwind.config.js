@@ -89,12 +89,14 @@ module.exports = {
         }
       },
       animation: {
-        'fadeInDown': 'fadeInDown 2s linear ',
-        'fadeInDownBand': 'fadeInDown 4s linear ',
+        'fadeInDown': 'fadeInDown 2s linear',
+        'fadeInDownBand': 'fadeInDown 2s linear 2s ',
         'fadeInLeft': 'fadeInLeft 2s linear ',
-        'fadeInLeftHome': 'fadeInLeftHome 0.5s linear ',
+        'fadeInLeftHome': 'fadeInLeftHome 0.5s linear 0.3s ',
+        'fadeInLeftHomeButton': 'fadeInLeftHome 0.5s linear 1s ',
         'fadeInRight': 'fadeInRight 2s linear ',
         'fadeInRightHome': 'fadeInRightHome 0.5s linear ',
+        'fadeInRightHomeButton': 'fadeInRightHome 0.5s linear 1s',
         'fadeIn': 'fadeIn 2s linear ',
         'ZoomIn': 'ZoomIn 5s linear',
       },

@@ -33,6 +33,7 @@
     "react-countup": "^6.4.0",
     "react-dom": "18.2.0",
     "react-google-recaptcha": "^2.1.0",
+    "react-hook-form": "^7.42.0",
     "react-icons": "^4.7.1",
     "react-responsive-carousel": "^3.2.23",
     "react-visibility-sensor": "^5.1.1",

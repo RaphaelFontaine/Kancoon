@@ -1,5 +1,5 @@
 import { Carousel } from "@mantine/carousel";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Autoplay from 'embla-carousel-autoplay';
 import { Image } from "@mantine/core";
 import { CLIENTS_KANCOON } from "../../utils/clients";
@@ -13,7 +13,8 @@ interface ClientsProps {
 }
 
 export function Clients_Carousel({items}: ClientsProps){
-    const slides = items.map((item) => (
+    const [selectedSlide, setSelectedSlide] = useState(0)
+    const slides = items.map((item, index) => (
         <Carousel.Slide>
             <h1 className="text-white py-4 font-bold text-center text-client-size-titre">
                 {item.titre}
@@ -22,7 +23,7 @@ export function Clients_Carousel({items}: ClientsProps){
                 {item.texte}
             </h1>
             <Image 
-                className="mx-auto flex text-center pt-6 justify-center hover:scale-110 hover:shadow-md transition-all duration-700"
+                className={`${ selectedSlide === index ? "bg-green h-[20px]" : ""} mx-auto flex text-center pt-6 justify-center hover:scale-110 hover:shadow-md transition-all duration-700`}
                 src={item.image} 
                 width='100px'
                 height='78px'
@@ -34,13 +35,14 @@ export function Clients_Carousel({items}: ClientsProps){
         <Carousel 
             classNames={{
                 "indicators" : "pt-10",
-                "indicator" : "bg-white focus-within:bg-green focus-within:h-[20px] h-[10px] w-[8px]",
+                "indicator" :  "${ selectedSlide === index ? 'bg-green h-[20px]' : ''} bg-white h-[10px] w-[8px]",
                 "controls": "h-10",
                 "control" : "hidden phone:flex bg-transparent text-white px-[15%] h-10 border-none hover:text-green hover:scale-[3] scale-[3]",
                 "slide" : "relative flex flex-col",
             }}
             height='420px'
             slideSize= '100%'
+            onSlideChange={ (index) => { setSelectedSlide(index)}}
             withIndicators
             plugins={[autoplay.current]}
             loop

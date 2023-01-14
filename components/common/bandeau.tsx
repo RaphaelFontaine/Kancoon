@@ -33,13 +33,10 @@ export function Band(props : BandProps){
         });
     }, []);
 
-    return(
-        <>
-            <div data-animate-type="motion-safe:animate-fadeInDown" className="js-show-on-scroll bg-white text-black text-primary-2" >
-                <img className="hidden phone:flex" src={props.computer} alt={props.alt} loading="lazy"/>
-                <img className="flex phone:hidden" src={props.phone} alt={props.alt} loading="lazy"/>
-            </div>
-            
-        </>  
+    return( 
+        <div data-animate-type="motion-safe:animate-fadeInDown" className="js-show-on-scroll bg-white text-black text-primary-2" >
+            <img className="hidden phone:flex" src={props.computer} alt={props.alt} loading="lazy"/>
+            <img className="flex phone:hidden" src={props.phone} alt={props.alt} loading="lazy"/>
+        </div>
     )
 }

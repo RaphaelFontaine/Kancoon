@@ -32,7 +32,7 @@ export function Showcase(props : ShowcaseProps){
         <div className={`flex flex-col bp:flex-row z-1 h-auto ${left ? "" : "bp:flex-row-reverse"}`}>
             <div data-animate-type={`${left ? "motion-safe:animate-fadeInLeft" : "motion-safe:animate-fadeInRight"}`} className={`${left ? "bg-white text-corps-color" : "bg-general-grey text-white"} js-show-on-scroll h-auto flex flex-row bp:w-1/2 w-full`}>
                 <div className={`${left ? "pl-band-left" : "right-0 pr-band-left"} absolute flex flex-row z-1 h-grey-band`}>
-                    <div className={`${left ? "bg-general-grey h-grey-band" : "bg-green h-green-band"} w-grey-band`}>
+                    <div  className={`${left ? "bg-general-grey h-grey-band" : "bg-green h-green-band"}  w-grey-band`}>
                     </div>
                     <div className={`${left ? "bg-white" : "bg-general-grey"} pl-band-between`}>
                         <div className={`${left ? "bg-green h-green-band" : " bg-white h-grey-band"} w-green-band`}>
