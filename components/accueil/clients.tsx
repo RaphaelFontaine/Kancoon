@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import Autoplay from 'embla-carousel-autoplay';
 import { Image } from "@mantine/core";
 import { CLIENTS_KANCOON } from "../../utils/clients";
+import { GrMapLocation } from 'react-icons/gr'
 
 interface ClientsProps {
     items : {
@@ -16,7 +17,9 @@ export function Clients_Carousel({items}: ClientsProps){
     const [selectedSlide, setSelectedSlide] = useState(0)
     const slides = items.map((item, index) => (
         <Carousel.Slide>
+            {/* <GrMapLocation width='4em' height='4em' color="white"/> */}
             <h1 className="text-white py-4 font-bold text-center text-client-size-titre">
+                
                 {item.titre}
             </h1>
             <h1 className="text-client-size-texte text-center px-[22%] py-8">
@@ -35,7 +38,7 @@ export function Clients_Carousel({items}: ClientsProps){
         <Carousel 
             classNames={{
                 "indicators" : "pt-10",
-                "indicator" :  "{`${ selectedSlide === index ? 'bg-green h-[20px]' : ''} bg-white h-[10px] w-[8px]`}",
+                "indicator" :  "bg-white h-[10px] w-[10px] rounded-full",
                 "controls": "h-10",
                 "control" : "hidden phone:flex bg-transparent text-white px-[15%] h-10 border-none hover:text-green hover:scale-[3] scale-[3]",
                 "slide" : "relative flex flex-col",
@@ -59,7 +62,7 @@ export function Clients_Carousel({items}: ClientsProps){
 export default function Clients(){
     return(
         <div className="bg-black flex flex-col text-white text-center">
-            <div className="py-10 text-partenaire-size">
+            <div className="py-10 text-partenaire-size uppercase">
                 Quelques Clients Professionnels <br/>
             </div>
             <Clients_Carousel items={CLIENTS_KANCOON}/>

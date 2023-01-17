@@ -31,7 +31,7 @@ export function GetInTouchSimple() {
     <div>
         <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
         <SimpleGrid className='px-10 pt-10 space-x-5' cols={2} mt="xl" >
-            <TextInput label="Nom complet" placeholder="Ahmed Sila"
+            <TextInput label="Nom complet" placeholder="Jean Dupont"
               {...register('full_name', {
                 required : { value : true, message : "Ce champ est requis !"},
                 minLength : { value : 2, message : ""}
@@ -43,12 +43,12 @@ export function GetInTouchSimple() {
                 'label' : "text-white"
               }}
             />
-            <TextInput
+            <TextInput label="E-mail" placeholder="jean.dupont@gmail.com"
               classNames={{
-                "input": "focus:border-green"
+                "input": "focus:border-green",
+                'label' : "text-white"
               }}
               className='hover:border-green'
-              placeholder="E-mail (obligatoire)"
               {...register('email', {
                 required : { value : true, message : "Ce champ est requis !"},
                 minLength : { value : 2, message : ""}
@@ -57,35 +57,35 @@ export function GetInTouchSimple() {
             />
         </SimpleGrid>
         <SimpleGrid className='px-10 py-10 space-x-5' cols={2} mt="xl" >
-            <TextInput
+            <TextInput label="Téléphone" placeholder="06 11 22 33 44"
               classNames={{
-                "input": "focus:border-green"
+                "input": "focus:border-green",
+                'label' : "text-white"
               }}
               className='focus:border-green'
-              placeholder="Téléphone (obligatoire)"
               {...register('phone', {
                 required : { value : true, message : "Ce champ est requis !"},
                 minLength : { value : 2, message : ""}
               })}
               error={errors.phone?.message}
             />
-            <TextInput
+            <TextInput label="Sujet" placeholder="Stores Bannes"
               classNames={{
-                "input": "focus:border-green"
+                "input": "focus:border-green",
+                'label' : "text-white"
               }}
               className='hover:border-green'
-              placeholder="Sujet"
               {...register('subject')}
               error={errors.subject?.message}
             />
         </SimpleGrid>
-        <Textarea
+        <Textarea label="Message"
             classNames={{
-              "input": "focus:border-green"
+              "input": "focus:border-green",
+              'label' : "text-white"
             }}
             className='mx-10'
             mt="md"
-            placeholder="Message"
             maxRows={10}
             minRows={5}
             autosize
