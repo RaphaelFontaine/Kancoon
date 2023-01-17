@@ -73,7 +73,7 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
         <Carousel 
             classNames={{
                 "controls": "h-5 hover:text-green rounded-full px-10",
-                "control" : "hidden phone:flex bg-transparent h-5 text-white rounded-full scale-[3]",
+                "control" : "hidden phone:flex bg-transparent h-5 text-white rounded-full scale-[3] hover:scale-[3]",
                 "slide" : "relative flex flex-col",
             }}
             height='720px'

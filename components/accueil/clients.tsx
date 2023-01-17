@@ -23,7 +23,7 @@ export function Clients_Carousel({items}: ClientsProps){
                 {item.texte}
             </h1>
             <Image 
-                className={`${ selectedSlide === index ? "bg-green h-[20px]" : ""} mx-auto flex text-center pt-6 justify-center hover:scale-110 hover:shadow-md transition-all duration-700`}
+                className="mx-auto flex text-center pt-6 justify-center hover:scale-110 hover:shadow-md transition-all duration-700"
                 src={item.image} 
                 width='100px'
                 height='78px'
@@ -35,7 +35,7 @@ export function Clients_Carousel({items}: ClientsProps){
         <Carousel 
             classNames={{
                 "indicators" : "pt-10",
-                "indicator" :  "${ selectedSlide === index ? 'bg-green h-[20px]' : ''} bg-white h-[10px] w-[8px]",
+                "indicator" :  "{`${ selectedSlide === index ? 'bg-green h-[20px]' : ''} bg-white h-[10px] w-[8px]`}",
                 "controls": "h-10",
                 "control" : "hidden phone:flex bg-transparent text-white px-[15%] h-10 border-none hover:text-green hover:scale-[3] scale-[3]",
                 "slide" : "relative flex flex-col",
