@@ -1,10 +1,8 @@
 import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
 import ReCAPTCHA from "react-google-recaptcha"
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { IMail } from 'models';
-import { RequestOptions } from 'https';
-
 
 export function GetInTouchSimple() {
   const { register, trigger, getValues, formState : { errors } } = useForm<IMail>()
@@ -93,11 +91,10 @@ export function GetInTouchSimple() {
             error={errors.message?.message}
         />
         
-        <Group position="center" mt="xl" className='flex flex-col '>
+        <Group position="center" mt="xl" className='flex flex-col'>
           {/* <ReCAPTCHA className='mt-7' sitekey='6LcdHcsZAAAAAJqdcjHkgjydMxHY-jtTU-Jl0FrO'
           /> */}
-          <Button onClick={submitForm}
-          type="submit" size="md" className='bg-white button-form text-green hover:text-white mt-7 hover:bg-green transition-all active:scale-90 duration-1000 mb-10'>
+          <Button onClick={submitForm} type="submit" size="md" className='bg-white button-form text-green hover:text-white mt-7 hover:bg-green transition-all active:scale-90 duration-1000 mb-10'>
             Envoyer
           </Button>
         </Group>

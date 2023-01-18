@@ -4,6 +4,7 @@ import Autoplay from 'embla-carousel-autoplay';
 import { Button, Image } from "@mantine/core";
 import { HOME_DATA } from "../../utils/home";
 import {useEffect} from 'react';
+import { useInView } from "framer-motion";
 
 interface HomeCarouselProps {
     items : {
@@ -13,6 +14,25 @@ interface HomeCarouselProps {
         WhiteText : string
     }[]
 }
+
+function Section({children} : any) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+  
+    return (
+        <section ref={ref}>
+        <span
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+          }}
+        >
+          {children}
+        </span>
+      </section>
+    );
+  }
 
 export function HomeCarouselContent({items}: HomeCarouselProps){
     useEffect(() => {
@@ -55,14 +75,18 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
                 </div>
                 <div className='flex flex-col items-center justify-center w-full mx-auto phone:flex-row py-4 space-x-0 phone:space-x-8 space-y-2 phone:space-y-0'>
                     <a href={item.link}>
-                        <Button data-animate-type="motion-safe:animate-fadeInLeftHome" className="js-show-on-scroll button-home w-40 h-16 leading-3 hover:bg-dark-grey text-home-carroussel-button transition-all duration-[500ms] rounded-none " color="black">
-                            En Savoir +
-                        </Button>
+                        <Section>
+                            <Button className=" button-home w-40 h-16 leading-3 hover:bg-dark-grey text-home-carroussel-button transition-all duration-[500ms] rounded-none " color="black">
+                                En Savoir +
+                            </Button>
+                        </Section>
                     </a>
                     <a href="/contact">
-                        <Button data-animate-type="motion-safe:animate-fadeInRightHome" className="js-show-on-scroll button-home-right bg-transparent w-52 h-16 leading-3 text-white hover:text-black text-home-carroussel-button border-white border-1 hover:bg-white transition-all duration-[500ms] rounded-none">
+                    <Section>
+                        <Button className=" button-home-right bg-transparent w-52 h-16 leading-3 text-white hover:text-black text-home-carroussel-button border-white border-1 hover:bg-white transition-all duration-[500ms] rounded-none">
                             Contactez Nous
                         </Button>
+                        </Section>
                     </a>
                 </div>
             </div>

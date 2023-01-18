@@ -63,11 +63,11 @@ export function Showcase(props : ShowcaseProps){
 
     return(
         <div className={`flex flex-col bp:flex-row z-1 h-auto ${left ? "" : "bp:flex-row-reverse"}`}>
-            <div className={`${left ? "bg-white text-corps-color fadeInLeft" : "bg-general-grey text-white fadeInLeft bp:fadeInRight"} h-auto flex flex-row bp:w-1/2 w-full`}>
+            <div className={`${left ? "bg-white text-corps-color fadeInLeft" : "bg-general-grey text-white fadeInRight"} h-auto flex flex-row bp:w-1/2 w-full`}>
                 <div className={`${left ? "pl-band-left" : "right-0 pr-band-left"} absolute flex flex-row z-1 h-grey-band`}>
                     <div  className={`${left ? "bg-general-grey h-grey-band" : "bg-green h-green-band"}  w-grey-band`}>
                     </div>
-                    <div className={`${left ? "bg-white" : "bg-general-grey"} js-show-on-scroll pl-band-between`}>
+                    <div className={`${left ? "bg-white" : "bg-general-grey"} pl-band-between`}>
                         <div className={`${left ? "bg-green h-green-band" : " bg-white h-grey-band"} w-green-band`}>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ export function Showcase(props : ShowcaseProps){
                 </div>
             </div>
 
-            <div className={`${left ? "fadeInRight" : "fadeInRight bp:fadeInLeft"} h-auto bp:w-1/2 w-full`}>
+            <div className={`${left ? "fadeInRight" : "fadeInLeft"} h-auto bp:w-1/2 w-full`}>
                 {
                     images.length === 1 ?
                     <img 
