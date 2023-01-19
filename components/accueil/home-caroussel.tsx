@@ -86,7 +86,7 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
                         <Button className=" button-home-right bg-transparent w-52 h-16 leading-3 text-white hover:text-black text-home-carroussel-button border-white border-1 hover:bg-white transition-all duration-[500ms] rounded-none">
                             Contactez Nous
                         </Button>
-                        </Section>
+                    </Section>
                     </a>
                 </div>
             </div>
@@ -94,6 +94,7 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
     ))
     const autoplay = useRef(Autoplay({ delay: 3500 }));
     return (
+        
         <Carousel 
             classNames={{
                 "controls": "h-5 hover:text-green rounded-full px-10",
