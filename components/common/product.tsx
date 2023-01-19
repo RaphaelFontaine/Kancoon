@@ -7,6 +7,7 @@ interface ShowcaseProps {
     core : string
     images : string[]
 }
+
 export function Showcase(props : ShowcaseProps){
     let {left, title, core, images} = props
 
@@ -31,7 +32,6 @@ export function Showcase(props : ShowcaseProps){
 
         const callback = function(entries : any) {
             entries.forEach(function(entry : any) {
-                const animationType = entry.target.dataset.animateType;
                 if (entry.isIntersecting) {
                     entry.target.classList.add("motion-safe:animate-fadeInRight");
                   }

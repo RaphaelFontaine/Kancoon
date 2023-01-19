@@ -28,7 +28,7 @@ export function GetInTouchSimple() {
   return (
     <div>
         <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
-        <SimpleGrid className='px-10 pt-10 space-x-5' cols={2} mt="xl" >
+        <SimpleGrid className='px-10 pt-10 space-x-5' cols={2} mt="xl">
             <TextInput label="Nom complet" placeholder="Jean Dupont"
               {...register('full_name', {
                 required : { value : true, message : "Ce champ est requis !"},
