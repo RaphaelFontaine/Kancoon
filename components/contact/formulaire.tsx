@@ -1,27 +1,40 @@
 import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { useForm } from "react-hook-form";
 import { IMail } from 'models';
+import { toast } from 'react-hot-toast';
+
+const PHONE_REGEX = new RegExp(/^(0|\+33)[6-7]([0-9]{2}){4}$/);
+const MAIL_REGEX = new RegExp(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i);
+
 
 export function GetInTouchSimple() {
+
   const { register, trigger, getValues, formState : { errors } } = useForm<IMail>()
 
   const submitForm = async() => {
     const is_valid = await trigger()
     if(!is_valid) return
-    try {
-      const requestOptions : RequestInit = {
-        method: 'POST',
-        headers: { 
-          'Content-Type': 'application/json' 
-        },
-        body: JSON.stringify(getValues())
-      }
-      const response = await fetch('api/send_email', requestOptions)
-      console.log(response)
-    } catch (error) {
-      
+    const requestOptions : RequestInit = {
+      method: 'POST',
+      headers: { 
+        'Content-Type': 'application/json' 
+      },
+      body: JSON.stringify(getValues())
     }
+    const res = await fetch('api/send_email')
+    if(res.ok){
+      toast.success('email envoyé')
+
+    }else{
+      toast.error('une erreur est survenue')
+
+    }
+    // toast.promise(, requestOptions), {
+    //   loading : 'Envoi de votre mail en cours',
+    //   success : 'Votre mail a été envoyé avec succès !',
+    //   error : (err) => err.message
+    // })
   }
 
   return (
@@ -48,7 +61,7 @@ export function GetInTouchSimple() {
               className='hover:border-green'
               {...register('email', {
                 required : { value : true, message : "Ce champ est requis !"},
-                minLength : { value : 2, message : ""}
+                pattern: { value : MAIL_REGEX, message : "Veuillez renseigner un email valide !"}
               })}
               error={errors.email?.message}
             />
@@ -62,7 +75,7 @@ export function GetInTouchSimple() {
               className='focus:border-green'
               {...register('phone', {
                 required : { value : true, message : "Ce champ est requis !"},
-                minLength : { value : 2, message : ""}
+                pattern: { value : PHONE_REGEX, message : "error phone"}
               })}
               error={errors.phone?.message}
             />
@@ -91,8 +104,6 @@ export function GetInTouchSimple() {
         />
         
         <Group position="center" mt="xl" className='flex flex-col'>
-          {/* <ReCAPTCHA className='mt-7' sitekey='6LcdHcsZAAAAAJqdcjHkgjydMxHY-jtTU-Jl0FrO'
-          /> */}
           <Button onClick={submitForm} type="submit" size="md" className='bg-white button-form text-green hover:text-white mt-7 hover:bg-green transition-all active:scale-90 duration-1000 mb-10'>
             Envoyer
           </Button>
