@@ -24,10 +24,10 @@ export function GetInTouchSimple() {
     }
     const res = await fetch('api/send_email')
     if(res.ok){
-      toast.success('email envoyé')
+      toast.success('Email envoyé avec succès')
 
     }else{
-      toast.error('une erreur est survenue')
+      toast.error('Une erreur est survenue lors de l\'envoi')
 
     }
     // toast.promise(, requestOptions), {

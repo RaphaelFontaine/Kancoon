@@ -15,43 +15,43 @@ interface HomeCarouselProps {
     }[]
 }
 
-function Section({children} : any) {
-  
+function TitleLeft({children} : any) {
     return (
-            <motion.span
-              initial={{
-                opacity : 0
-            }}
-            whileInView={{
-                opacity : [0,1],
-                x : [400, 0]
-            }}
-            viewport={{ once: false }}
+            <motion.div
+                initial={{ opacity : 0 }}
+                whileInView={{ opacity : [0,1], translateX : [-400, 0] }}
+                transition={{ duration: 1  }}
             >
-            {children}
-            </motion.span>
+                {children}
+            </motion.div>
+    );
+  }
+
+function ButtonRight({children} : any) {
+    return (
+            <motion.div
+                initial={{ opacity : 0 }}
+                whileInView={{ opacity : [0,1], translateX : [400, 0] }}
+                transition={{ duration: 2, delay : 0.5 }}
+            >
+                {children}
+            </motion.div>
+    );
+  }
+
+  function ButtonLeft({children} : any) {
+    return (
+            <motion.div
+                initial={{ opacity : 0 }}
+                whileInView={{ opacity : [0,1], translateX : [-400, 0] }}
+                transition={{ duration: 2, delay : 0.5 }}
+            >
+                {children}
+            </motion.div>
     );
   }
 
 export function HomeCarouselContent({items}: HomeCarouselProps){
-    useEffect(() => {
-        const targets = document.querySelectorAll(".js-show-on-scroll");
-
-        const callback = function(entries : any) {
-            entries.forEach(function(entry : any) {
-                const animationType = entry.target.dataset.animateType;
-                if (entry.isIntersecting) {
-
-                    entry.target.classList.add(animationType);
-                  }
-            });
-        };
-
-        const observer = new IntersectionObserver(callback);
-        targets.forEach(function(target) {
-            observer.observe(target);
-        });
-    }, []);
 
     const slides = items.map((item, index) => (
         <Carousel.Slide>
@@ -64,28 +64,30 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
             />   
 
             <div className='z-20 absolute w-full mx-auto mt-60 flex flex-col items-center justify-center'>
-                <div data-animate-type="motion-safe:animate-fadeInLeftHome" className='js-show-on-scroll delay-700 flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
-                    <div className='text-white'>
-                        {item.TransparentText}
-                        <div className='text-white uppercase border-green border-4'>
-                            {item.WhiteText}
+                <div className='flex flex-col phone:flex-row text-home-carroussel-title content-center font-bold font-police space-x-0 phone:space-x-4 space-y-2'>
+                    <TitleLeft>
+                        <div className='text-white'>
+                            {item.TransparentText}
+                            <div className='text-white uppercase border-green border-4'>
+                                {item.WhiteText}
+                            </div>
                         </div>
-                    </div>
+                    </TitleLeft>
                 </div>
                 <div className='flex flex-col items-center justify-center w-full mx-auto phone:flex-row py-4 space-x-0 phone:space-x-8 space-y-2 phone:space-y-0'>
                     <a href={item.link}>
-                        <Section>
+                        <ButtonLeft>
                             <Button className=" button-home w-40 h-16 leading-3 hover:bg-dark-grey text-home-carroussel-button transition-all duration-[500ms] rounded-none " color="black">
                                 En Savoir +
                             </Button>
-                        </Section>
+                        </ButtonLeft>
                     </a>
                     <a href="/contact">
-                    <Section>
+                    <ButtonRight>
                         <Button className=" button-home-right bg-transparent w-52 h-16 leading-3 text-white hover:text-black text-home-carroussel-button border-white border-1 hover:bg-white transition-all duration-[500ms] rounded-none">
                             Contactez Nous
                         </Button>
-                    </Section>
+                    </ButtonRight>
                     </a>
                 </div>
             </div>
