@@ -12,7 +12,7 @@ function BandeauLeft({children} : any) {
     return (
             <motion.div
                 initial={{ opacity : 0 }}
-                whileInView={{ opacity : [0,1], translateY : [-500, 0] }}
+                animate={{ opacity : [0,1], translateY : [-500, 0] }}
                 transition={{ duration: 2  }}
             >
                 {children}

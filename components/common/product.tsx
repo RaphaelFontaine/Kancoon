@@ -43,7 +43,6 @@ export function Showcase(props : ShowcaseProps){
             observer.observe(target);
         });
     }, []);
-
     useEffect(() => {
         const targets = document.querySelectorAll(".fadeInLeft");
 
