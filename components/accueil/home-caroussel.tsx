@@ -3,7 +3,6 @@ import { useRef } from "react";
 import Autoplay from 'embla-carousel-autoplay';
 import { Button, Image } from "@mantine/core";
 import { HOME_DATA } from "../../utils/home";
-import {useEffect} from 'react';
 import { motion, useInView } from "framer-motion";
 
 interface HomeCarouselProps {
