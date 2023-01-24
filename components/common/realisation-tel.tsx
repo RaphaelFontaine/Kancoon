@@ -3,6 +3,7 @@ import { Button, Modal, Group } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import { Image } from "@mantine/core";
 import Autoplay from 'embla-carousel-autoplay';
+
 interface RealisationCarouselProps {
     items : {
         image : string,
