@@ -59,7 +59,7 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
                 className="mx-auto z-10 brightness-75 absolute"
                 src={item.image} 
                 width='full'
-                height='720px'
+                height='730px'
             />   
 
             <div className='z-20 absolute w-full mx-auto mt-60 flex flex-col items-center justify-center'>
@@ -92,7 +92,7 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
             </div>
         </Carousel.Slide>
     ))
-    const autoplay = useRef(Autoplay({ delay: 3500 }));
+    const autoplay = useRef(Autoplay({ delay: 5000 }));
     return (
         
         <Carousel 
@@ -101,7 +101,7 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
                 "control" : "hidden phone:flex bg-transparent h-5 text-white rounded-full scale-[3] hover:scale-[3]",
                 "slide" : "relative flex flex-col",
             }}
-            height='720px'
+            height='730px'
             slideSize= '100%'
             plugins={[autoplay.current]}
             loop
