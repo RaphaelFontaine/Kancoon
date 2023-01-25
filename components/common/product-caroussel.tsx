@@ -42,8 +42,7 @@ export function ProductCarroussel(props: any) {
   const slides = props.images.map((url: string) => (
     <Carousel.Slide key={url}>
       <Image 
-        src={url} 
-        height='576px' 
+        src={url}  
         width='full'
       />
     </Carousel.Slide>
@@ -51,6 +50,7 @@ export function ProductCarroussel(props: any) {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
   return (
     <Carousel 
+      className="w-full"
       classNames={{
         "indicator" : "bg-white",
         "control" : "hidden phone:flex bg-white",
@@ -60,7 +60,7 @@ export function ProductCarroussel(props: any) {
       withIndicators
       plugins={[autoplay.current]}
       loop
-      height={'576px'}
+      height={'auto'}
       onMouseEnter={autoplay.current.stop}
       onMouseLeave={autoplay.current.reset}
       >
