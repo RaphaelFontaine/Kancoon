@@ -8,7 +8,7 @@ export default function Footer(){
             </Link>
 
             <div className="flex flex-col space-y-6">
-                <div className="font-semibold text-footer-title">
+                <div className="flex items-center justify-center phone:justify-start font-semibold text-footer-title">
                     HORAIRES D'OUVERTURES
                 </div>
                 <div className="space-y-3 max-w-xs text-footer-corps">
@@ -22,7 +22,7 @@ export default function Footer(){
             </div>
 
             <div className="flex flex-col space-y-6">
-                <div className="font-semibold text-footer-title">
+                <div className="flex items-center justify-center phone:justify-start font-semibold text-footer-title">
                     CONTACTEZ NOUS
                 </div>
                 <div  className="space-y-3 max-w-xs text-footer-corps">
@@ -36,7 +36,7 @@ export default function Footer(){
             </div>
 
             <div className="flex flex-col space-y-6">
-                <div className="font-semibold text-footer-title">
+                <div className="flex items-center justify-center phone:justify-start font-semibold text-footer-title">
                     RETROUVEZ NOUS
                 </div>
                 <div className="text-footer-corps max-w-xs">
@@ -47,7 +47,7 @@ export default function Footer(){
             </div>
 
             <div className="flex flex-col justify-center items-center space-y-6">
-                <div className="font-semibold text-footer-title">
+                <div className="flex items-center justify-center phone:justify-start font-semibold text-footer-title">
                   NOS RESEAUX SOCIAUX
                 </div>
                 <div className="flex flex-row text-footer-corps">
