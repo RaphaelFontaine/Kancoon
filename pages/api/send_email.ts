@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             from : "raphael.fontaine18@gmail.com",
             subject: 'Nouveau formulaire rempli sur le site Kancoon.fr',
             templateId : "d-e63def137c0e4ca0b8d9bdd3f773e931",
-            dynamic_template_date : form_data
+            dynamic_template_data : form_data
         })
         res.status(200).end()
     } catch (error) {
