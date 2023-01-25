@@ -1,12 +1,12 @@
 import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
-import React from 'react';
+import React, { useRef } from 'react';
 import { useForm } from "react-hook-form";
 import { IMail } from 'models';
 import { toast } from 'react-hot-toast';
+import ReCAPTCHA from 'react-google-recaptcha'
 
 const PHONE_REGEX = new RegExp(/^(0|\+33)[6-7]([0-9]{2}){4}$/);
 const MAIL_REGEX = new RegExp(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i);
-
 
 export function GetInTouchSimple() {
 
@@ -40,7 +40,7 @@ export function GetInTouchSimple() {
   return (
     <div>
         <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
-        <SimpleGrid className='px-10 pt-10 space-x-5' cols={2} mt="xl">
+        <SimpleGrid className='px-10 pt-6 space-x-5' cols={2} mt="xl">
             <TextInput label="Nom complet" placeholder="Jean Dupont"
               {...register('full_name', {
                 required : { value : true, message : "Ce champ est requis !"},
@@ -66,7 +66,7 @@ export function GetInTouchSimple() {
               error={errors.email?.message}
             />
         </SimpleGrid>
-        <SimpleGrid className='px-10 py-10 space-x-5' cols={2} mt="xl" >
+        <SimpleGrid className='px-10 py-6 space-x-5' cols={2} mt="xl" >
             <TextInput label="Téléphone" placeholder="0611223344"
               classNames={{
                 "input": "focus:border-green",
@@ -104,6 +104,7 @@ export function GetInTouchSimple() {
         />
         
         <Group position="center" mt="xl" className='flex flex-col'>
+        <ReCAPTCHA sitekey='6Lf77yckAAAAAHagO6TjYx9KPIszAy4MsLGnSOPQ'/>
           <Button onClick={submitForm} type="submit" size="md" className='bg-white button-form text-green hover:text-white mt-7 hover:bg-green transition-all active:scale-90 duration-1000 mb-10'>
             Envoyer
           </Button>
