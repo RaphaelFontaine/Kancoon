@@ -15,42 +15,65 @@ interface HomeCarouselProps {
 }
 
 function TitleLeft({children} : any) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+  
     return (
-            <motion.div
-                initial={{ opacity : 0 }}
-                whileInView={{ opacity : [0,1], translateX : [-400, 0] }}
-                transition={{ duration: 1  }}
-            >
-                {children}
-            </motion.div>
+      <section ref={ref}>
+        <motion.div
+          style={{
+            transform: isInView ? "none" : "translateX(-50vw)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"
+          }}
+        >
+          {children}
+        </motion.div>
+      </section>
     );
   }
 
 function ButtonRight({children} : any) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+  
     return (
-            <motion.div
-                initial={{ opacity : 0 }}
-                whileInView={{ opacity : [0,1], translateX : [400, 0] }}
-                transition={{ duration: 2, delay : 0.5 }}
-            >
-                {children}
-            </motion.div>
+      <section ref={ref}>
+        <motion.div
+          style={{
+            transform: isInView ? "none" : "translateX(50vw)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+          }}
+        >
+          {children}
+        </motion.div>
+      </section>
     );
   }
 
-  function ButtonLeft({children} : any) {
+function ButtonLeft({children} : any) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+  
     return (
-            <motion.div
-                initial={{ opacity : 0 }}
-                whileInView={{ opacity : [0,1], translateX : [-400, 0] }}
-                transition={{ duration: 2, delay : 0.5 }}
-            >
-                {children}
-            </motion.div>
+      <section ref={ref}>
+        <motion.div
+          style={{
+            transform: isInView ? "none" : "translateX(-50vw)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+          }}
+        >
+          {children}
+        </motion.div>
+      </section>
     );
   }
+  
 
-export function HomeCarouselContent({items}: HomeCarouselProps){
+
+function HomeCarouselContent({items}: HomeCarouselProps){
 
     const slides = items.map((item, index) => (
         <Carousel.Slide>
@@ -110,8 +133,6 @@ export function HomeCarouselContent({items}: HomeCarouselProps){
         </Carousel>
     );
 }
-
-
 
 export default function HomeCarousel(){
     return(
