@@ -24,7 +24,7 @@ export function GetInTouchSimple() {
     }
     const res = await fetch('api/send_email')
     if(res.ok){
-      toast.success('Email envoyé avec succès')
+      toast.success('Email envoyé avec succès !')
 
     }else{
       toast.error('Une erreur est survenue lors de l\'envoi')
@@ -67,7 +67,7 @@ export function GetInTouchSimple() {
             />
         </SimpleGrid>
         <SimpleGrid className='px-10 py-10 space-x-5' cols={2} mt="xl" >
-            <TextInput label="Téléphone" placeholder="06 11 22 33 44"
+            <TextInput label="Téléphone" placeholder="0611223344"
               classNames={{
                 "input": "focus:border-green",
                 'label' : "text-white"
