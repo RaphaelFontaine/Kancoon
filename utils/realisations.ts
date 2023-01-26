@@ -29,11 +29,11 @@ export const PERGOLAS_REALISATIONS = [
     },
     {
         image: "/assets/pergolas/installation/installed_pergola_9.jpg",
-        legende: "Pergola Bioclimatique - Les Sables d'Olonne",
+        legende: "Pergola Toile - Les Sables d'Olonne",
     },
     {
         image: "/assets/pergolas/installation/installed_pergola_10.jpg",
-        legende: "Pergola Toile - Les Sables d'Olonne",
+        legende: "Pergola Bioclimatique - Les Sables d'Olonne",
     },
     {
         image: "/assets/pergolas/installation/installed_pergola_11.jpg",
