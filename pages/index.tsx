@@ -5,7 +5,6 @@ import { MentionsLegales } from '../components/common/mentions-legales'
 import { Services } from '../components/accueil/services'
 import Clients from '../components/accueil/clients'
 import HomeCarousel from '../components/accueil/home-caroussel'
-import Cookies from 'components/accueil/cookies'
 
 export default function Home() {
     return (
