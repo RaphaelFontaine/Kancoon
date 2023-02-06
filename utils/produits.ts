@@ -32,12 +32,13 @@ export const PERGOLAS_PRODUCT = [
             '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_7.jpg',
             '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_8.jpg',
             '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_9.jpg',
+            '/assets/pergolas/pergolas_bioclimatique/carroussel_pergola_bioclimatique_10.jpg',
         ]
     }, 
     {
         left: true,
         title: "La Pergola Toile",
-        core: " La pergola toile est une excellente alternative à la pergola bioclimatique. Qu’elle soit rétractable ou enroulable, la toile utilisée protège des rayons du soleil et résiste aux intempéries. Montées sur une structure aluminium légère mais solide, elle s’intègre facilement dans tout type d’habitation et apporte une touche de modernité. Créer une zone d’ombre pour manger par exemple est essentielle lorsque le soleil est à son zénith. C’est le pari de la pergola toile. Avec sa motorisation, aucun effort pour l’enrouler ou la dérouler. L’hiver, vous pouvez retirer la toile pour éviter qu’elle s’abîme. Une solution parfaite et esthétique pour vous protéger du soleil.",
+        core: "La pergola toile est une excellente alternative à la pergola bioclimatique. Qu’elle soit rétractable ou enroulable, la toile utilisée protège des rayons du soleil et résiste aux intempéries. Montées sur une structure aluminium légère mais solide, elle s’intègre facilement dans tout type d’habitation et apporte une touche de modernité. Créer une zone d’ombre pour manger par exemple est essentielle lorsque le soleil est à son zénith. C’est le pari de la pergola toile. Avec sa motorisation, aucun effort pour l’enrouler ou la dérouler. L’hiver, vous pouvez retirer la toile pour éviter qu’elle s’abîme. Une solution parfaite et esthétique pour vous protéger du soleil.",
         images: [
             '/assets/pergolas/pergolas_toile/carrousel_pergola_toile_1.jpg',
             '/assets/pergolas/pergolas_toile/carrousel_pergola_toile_2.jpg',
@@ -234,6 +235,7 @@ export const STORES_EXT_PRODUCT = [
         images: [
             "/assets/stores-ext/stores_bso/store_bso_1.jpg",
             "/assets/stores-ext/stores_bso/store_bso_2.jpg",
+            "/assets/stores-ext/stores_bso/store_bso_3.jpg",
         ],
     },
     {

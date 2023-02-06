@@ -35,12 +35,12 @@ const links : Link[]=[
         label : "Stores",
         links : [
             {
-                link : "/stores-interieurs-moustiquaires",
-                label : "Stores Intérieurs - Moustiquaires"
-            },
-            {
                 link : "/stores-exterieurs-stores-bannes",
                 label : "Stores Extérieurs - Stores Bannes"
+            },
+            {
+                link : "/stores-interieurs-moustiquaires",
+                label : "Stores Intérieurs - Moustiquaires"
             },
             {
                 link : "/parasols",

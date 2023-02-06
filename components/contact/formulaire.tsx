@@ -40,7 +40,7 @@ export function GetInTouchSimple() {
     <div>
         <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
           <SimpleGrid className='px-10 pt-6 space-x-5' cols={2} mt="xl">
-              <TextInput label="Nom complet" placeholder="Jean Dupont"
+              <TextInput label="Nom complet *" placeholder="Jean Dupont"
                 {...register('full_name', {
                   required : { value : true, message : "Ce champ est requis !"},
                   minLength : { value : 2, message : ""}
@@ -52,7 +52,7 @@ export function GetInTouchSimple() {
                   'label' : "text-white"
                 }}
               />
-              <TextInput label="E-mail" placeholder="jean.dupont@gmail.com"
+              <TextInput label="E-mail *" placeholder="jean.dupont@gmail.com"
                 classNames={{
                   "input": "focus:border-green",
                   'label' : "text-white"
@@ -66,7 +66,7 @@ export function GetInTouchSimple() {
               />
           </SimpleGrid>
           <SimpleGrid className='px-10 py-6 space-x-5' cols={2} mt="xl" >
-              <TextInput label="Téléphone" placeholder="0611223344"
+              <TextInput label="Téléphone *" placeholder="0611223344"
                 classNames={{
                   "input": "focus:border-green",
                   'label' : "text-white"
@@ -74,7 +74,7 @@ export function GetInTouchSimple() {
                 className='focus:border-green'
                 {...register('phone', {
                   required : { value : true, message : "Ce champ est requis !"},
-                  pattern: { value : PHONE_REGEX, message : "error phone"}
+                  pattern: { value : PHONE_REGEX, message : "Veuillez entrer un numéro de téléphone valide"}
                 })}
                 error={errors.phone?.message}
               />

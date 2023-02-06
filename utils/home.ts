@@ -12,16 +12,16 @@ export const HOME_DATA = [
       WhiteText: 'Pergolas',
     },
     {
-      image:'/assets/accueil/Photo_Caroussel/stores_int.jpg',
-      link: '/stores-interieurs-moustiquaires',
-      TransparentText: 'Découvrez nos ',
-      WhiteText: 'Stores Intérieurs',
-    },
-    {
       image: '/assets/accueil/Photo_Caroussel/stores_ext.jpg',
       link: '/stores-exterieurs-stores-bannes',
       TransparentText: 'Découvrez nos ',
       WhiteText: 'Stores Extérieurs',
+    },
+    {
+      image:'/assets/accueil/Photo_Caroussel/stores_int.jpg',
+      link: '/stores-interieurs-moustiquaires',
+      TransparentText: 'Découvrez nos ',
+      WhiteText: 'Stores Intérieurs',
     },
     {
       image: '/assets/accueil/Photo_Caroussel/terrasses.jpg',

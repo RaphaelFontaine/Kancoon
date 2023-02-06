@@ -1,7 +1,7 @@
 export const PERGOLAS_REALISATIONS = [
     {
         image: "/assets/pergolas/installation/installed_pergola_1.jpg", 
-        legende: "", 
+        legende: "Pergola Bioclimatique", 
     },
     {
         image: "/assets/pergolas/installation/installed_pergola_2.jpg", 
@@ -13,11 +13,11 @@ export const PERGOLAS_REALISATIONS = [
     },
     {
         image: "/assets/pergolas/installation/installed_pergola_4.jpg",
-        legende: ""
+        legende: "Pergola Bioclimatique"
     },
     {
         image: "/assets/pergolas/installation/installed_pergola_5.jpg",
-        legende: ""
+        legende: "Pergola Bioclimatique"
     },
     {
         image: "/assets/pergolas/installation/installed_pergola_7.jpg",
