@@ -84,7 +84,7 @@ export const STORES_INT_PRODUCT = [
     },
     {
         left : true,
-        title : "Stores rouleaux",
+        title : "Stores à enroulement",
         core : "Ces stores à enroulement permettent de se protéger contre l’éblouissement et la chaleur. Leur encombrement minimal, leurs possibilités dimensionnelles et le large choix de coloris de tissus en font un produit adapté à toutes les configurations. Nos modèles bénéficient d’un mécanisme de fonctionnement permettant une manipulation aisée qui a été récompensé l’IF Product Design Award. Le large choix de coloris de tissus.",
         images : [
             "/assets/stores-int/stores_rouleaux/stores_rouleaux_1.jpg",

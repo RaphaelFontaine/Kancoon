@@ -60,31 +60,31 @@ export const PERGOLAS_REALISATIONS = [
 export const STORES_INT_REALISATIONS = [
     {
         image: "assets/stores-int/installation/store_int1.jpg",
-        legende: "Store rouleaux"
+        legende: "Stores à Enroulement"
     },
     {
         image: "assets/stores-int/installation/store_int2.jpg",
-        legende: ""
+        legende: "Stores Californiens"
     },
     {
         image: "assets/stores-int/installation/store_int3.jpg",
-        legende: ""
+        legende: "Stores à Enroulement"
     },
     {
         image: "assets/stores-int/installation/store_int4.jpg",
-        legende: ""
+        legende: "Stores Ombre et Lumière"
     },
     {
         image: "assets/stores-int/installation/store_int5.jpg",
-        legende: "Store duette"
+        legende: "Stores Duette"
     },
     {
         image: "assets/stores-int/installation/store_int6.jpg",
-        legende: "Store toiture de véranda"
+        legende: "Store Toiture de Véranda"
     },
     {
         image: "assets/stores-int/installation/store_int7.jpg",
-        legende: "Store plissé"
+        legende: "Store Plissé"
     }
 ]
 
