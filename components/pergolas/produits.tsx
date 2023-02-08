@@ -68,13 +68,16 @@ export default function Produit(){
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-row items-center justify-center text-title-size w-full pr-[13%] bp:pr-[15%] py-[15%] bp:py-[0%] ">
+                    <div className="flex flex-col items-center justify-center text-title-size w-full pr-[13%] bp:pr-[15%] py-[15%] bp:py-[0%] ">
                         <div className="flex flex-row">
-                            Mission 
-                            <span className="line-through "> 
-                            {" "}Im
-                            </span>
-                            Possible : <br/>Pergola sur les toits.
+                            Mission &nbsp;
+                            <div className="line-through h-1/2"> 
+                                Im
+                            </div>
+                            Possible : <br/>
+                        </div>
+                        <div className="flex items-center justify-center">
+                            Pergola sur les toits
                         </div>
                     </div>
                 </div>
