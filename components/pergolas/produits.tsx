@@ -26,6 +26,9 @@ export default function Produit(){
         });
     }, []);
 
+    const PERGOLA_BIOCLIMATIQUE = PERGOLAS_PRODUCT[0]
+    const PERGOLA_TOILE = PERGOLAS_PRODUCT[1]
+
     return(
         <>
             <Band computer={BANDEAU_PERGOLA.computer} phone={BANDEAU_PERGOLA.phone} alt={BANDEAU_PERGOLA.alt}/>
@@ -49,12 +52,41 @@ export default function Produit(){
                 </VideoResponsive>
             </div>
 
-            {PERGOLAS_PRODUCT.map((product, index) => 
-                <Showcase key={index}
-                left={product.left} title={product.title}
-                images={product.images}
-                core={product.core}/>
-            )}
+            
+            <Showcase 
+            left={PERGOLA_BIOCLIMATIQUE.left} title={PERGOLA_BIOCLIMATIQUE.title}
+            images={PERGOLA_BIOCLIMATIQUE.images}
+            core={PERGOLA_BIOCLIMATIQUE.core}/>
+
+            <div  className="flex flex-col bp:flex-row bp:h-case-size">
+                <div data-animate-type="motion-safe:animate-fadeInLeft" className="js-show-on-scroll flex flex-row bg-white w-full bp:w-1/2 text-title-color ">
+                    <div className="flex flex-row bg-white h-grey-band pl-[40px]">
+                        <div className="bg-general-grey w-grey-band h-grey-band">
+                        </div>
+                        <div className="bg-white pl-[20px]">
+                            <div className="bg-green w-green-band h-green-band">
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-row items-center justify-center text-title-size w-full pr-[13%] bp:pr-[15%] py-[15%] bp:py-[0%] ">
+                        <div className="flex flex-row">
+                            Mission 
+                            <span className="line-through "> 
+                            {" "}Im
+                            </span>
+                            Possible : <br/>Pergola sur les toits.
+                        </div>
+                    </div>
+                </div>
+                <VideoResponsive 
+                    source={VIDEO_PERGOLA.source}>
+                </VideoResponsive>
+            </div>
+
+            <Showcase 
+            left={PERGOLA_TOILE.left} title={PERGOLA_TOILE.title}
+            images={PERGOLA_TOILE.images}
+            core={PERGOLA_TOILE.core}/>
         </>
     )
 }

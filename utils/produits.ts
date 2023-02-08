@@ -36,7 +36,7 @@ export const PERGOLAS_PRODUCT = [
         ]
     }, 
     {
-        left: true,
+        left: false,
         title: "La Pergola Toile",
         core: "La pergola toile est une excellente alternative à la pergola bioclimatique. Qu’elle soit rétractable ou enroulable, la toile utilisée protège des rayons du soleil et résiste aux intempéries. Montées sur une structure aluminium légère mais solide, elle s’intègre facilement dans tout type d’habitation et apporte une touche de modernité. Créer une zone d’ombre pour manger par exemple est essentielle lorsque le soleil est à son zénith. C’est le pari de la pergola toile. Avec sa motorisation, aucun effort pour l’enrouler ou la dérouler. L’hiver, vous pouvez retirer la toile pour éviter qu’elle s’abîme. Une solution parfaite et esthétique pour vous protéger du soleil.",
         images: [
