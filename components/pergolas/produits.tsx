@@ -1,6 +1,6 @@
 import { BANDEAU_PERGOLA } from "../../utils/bandeau";
 import { PERGOLAS_PRODUCT } from "../../utils/produits";
-import { VIDEO_PERGOLA } from "../../utils/video";
+import { VIDEO_PERGOLA, VIDEO_PERGOLA_2 } from "../../utils/video";
 import { Band } from "../common/bandeau";
 import { Showcase } from "../common/product";
 import { VideoResponsive } from "../common/video";
@@ -82,7 +82,7 @@ export default function Produit(){
                     </div>
                 </div>
                 <VideoResponsive 
-                    source={VIDEO_PERGOLA.source}>
+                    source={VIDEO_PERGOLA_2.source}>
                 </VideoResponsive>
             </div>
 
