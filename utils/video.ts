@@ -7,7 +7,7 @@ export const VIDEO_PERGOLA = {
 }
 
 export const VIDEO_PERGOLA_2 = {
-    source: "https://www.youtube.com/embed/AztLYxlZUW4?autoplay=1"
+    source: "https://www.youtube.com/embed/AztLYxlZUW4"
 }
 
 export const VIDEO_PARASOL = {

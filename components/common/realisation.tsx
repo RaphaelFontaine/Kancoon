@@ -20,7 +20,7 @@ export function RealisationBandeau() {
         });
     }, []);
     return (
-        <div data-animate-type="motion-safe:animate-fadeIn" className="js-show-on-scroll bg-grey-realisation text-realisation-title-size text-center pt-realisation-top pb-realisation-bottom">
+        <div data-animate-type="motion-safe:animate-fadeIn" className="js-show-on-scroll bg-grey-realisation text-white text-realisation-title-size text-center pt-realisation-top pb-realisation-bottom">
                 Nos Réalisations
                 <div className="text-realisation-corps-size">
                     Les Sables d'Olonne, Saint Gilles Croix de Vie, La Roche sur Yon
