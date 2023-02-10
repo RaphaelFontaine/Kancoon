@@ -22,7 +22,7 @@ export function Services() {
                 </div>
                 <div className="flex flex-col border-[1px] px-[2%] py-[3%] border-[#E6E6E6] hover:shadow-2xl hover:scale-105 transition-all duration-700 w-[80%] bp:w-[30%] bp:h-[630px]">
                     <div className="mx-auto">
-                        <img src='/assets/accueil/service_logo/Qualité.png' width="151px" height="161px" loading="lazy" alt="icon" decoding="async">
+                        <img src='/assets/accueil/service_logo/Qualite.png' width="151px" height="161px" loading="lazy" alt="icon" decoding="async">
                         </img>
                     </div>
                     <div className="uppercase text-service-title my-6 font-medium text-title-size">
