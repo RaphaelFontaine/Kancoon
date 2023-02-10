@@ -14,6 +14,7 @@ export default function Terrasses() {
                 <title>Terrasses bois et composites par KANCOON aux Sables d'Olonne</title>
                 <meta name="description" content="Terrasses bois et composites par KANCOON aux Sables d'Olonne" />
                 <link rel="icon" href= "/FAVICON-transparent.png" />
+                <script async defer data-website-id="128afe3d-c0f3-4471-a7e9-0ceba4174583" src="https://stats.viking.click/umami.js"></script>
             </Head>
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>

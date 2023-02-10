@@ -13,6 +13,7 @@ export default function Parasols() {
                 <title>Parasols professionnels par KANCOON aux Sables d'Olonne et en Vendée</title>
                 <meta name="description" content="Parasols professionnels par KANCOON aux Sables d'Olonne et en Vendée" />
                 <link rel="icon" href= "/FAVICON-transparent.png" />
+                <script async defer data-website-id="128afe3d-c0f3-4471-a7e9-0ceba4174583" src="https://stats.viking.click/umami.js"></script>
             </Head>
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-dark-grey'>

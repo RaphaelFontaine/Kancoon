@@ -14,6 +14,7 @@ export default function Parasols() {
                 <title>Contactez-nous pour vos aménagements intérieurs et extérieurs</title>
                 <meta name="description" content="Contactez-nous pour vos aménagements intérieurs et extérieurs" />
                 <link rel="icon" href= "/FAVICON-transparent.png" />
+                <script async defer data-website-id="128afe3d-c0f3-4471-a7e9-0ceba4174583" src="https://stats.viking.click/umami.js"></script>
             </Head>
             <HeaderAction></HeaderAction>
             <main className='pt-[95px] bg-general-grey'>

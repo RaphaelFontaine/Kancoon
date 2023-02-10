@@ -13,6 +13,7 @@ export default function Home() {
                 <title>Kancoon, spécialiste de protection solaire en Vendée</title>
                 <meta name="description" content="spécialiste de protection solaire en Vendée" />
                 <link rel="icon" href="/FAVICON-transparent.png" />
+                <script async defer data-website-id="128afe3d-c0f3-4471-a7e9-0ceba4174583" src="https://stats.viking.click/umami.js"></script>
             </Head>
             <HeaderAction></HeaderAction>
     
