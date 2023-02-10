@@ -5,6 +5,7 @@ import { Band } from "../common/bandeau";
 import { Showcase } from "../common/product";
 import { VideoResponsive } from "../common/video";
 import {useEffect} from 'react';
+import { ImCross } from 'react-icons/im'
 
 export default function Produit(){
     useEffect(() => {
@@ -71,13 +72,14 @@ export default function Produit(){
                     <div className="flex flex-col items-center justify-center text-title-size w-full pr-[13%] bp:pr-[15%] py-[15%] bp:py-[0%] ">
                         <div className="flex flex-row">
                             Mission &nbsp;
-                            <div className="line-through h-1/2"> 
+                            <div className=" z-1 h-1/2"> 
+                                <ImCross className="absolute text-[#FF0000] mt-2 z-2 opacity-80" />
                                 Im
                             </div>
                             Possible : <br/>
                         </div>
                         <div className="flex items-center justify-center">
-                            Pergola sur les toits
+                        Pergola sur les toits
                         </div>
                     </div>
                 </div>
