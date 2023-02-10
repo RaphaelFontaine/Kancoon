@@ -73,7 +73,7 @@ export default function Produit(){
                         <div className="flex flex-row">
                             Mission &nbsp;
                             <div className=" z-1 h-1/2"> 
-                                <ImCross className="absolute text-[#FF0000] mt-2 z-2 opacity-80" />
+                                <ImCross className="absolute text-[#FF0000] mt-1 bp:mt-2 z-2 opacity-80" />
                                 Im
                             </div>
                             Possible : <br/>
