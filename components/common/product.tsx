@@ -1,5 +1,5 @@
 import {ProductCarroussel} from "../common/product-caroussel";
-import {useEffect, useRef} from 'react';
+import { useRef} from 'react';
 import { motion, useInView } from "framer-motion";
 
 interface ShowcaseProps {

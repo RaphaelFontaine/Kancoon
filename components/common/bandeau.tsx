@@ -11,8 +11,8 @@ interface BandProps {
 function BandeauLeft({children} : any) {
     return (
             <motion.div
-                initial={{ opacity : 0 }}
-                animate={{ opacity : [0,1], translateY : [-500, 0] }}
+                initial={{ opacity : 0.5 }}
+                animate={{ opacity : [0.5,1], translateY : [-500, 0] }}
                 transition={{ duration: 2  }}
             >
                 {children}
