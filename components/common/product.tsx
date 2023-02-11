@@ -57,7 +57,7 @@ export function Showcase(props : ShowcaseProps){
         <div className={`flex flex-col bp:flex-row z-1 h-auto ${left ? "" : "bp:flex-row-reverse"}`}>
             <div className={`${left ? "visible" : "hidden"} text-corps-color h-auto flex flex-row bp:w-1/2 w-full`}>
                 <FadeLeft>
-                    <div className="pl-band-left absolute flex flex-row z-1 h-grey-band">
+                    <div className="pl-band-left absolute flex flex-row z-20 h-grey-band">
                         <div  className="bg-general-grey h-grey-band w-grey-band">
                         </div>
                         <div className="bg-white pl-band-between">
@@ -65,11 +65,11 @@ export function Showcase(props : ShowcaseProps){
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center justify-center bg-white h-full z-0 pt-[7%] px-[14%]">
+                    <div className="flex flex-col items-center justify-center bg-white h-full space-y-4 z-10 py-10 bp:py-0 lg:py-6 px-16">
                         <div className="text-title-size text-center">
                             {title}
                         </div>
-                        <div className="text-corps-size py-[12%] bp:py-[8%] lg:py-[12%] leading-phone-text bp:leading-text lg:leading-max-text">
+                        <div className="text-corps-size leading-max-text bp:leading-phone-text lg:leading-max-text">
                             {core}
                         </div>
                     </div>
@@ -85,11 +85,11 @@ export function Showcase(props : ShowcaseProps){
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center justify-center bg-general-grey h-full z-0 pt-[7%] px-[14%]">
+                    <div className="flex flex-col items-center justify-center space-y-4 bg-general-grey h-full z-10 py-10 bp:py-0 lg:py-6 px-16">
                         <div className="text-title-size text-center">
                             {title}
                         </div>
-                        <div className="text-corps-size py-[12%] bp:py-[8%] lg:py-[12%] leading-phone-text bp:leading-text lg:leading-max-text">
+                        <div className="text-corps-size leading-max-text bp:leading-phone-text lg:leading-max-text">
                             {core}
                         </div>
                     </div>

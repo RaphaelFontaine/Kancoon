@@ -9,7 +9,7 @@ module.exports = {
     screens: {
       'ft': '765px',
       'phone': '500px',
-      'lg': '1024px',
+      'lg': '1070px',
       'bp': '930px',
     },
     colors: {
@@ -121,7 +121,7 @@ module.exports = {
 
       },
       lineHeight: {
-        'max-text': '28px',
+        'max-text': '25px',
         'text': '25px',
         'phone-text': '20px',
       }
