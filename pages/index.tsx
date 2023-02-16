@@ -21,12 +21,9 @@ export default function Home() {
                 <HomeCarousel></HomeCarousel>
                 <Services></Services>
                 <Clients></Clients>
-                
             </main>
             <Footer></Footer>
             <MentionsLegales></MentionsLegales>
-           
-
         </div>
     )
 }
