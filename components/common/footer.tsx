@@ -4,7 +4,7 @@ export default function Footer(){
     return(
         <div className="flex flex-wrap gap-x-16 gap-y-10 bg-footer-grey text-white p-8 font-light items-top justify-center">
             <Link href={"/"} className="flex items-center cursor-pointer">
-                  <img className="h-20 cursor-pointer" src="/assets/all/logo-kancoon.png" alt={"Kancoon"}/>
+                  <img src="/assets/all/logo-kancoon.png" alt={"Kancoon"}/>
             </Link>
 
             <div className="flex flex-col space-y-6">
