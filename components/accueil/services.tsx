@@ -1,6 +1,3 @@
-import { Transition } from "@mantine/core";
-
-
 export function Services() {
     return (
         <div className="flex flex-col bg-white pb-[5%]">

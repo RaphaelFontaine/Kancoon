@@ -1,5 +1,3 @@
-import { GrMapLocation } from 'react-icons/gr';
-
 export function Icon() {
     // const style = { color: "white", fontSize: "1.5em" }
     return (

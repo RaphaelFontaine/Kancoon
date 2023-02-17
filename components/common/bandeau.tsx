@@ -1,9 +1,6 @@
 import React from 'react';
-import { motion } from "framer-motion";
 import {useEffect} from 'react';
 import { useScrollIntoView } from '@mantine/hooks';
-import { Button, Text } from '@mantine/core';
-import { FiArrowDownCircle } from 'react-icons/fi';
 
 interface BandProps {
     computer : string
