@@ -1,23 +1,64 @@
 import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
-import React, { useRef } from 'react';
-// import { useForm } from "react-hook-form";
+import React, { useRef, useState } from 'react';
 import { IMail } from 'models';
 import { toast } from 'react-hot-toast';
 import { useForm, ValidationError } from '@formspree/react';
+import axios from 'axios';
 
 const PHONE_REGEX = new RegExp(/^(0|\+33)[6-7]([0-9]{2}){4}$/);
 const MAIL_REGEX = new RegExp(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i);
 
-export function ContactForm() {
-  const [state, handleSubmit] = useForm("mnqydqgy");
+interface FormValues {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+}
 
-  toast.success('Votre formulaire a bien été envoyé')
+function submitForm(event: React.FormEvent, formData: FormValues) {
+  event.preventDefault();
+
+  axios.post('https://formspree.io/mnqydqgy', formData)
+    .then(response => {
+      toast.success("Le formulaire a été envoyé avec succès !");
+    })
+    .catch(error => {
+      console.log(error);
+    });
+}
+
+export function ContactForm() {
+
+
+  // console.log(state)
   // if (state.succeeded) {
+  //   console.log('succes')
   //   toast.success('Votre formulaire a bien été envoyé')
   // }
-  // if (!state.errors) {
+
+  // if (state.errors) {
+  //   console.log('error')
   //   toast.error('Echec lors de l\'envoi de votre formulaire')
   // }
+
+  const [formData, setFormData] = useState<FormValues>({
+    name: '',
+    email: '',
+    phone:'',
+    subject:'',
+    message: ''
+  });
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  }
+
+  const handleSubmit = (event: React.FormEvent) => {
+    submitForm(event, formData);
+  }
+
   return (
     <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
       <form onSubmit={handleSubmit}>
@@ -31,11 +72,11 @@ export function ContactForm() {
               </div>
               <div>
                 <input
-                  className='focus:border-green text-dark-grey bg-white text-satisfaction rounded-sm border-1 border-white border-xl w-64 h-8'
+                  className='focus:border-green overflow-hidden text-dark-grey bg-white text-satisfaction rounded-sm border-1 border-white border-xl w-64 h-8'
                   id="name"
                   type="text" 
                   name="name"
-                  placeholder="Jean Dupont"
+                  placeholder=" Jean Dupont"
                   required={true}
                 />
               </div>
@@ -52,15 +93,15 @@ export function ContactForm() {
                   id="email"
                   type="email" 
                   name="email"
-                  placeholder="jean.dupont@gmail.com"
+                  placeholder=" jean.dupont@gmail.com"
                   required={true}
                 />
               </div>  
-              <ValidationError 
+              {/* <ValidationError 
                 prefix="Email" 
                 field="email"
                 errors={state.errors}
-              />
+              /> */}
             </div>  
           </div>  
           <div className='flex flex-row items-center justify-center px-10 py-10 space-x-5'>
@@ -76,15 +117,15 @@ export function ContactForm() {
                   id="phone"
                   type="phone" 
                   name="phone"
-                  placeholder="0611223344"
+                  placeholder=" 0611223344"
                   required={true}
                 />
               </div>
-              <ValidationError 
+              {/* <ValidationError 
                 prefix="phone" 
                 field="phone"
                 errors={state.errors}
-              />
+              /> */}
             </div>
             <div className='flex-col'>
               <div>
@@ -98,14 +139,14 @@ export function ContactForm() {
                   id="subject"
                   type="text" 
                   name="subject"
-                  placeholder="Stores Bannes"
+                  placeholder=" Stores Bannes"
                 />
               </div>
-              <ValidationError 
+              {/* <ValidationError 
                 prefix="subject" 
                 field="subject"
                 errors={state.errors}
-              />
+              /> */}
             </div>
           </div>
           <div className='flex flex-col items-center justify-center px-10 py-10 pt-6'>
@@ -117,13 +158,13 @@ export function ContactForm() {
               id="message"
               type="text" 
               name="message"
-              placeholder="Votre message"
+              placeholder=" Votre message"
             />
-            <ValidationError 
+            {/* <ValidationError 
               prefix="message" 
               field="message"
               errors={state.errors}
-            />
+            /> */}
           </div>
           <div className='flex items-center justify-center pb-4'>
             <Button type="submit" size="md" className='bg-white button-form text-green hover:text-white mt-7 hover:bg-green transition-all active:scale-90 duration-1000 mb-10'>
@@ -138,9 +179,8 @@ export function ContactForm() {
 }
 
 export default function GetInTouchSimple() {
-
   return (
-    <ContactForm />
+    <ContactForm/>
   );
 }
 
