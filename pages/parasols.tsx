@@ -4,7 +4,6 @@ import HeaderAction from '../components/common/header'
 import { MentionsLegales } from '../components/common/mentions-legales'
 import Produit from '../components/parasols/produits'
 import RealisationsParasols from '../components/parasols/realisations'
-import Realisations from '../components/parasols/realisations'
 
 export default function Parasols() {
     return (
