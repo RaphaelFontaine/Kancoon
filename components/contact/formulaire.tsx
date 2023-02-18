@@ -38,9 +38,9 @@ export function ContactForm() {
     setIsSubmitting(false);
   };
   return (
-    <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
+    <div className='bg-light-grey border-2 w-[90%] ft:w-auto border-white hover:border-green transition-all duration-500 rounded-xl'>
       <form onSubmit={handleSubmit(onSubmit)}>
-          <div className='flex flex-row items-center justify-center px-10 py-10 space-x-5'>
+          <div className='flex flex-wrap items-center justify-center px-10 py-5 ft:py-10 gap-5'>
             <div className='flex-col'>
               <div>
                 <label className='text-white' htmlFor="name">
@@ -86,7 +86,7 @@ export function ContactForm() {
               </div> 
             </div>  
           </div>  
-          <div className='flex flex-row items-center justify-center px-10 py-10 space-x-5'>
+          <div className='flex flex-wrap items-center justify-center px-10 py-5 ft:py-10 gap-5'>
             <div className='flex-col'>
               <div>
                 <label className='text-white' htmlFor="phone">
