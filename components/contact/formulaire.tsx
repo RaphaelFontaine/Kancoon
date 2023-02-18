@@ -1,13 +1,8 @@
-import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
-import React, { useRef, useState } from 'react';
-import { IMail } from 'models';
+import { Button } from '@mantine/core';
+import React, { useState } from 'react';
 import { toast } from 'react-hot-toast';
-import { ValidationError } from '@formspree/react';
 import axios from 'axios';
-import { useForm, FieldErrors } from 'react-hook-form';
-
-const PHONE_REGEX = new RegExp(/^(0|\+33)[6-7]([0-9]{2}){4}$/);
-const MAIL_REGEX = new RegExp(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i);
+import { useForm } from 'react-hook-form';
 
 type FormValues = {
   name: string;
@@ -27,9 +22,6 @@ export function ContactForm() {
   const emailRegex = new RegExp(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i);
   const phoneRegex = new RegExp(/^(0|\+33)[6-7]([0-9]{2}){4}$/);
 
-  const emailRef = React.useRef<HTMLInputElement>(null);
-  const phoneRef = React.useRef<HTMLInputElement>(null);
-
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
 
@@ -45,22 +37,9 @@ export function ContactForm() {
 
     setIsSubmitting(false);
   };
-
-  // const [state, handleSubmit] = useForm("mnqydqgy");
-  // console.log(state)
-  // if (state.succeeded) {
-  //   console.log('succes')
-  //   toast.success('Votre formulaire a bien été envoyé')
-  // }
-
-  // if (state.errors) {
-  //   console.log('error')
-  //   toast.error('Echec lors de l\'envoi de votre formulaire')
-  // }
   return (
     <div className='bg-light-grey border-2 border-white hover:border-green transition-all duration-500 rounded-xl'>
       <form onSubmit={handleSubmit(onSubmit)}>
-        {/* <div className="flex flex-col"> */}
           <div className='flex flex-row items-center justify-center px-10 py-10 space-x-5'>
             <div className='flex-col'>
               <div>
@@ -105,12 +84,6 @@ export function ContactForm() {
                 />
                 {errors.email && <p className='text-white absolute text-satisfaction'>{errors.email.message}</p>}
               </div> 
-              {/* {errors.phoneNumber && <p>{errors.email.message}</p>}  */}
-              {/* <ValidationError 
-                prefix="Email" 
-                field="email"
-                errors={state.errors}
-              /> */}
             </div>  
           </div>  
           <div className='flex flex-row items-center justify-center px-10 py-10 space-x-5'>
@@ -139,11 +112,6 @@ export function ContactForm() {
                 />
               </div>
               {errors.phoneNumber && <p className='text-white absolute text-satisfaction'>{errors.phoneNumber.message}</p>}
-              {/* <ValidationError 
-                prefix="phone" 
-                field="phone"
-                errors={state.errors}
-              /> */}
             </div>
             <div className='flex-col'>
               <div>
@@ -160,11 +128,6 @@ export function ContactForm() {
                   placeholder=" Stores Bannes"
                 />
               </div>
-              {/* <ValidationError 
-                prefix="subject" 
-                field="subject"
-                errors={state.errors}
-              /> */}
             </div>
           </div>
           <div className='flex flex-col items-center justify-center px-10 py-10 pt-6'>
@@ -178,18 +141,12 @@ export function ContactForm() {
               name="message"
               placeholder=" Votre message"
             />
-            {/* <ValidationError 
-              prefix="message" 
-              field="message"
-              errors={state.errors}
-            /> */}
           </div>
           <div className='flex items-center justify-center pb-4'>
             <Button type="submit" disabled={isSubmitting} size="md" className='bg-white button-form text-green hover:text-white mt-7 hover:bg-green transition-all active:scale-90 duration-1000 mb-10'>
                   Envoyer
             </Button>
           </div>
-        {/* </div> */}
       </form> 
     </div>
 
