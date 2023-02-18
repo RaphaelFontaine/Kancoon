@@ -5,11 +5,11 @@ import axios from 'axios';
 import { useForm } from 'react-hook-form';
 
 type FormValues = {
-  name: string;
-  email: string;
-  phoneNumber: string;
-  subject: string;
-  message: string;
+  Nom: string;
+  Email: string;
+  Téléphone: string;
+  Sujet: string;
+  Message: string;
 };
 
 export function ContactForm() {
@@ -27,7 +27,7 @@ export function ContactForm() {
 
     try {
       // Utilisation d'axios pour envoyer le formulaire à Formsprée
-      await axios.post('https://formspree.io/mnqydqgy', data);
+      await axios.post('https://formspree.io/xnqydjav', data);
       toast.success('Le formulaire a été soumis avec succès!')
 
       setSubmitted(true);
@@ -50,13 +50,12 @@ export function ContactForm() {
               <div>
                 <input
                   className='focus:border-green overflow-hidden text-dark-grey bg-white text-satisfaction rounded-sm border-1 border-white border-xl w-64 h-8'
-                  id="name"
                   type="text" 
-                  name="name"
+                  id="Nom"
                   placeholder=" Jean Dupont"
-                  required= {true}
+                  {...register('Nom', { required: true })}
                 />
-                {errors.name && <p className='text-white absolute text-satisfaction'>Ce champ est requis.</p>}
+                {errors.Nom && <p className='text-white absolute text-satisfaction'>Ce champ est requis.</p>}
               </div>
             </div>  
             <div className='flex-col'>
@@ -68,10 +67,10 @@ export function ContactForm() {
               <div>
                 <input
                   className='focus:border-green text-dark-grey bg-white text-satisfaction rounded-sm border-1 border-white border-xl w-64 h-8'
-                  id="email"
+                  id="Email"
                   type="text" 
                   placeholder=" jean.dupont@gmail.com"
-                  {...register('email', {
+                  {...register('Email', {
                     required: 'Veuillez entrer votre adresse e-mail.',
                     pattern: {
                       value: emailRegex,
@@ -82,7 +81,7 @@ export function ContactForm() {
                       'Veuillez entrer votre adresse e-mail.',
                   })}
                 />
-                {errors.email && <p className='text-white absolute text-satisfaction'>{errors.email.message}</p>}
+                {errors.Email && <p className='text-white absolute text-satisfaction'>{errors.Email.message}</p>}
               </div> 
             </div>  
           </div>  
@@ -99,7 +98,7 @@ export function ContactForm() {
                   id="phone"
                   type="text" 
                   placeholder=" 0611223344"
-                  {...register('phoneNumber', {
+                  {...register('Téléphone', {
                     required: 'Veuillez entrer votre numéro de téléphone.',
                     pattern: {
                       value: phoneRegex,
@@ -111,7 +110,7 @@ export function ContactForm() {
                   })}
                 />
               </div>
-              {errors.phoneNumber && <p className='text-white absolute text-satisfaction'>{errors.phoneNumber.message}</p>}
+              {errors.Téléphone && <p className='text-white absolute text-satisfaction'>{errors.Téléphone.message}</p>}
             </div>
             <div className='flex-col'>
               <div>
@@ -124,8 +123,8 @@ export function ContactForm() {
                   className='focus:border-green text-dark-grey bg-white text-satisfaction rounded-sm border-1 border-white border-xl w-64 h-8'
                   id="subject"
                   type="text" 
-                  name="subject"
                   placeholder=" Stores Bannes"
+                  {...register('Sujet', { required: false })}
                 />
               </div>
             </div>
@@ -137,9 +136,9 @@ export function ContactForm() {
             <input
               className='focus:border-green text-dark-grey bg-white text-satisfaction rounded-sm border-1 border-white border-xl w-full h-40'
               id="message"
-              type="text" 
-              name="message"
+              type="text"
               placeholder=" Votre message"
+              {...register('Message', { required: false })}
             />
           </div>
           <div className='flex items-center justify-center pb-4'>
