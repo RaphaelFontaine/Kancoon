@@ -27,7 +27,7 @@ export function ContactForm() {
 
     try {
       // Utilisation d'axios pour envoyer le formulaire à Formsprée
-      await axios.post('https://formspree.io/xnqydjav', data);
+      await axios.post('https://getform.io/f/db83e718-1bb9-4e38-a89d-05d995abb3f8', data);
       toast.success('Le formulaire a été soumis avec succès!')
 
       setSubmitted(true);
@@ -154,7 +154,9 @@ export function ContactForm() {
 
 export default function GetInTouchSimple() {
   return (
-    <ContactForm/>
+    <>
+      <ContactForm/>
+    </>
   );
 }
 
