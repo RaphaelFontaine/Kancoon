@@ -26,6 +26,11 @@ const PARTENAIRES_KANCOON = [
         image: "/assets/la-societe/partenaires/marchand.png",
         link: "https://marchand-construction85.fr/",
         alt: "Marchand Construction"
+    },
+    {
+        image: "/assets/la-societe/partenaires/logo_rse.png",
+        link: "https://www.lsodeveloppement.fr/s-implanter-et-se-developper/label-rse-respon-sables/",
+        alt: "RSE"
     }
 ]
 
