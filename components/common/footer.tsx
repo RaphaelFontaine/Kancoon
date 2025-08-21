@@ -53,7 +53,7 @@ export default function Footer(){
                 <div className="flex flex-row text-footer-corps">
 
                   <a className="transition-all duration-500 px-[1%]" target="_blank" href= "https://www.facebook.com/kancoonolonne">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-facebook hover:fill-green transition-all duration-500" width="32" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"  stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-facebook hover:fill-green transition-all duration-500" width="32" height="28" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none"  strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                     </svg>
@@ -61,7 +61,7 @@ export default function Footer(){
 
 
                   <a className="transition-all duration-500 px-[1%]" target="_blank" href= "https://www.instagram.com/kancoonstorespergolas/">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-facebook hover:fill-green transition-all duration-500" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-facebook hover:fill-green transition-all duration-500" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <rect x="4" y="4" width="16" height="16" rx="4" />
                     <circle cx="12" cy="12" r="3" />
@@ -70,7 +70,7 @@ export default function Footer(){
                   </a>
 
                   <a className="transition-all duration-500 px-[1%]" target="_blank" href= "https://www.linkedin.com/company/kancoon/">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-facebook hover:fill-green transition-all duration-500" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-facebook hover:fill-green transition-all duration-500" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <rect x="4" y="4" width="16" height="16" rx="2" />
                       <line x1="8" y1="11" x2="8" y2="16" />
@@ -82,7 +82,7 @@ export default function Footer(){
 
 
                     <a className="transition-all duration-500 px-[1%]" target="_blank" href= "https://www.youtube.com/channel/UCpjiJxmhMs5MzIO2xa8yJaA">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-youtube hover:fill-green transition-all duration-500" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-youtube hover:fill-green transition-all duration-500" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="3" y="5" width="18" height="14" rx="4" />
                         <path d="M10 9l5 3l-5 3z" />
