@@ -26,16 +26,26 @@ export function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // Utilisation d'axios pour envoyer le formulaire à Formsprée
-      await axios.post('https://formsubmit.co/contact@kancoon.fr', data);
-      toast.success('Le formulaire a été soumis avec succès!')
-
-      setSubmitted(true);
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+    
+      const result = await res.json();
+      if (result.success) {
+        toast.success("Le formulaire a été soumis avec succès !");
+        setSubmitted(true);
+      } else {
+        toast.error("Une erreur est survenue lors de l'envoi du mail.");
+      }
     } catch (error) {
-      toast.error('Une erreur est survenue lors de la soumission du formulaire.\nVeuillez contactez le 02 51 95 94 00')
+      console.error(error);
+      toast.error("Impossible d'envoyer le message.\nVeuillez contacter le 02 51 95 94 00");
     }
-
-    setIsSubmitting(false);
+    setIsSubmitting(false);    
   };
   return (
     <div className='bg-light-grey border-2 w-[90%] ft:w-auto border-white hover:border-green transition-all duration-500 rounded-xl'>
@@ -159,4 +169,3 @@ export default function GetInTouchSimple() {
     </>
   );
 }
-
